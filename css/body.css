@@ -247,6 +247,21 @@ a.iupui:hover
 	color:#B31B1B;
 }
 
+a.bu:link
+{ 	
+	color:#CC0000;
+}
+
+a.bu:visited
+{ 	
+	color:#CC0000;
+}
+
+a.bu:hover
+{ 	
+	color:#B31B1B;
+}
+
 .right
 {
 	position:relative;
