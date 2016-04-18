@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" href="css/body.css"/>
+<title>Stefano Silvestri</title>
+
+<!-- Script to include MathJax -->
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+   
+
+</head>
+<body class="content">
+<div id="header">
+			<div id="name">
+				<h1><a href="index.html">Stefano Silvestri</a></h1>
+			</div>
+			
+			<ul id="navbar">
+				<li><a class="current" href="index.html">Home</a></li>
+				<li><a href="teaching.html">Teaching</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="resources.html"/>Resources</a></li>
+			</ul>
+		</div>
+		
+        <div class="left">
+        <h1>Resources</h1>
+		  <p>Here you can find a collection of useful program used in complex dynamics.</p>
+       
+       <ul>
+          <li><a href="http://www.mndynamics.com/indexp.html">Mandel</a> created by Wolf Jung, PhD.</br>
+          Great interactive program to study the dynamics of Quadratic, Cubic, and Quartic polynomials; Rational, Trascendantal, Newton, and Non-Analytic mappings.</br>
+          Available on <strong>Linux</strong>, <strong>Windows</strong>, and <strong>Mac</strong>. </li>
+          <li><a href="http://www.math.cornell.edu/~noonan/fstream.html">Fractal Stream</a> created by Matthew Nooan, PhD.</br>
+          One of the best program. It is simple to use and it allows the user to write his own scripts. It also supports real dynamics.</br>
+          Available on <strong>Mac</strong>.</li>
+       </ul>
+</div>
+		<div class="right">
+		</div>
+</body>
+</html>
