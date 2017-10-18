@@ -119,13 +119,42 @@ h3
 	border-left: 1px solid #C00;
 }
 
-#abs
+#abs1
 {
     font-family:Georgia, serif;
     text-align: center;
     padding-top:10px;
     padding-bottom:15px;
 }
+#abs2
+{
+    font-family:Georgia, serif;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:15px;
+}
+#abs3
+{
+    font-family:Georgia, serif;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:15px;
+}
+#abs4
+{
+    font-family:Georgia, serif;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:15px;
+}
+#abs5
+{
+    font-family:Georgia, serif;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:15px;
+}
+
 .current
 {
 	font-weight:bold;
