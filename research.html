@@ -152,6 +152,17 @@ transverse instability of these periodic patterns from the leading invasion fron
 			  slideit()
 			  //-->
 			</script>
+		
+			<script type="text/javascript">
+			(function (tos) {
+			  window.setInterval(function () {
+			    tos = (function (t) {
+			      return t[0] == 50 ? (parseInt(t[1]) + 1) + ':00' : (t[1] || '0') + ':' + (parseInt(t[0]) + 10);
+			    })(tos.split(':').reverse());
+			    window.pageTracker ? pageTracker._trackEvent('Time', 'Log', tos) : _gaq.push(['_trackEvent', 'Time', 'Log', tos]);
+			  }, 10000);
+			})('00');
+			</script>
 		<figcaption> <font size="-5"> Various attractors for the family of IFS \(\{\lambda z-1, \lambda z+1\}\)</font></figcaption>
 	</figure>
         <p>&nbsp;</p>
