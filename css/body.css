@@ -212,25 +212,25 @@ h3
 .purem{
   border-radius: 15px 50px;
   background: rgba(93, 173, 226,0.25); /* #5DADE2; Blue */
-  padding: 20px;
+  padding: 10px;
 }
 
 .applm{
   border-radius: 15px 50px;
   background: rgba(125, 206, 160,0.25); /* #7DCEA0; /* Green */
-  padding: 20px;
+  padding: 10px;
 }
 
 .histm{
   border-radius: 15px 50px;
   background: rgba( 220, 118, 51,0.25); /*#DC7633; /* Orange*/
-  padding: 20px;
+  padding: 10px;
 }
 
 .eleceng{
   border-radius: 15px 50px;
   background: rgba( 244, 208, 63,0.25); /*#F4D03F ; /* Yellow */
-  padding: 20px;
+  padding: 10px;
 }
 
 .content
