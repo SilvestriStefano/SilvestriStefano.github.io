@@ -10,6 +10,10 @@ div
 
 }
 
+p
+{
+  text-align: justify;
+}
 
 a:link
 {
@@ -155,12 +159,21 @@ h3
 	font-weight:bold;
 }
 
+
+.section_info
+{
+	padding-left: 5px; 
+	width: 90%;
+	/* position:relative; */
+	background-color:whitesmoke;
+	border-radius: 15px;
+}
+
 .collapsible {
-	color: #555;
+/* 	color: #555; */
 	cursor: pointer;
-	text-align: left;
+	text-align: center;
 	outline: none;
-	font-size: 15px;
 }
 
 .active, .collapsible:hover {
@@ -259,87 +272,6 @@ h3
 }
 
 
-/*.left a:link
-{
-
-	color:#5D5D98;
-
-}
-
-
-.left a:visited
-{
-
-	color:#5D5D98;
-
-}
-
-
-.left a:hover
-{
-
-	color:#343462;
-
-}*/
-
-.copy
-{
-
-	position:absolute;
-	float:left;
-	clear:both;
-	margin-top:100px;
-	margin-left:10px;
-	/*padding-bottom:10px;*/
-	width:75%;
-
-
-}
-
-
-.copy h3
-{
-
-	font-weight:bold;
-
-}
-
-
-.copy ul
-{
-
-	list-style-type: none;
-
-}
-.copy li
-{
-	padding-bottom:1em;
-
-}
-/*.copy a:link
-{
-
-	color:#5D5D98;
-
-}
-
-
-.copy a:visited
-{
-
-	color:#5D5D98;
-
-}
-
-
-.copy a:hover
-{
-
-	color:#343462;
-
-}*/
-
-
 a.iupui:link
 {
 
@@ -401,46 +333,3 @@ a.bu:hover
 
 }
 
-
-.section_info
-{
-
-	position:relative;
-	height:170px;
-	margin-left:10px;
-	padding-bottom:30px;
-	/*width:100%;*/
-
-}
-
-
-.section_info a:link
-{
-
-	color:#5D5D98;
-
-}
-
-
-.section_info a:visited
-{
-
-	color:#5D5D98;
-
-}
-
-
-.section_info a:hover
-{
-
-	color:#343462;
-
-}
-
-
-.section_info td
-{
-
-	padding-right: 5px;
-	padding-bottom: 2px;
-}
