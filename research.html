@@ -1,226 +1,489 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link type="text/css" rel="stylesheet" href="css/body.css"/>
-<title>Stefano Silvestri</title>
+  <title>Stefano Silvestri Ph.D.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Script to include MathJax -->
+<!-- Script to include MathJax -->  
 <script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-
-<!-- Script to include jQuery -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-
-	
+<link type="text/css" rel="stylesheet" href="css/body.css"/>
+ 
 </head>
-<body class="content">
+<body>
 
-
-<div id="header">
-			<div id="name">
-				<h1><a href="index.html">Stefano Silvestri</a></h1>
-			</div>
-			<div id="logo">
-				<script type="text/javascript">
-				    <!--
-				     var imlocation = "img/";
-				     var image_number = 0;
-				     function ImageArray (n) {
-				       this.length = n;
-				       for (var i =1; i <= n; i++) {
-					 this[i] = ' '
-				       }
-				     }
-				     image = new ImageArray(3)
-				     image[0] = 'PhJuampiGuacas12.jpg'
-				     image[1] = 'ARDIPAUL113.jpg'
-				     image[2] = 'EkBalam.jpg'
-				      function randomimage() {
-					image_number = Math.floor((Math.random() * 3) )
-					return(image[image_number])
-				     }
-				     document.write("<img src='" + imlocation + randomimage()+ "'width= '"+100+"' height='"+75+"'>");
-				    //-->
-				</script>
-		      </div>
-			<ul id="navbar">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="teaching.html">Teaching</a></li>
-				<li><a class="current" href="research.html">Research</a></li>
-				<li><a href="resources.html"/>Resources</a></li>
-			</ul>
-		</div>
-
-		<div class="left">
-		<h2>Research</h2>
-       <p>My research interests lie in complex dynamical systems, iterated function systems, symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.</p>
-		     <img src="img/Christine_Hair.png" name="Christine Hair" width="559"/>
-       <p><font size="-5"> Acacia Trees (modified version of <a href="https://www.maa.org/programs/maa-awards/writing-awards/christiane-s-hair">Christiane's Hair</a>) a set built by stacking
-Cantor sets with continuously varying scaling factors.</font></p>
-		<p></p>
-		<div class="section_info collapsible">
-		<h3>Current Research</h3>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="main.html">Stefano Silvestri</a>
+    
+      <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="navbar-toggler-icon"></span>                      
+      </button>
+      
+    
+    <div class="collapse navbar-collapse" id="myNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
     </div>
-    <div style="display:none">
-		<p>
-		My research project concerns the sets pictured below.
-		</p>
-		<p><img src="img/mset.png" alt="M" width="269"  /> <img src="img/m0set.png" alt="M0" width="269"  /></p>
-		<p>
-		Colored in dark blue is \(\mathcal{M}\) which is the closure of the set of roots in \(\mathbb{D}\) of polynomials with coefficients
-		in \(\lbrace-1,0,+1\rbrace\). In magenta is \(\mathcal{M}_0\) which is the closure of the set of roots in \(\mathbb{D}\) of with
-		coefficients in \(\lbrace-1,+1\rbrace\), commonly known as Littlewood’s polynomials. Both are bounded outside by the unit circle,
-		and usually depicted in overlap as \(\mathcal{M}_0\subset\mathcal{M}\). Interest in these sets spiked recently after <a href="https://arxiv.org/abs/1310.7647">G. Tiozzo</a>,
-		inspired by a conjecture of <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3289916">W.P. Thurston</a>, proved that \(\mathcal{M}_0\)
-		equals the closure in \(\mathbb{D}\) of the set of Galois conjugates of entropies of superattracting real quadratic polynomials.
-		From a different point of view, the set \(\mathcal{M}\) is the connectedness locus of the family of iterated function systems (IFS)
-		\( \langle \mathfrak{s}_-(z), \mathfrak{s}_+(z)\rangle=\langle \lambda z-1, \lambda z+1\rangle \) namely the set of parameters \( \lambda \)
-		for which the associated limit set of the IFS is connected.
-		</p>
-		<p>
-		The limit set is the unique invariant compact set satisfying \( \mathsf{A}_\lambda=\mathfrak{s}_-(\mathsf{A}_\lambda)\cup\mathfrak{s}_+(\mathsf{A}_\lambda) \).
-		Some examples of \( \mathsf{A}_\lambda \) are in the gif on the top right. The cyan colored set is \(\mathfrak{s}_-(\mathsf{A}_\lambda)\),
-		the "minus" copy of \( \mathsf{A}_\lambda\); while the orange one is \(\mathfrak{s}_+(\mathsf{A}_\lambda)\), the "plus" copy of \( \mathsf{A}_\lambda\).
-		As you can see these attractors are symmetric with respect to center \(0\), and sometimes this point is not part of the attractor. You may also notice how the plus and minus copies
-		can touch either at a point or segments, or overlap substantially (the yellow part). In the case the overlap is nonempty, it is easy to prove that \(\mathsf{A}_\lambda\) is connected
-		(a little harder, but possible, to show locally connected). In the opposite case, the attractor is totally disconnected and, hence, homeomorphic to a Cantor set. It can be shown then that
-		</p>
-		<p>
-	\(\mathcal{M}=\left\{ \lambda\in\mathbb{D}~|~\mathsf{A}_\lambda\text{ is connected} \right\}~\text{ and }~\mathcal{M}_0=\left\{\lambda\in\mathbb{D}~|~0\in\mathsf{A}_\lambda\right\}\).
-		</p>
-		<p>
-		The two sets are not at all equal! <em>Notice the contrast with what happens with the Mandelbrot set.</em>
-		</p>
-		<p>
-    These sets were first introduced by <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=793899">M.F. Barnsley
-		and A.N. Harrington</a> in the mid 1980s. In 1988-1992 <a href="https://www.math.u-psud.fr/~bousch/">Bousch</a> proved that \(\mathcal{M}\) and \(\mathcal{M}_0\)
-		are connected, and locally connected. In 2002, <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1912290">C. Bandt</a>
-		proved the existence of a hole in \(\mathcal{M}\), and conjectured that there are in fact infinitely many. In 2014, <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3719268">D. Calegari, S. Koch, and
-		A. Walker</a> gave a positive answer to the conjecture, for both \(\mathcal{M}\) and \(\mathcal{M}_0\). Furthermore, they constructed infinite sequences of holes accumulating at certain parameters in \(\partial\mathcal{M}\).
-		These are <em>buried points</em> of \(\partial\mathcal{M}\), i.e. not path accessible from the complement \(\mathbb{D}\setminus\mathcal{M}\).
-		</p>
-		<p>
-    The question of classifying these connected components of \(\mathbb{D}\setminus\mathcal{M}\) is still open; however the results in my thesis, are a step in that direction.
-    I concentrated on boundary parameters that are not buried. I gave sufficient conditions on \(\lambda\in\partial\mathcal{M}\) or \(\partial\mathcal{M}_0\) to guarantee it is accessible from \(\mathbb{D}\setminus\mathcal{M}\).
-		Moreover, I showed that a parameters in \(\partial\mathcal{M}\) is accessible from the largest connected component of \(\mathbb{D}\setminus\mathcal{M}\) by directly constructing a path connecting it to \(0\).
-		</p>
-	    <p style="font-size:small">If you are interested, you can download the <a href="files/Defense.pdf">slides of my Defense</a>. There is an animation at the end which only works if you open it on the computer and not on the browser. It might not work on a Linux OS.</p>
-    <p>Currently, I am working on extending these results using techniques from kneading theory and complex dynamics inspired by the work of <a href="https://icerm.brown.edu/video_archive/?play=2099">G. Tiozzo K. Lindsey</a> and
-    <a href="https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/quasisymmetric-conjugacy-between-quadratic-dynamics-and-iterated-function-systems/F7D829F84D00CEC3F3801D8BE1B06470">K.L. Ero&#287lu, S. Rohde, &amp B. Solomyak</a>.</p>
-    <p><img src="img/UniformizationDark.png" alt="Uniformization_of_the_complement" width="538"/></p>
-    <p>Furthermore, I am developing a combinatorial method to describe the boundary of \(\mathcal{M}\) around the point \(\mathrm{i}/\sqrt{2}\) using techniques developed by <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.505.5694&rep=rep1&type=pdf">C. Bandt &amp M. Mesing</a></p>
-    <p><img src="img/window.png" alt="near_i_over_sqrt_2" width="538"/></p>
-		<p></p>
-    </div>
-
-    <div class="section_info collapsible">
-		<h3>Undergraduate Research</h3>
-    </div>
-    <div style="display:none">
-		<p>During my  studies at Boston University (<a class="bu" href="http://www.bu.edu/math" target="_blank"><span class="bu">BU</span></a>) I was working under the supervision of <a href="http://math.bu.edu/people/bob/">Dr. Robert L. Devaney</a>.
-		The results appeared in three articles, two of which have been published in the <em>Pi Mu Epsilon journal</em> and <em>Fundamenta Mathematicae</em>, while the other is awaiting publication in <em>Topology Preceedings</em>.</p>
-    <p>I presented this work at three conferences:
-	<ul>
-	<li>at the Symposium for Undergraduate in the Mathematical Sciences (SUMS) hosted by Brown University on March 2013,</li>
-	<li>at the <a href="http://www.math.illinois.edu/mwds/">Midwest Dynamical System Conference</a> hosted by University Illinois at Urbana-Champaign on November 2013 (poster),</li>
-	<li>at the <a href="http://at.yorku.ca/c/b/i/t/70.htm">48th Spring Topology and Dynamics Conference</a> hosted by University of Richmond on March 2014.
-	</ul>
-	</p>
-	<p></p>
-	<p>I have also participated in a Research Experience for Undergraduate (<a href="http://www.math.umn.edu/~scheel/reu/reu-opportunities.html">REU</a>) at University of Minnesota Twin Cities (<a href="http://www.math.umn.edu">UMN</a>).
-	Here I worked under the guidance of <a href="http://www.math.umn.edu/~scheel/">Dr. Arnd Scheel</a> and his, at the time, postdoctoral student <a href="http://math.gmu.edu/~mholzer/">Dr. Matt Holzer</a>. The results appeared in the article
-	published in the <em>SIAM Undergraduate Research Online journal</em>.
-	</p>
-  </div>
-
-  <div class="section_info collapsible">
-	<h3>Publications &amp; Preprints</h3>
-  </div>
-  <div style="display:none">
-		<table>
-		<th class="purem", id="box">Pure Math</th>
-		<th class="applm", id="box">Applied Math</th>
-		<th class="histm", id="box">History of Math</th>
-		<th class="eleceng", id="box">Electrical Engineering	</th>
-		</table>
-		<ol reversed>
-		<li class="histm">P&eacuterez, R. A. and Silvestri, S. <b>A Catalog of Geometric Progression References in
-the Historical Record.</b><br> -<em>in preparation</em></li>
-        <li class="purem">P&eacuterez, R. A. and Silvestri, S. <b>Accessibility of the Boundary of the Thurston Set.</b> <em>submitted</em><br>
-          <button type="button" class="collapsible purem" style="font-size:15px">abstract</button>
-          <div class="abscontent" style="display:none"><p>Consider two objects associated to the Iterated Function System (IFS) \(\{1+\lambda z,-1+\lambda z\}\): the locus \(\mathcal{M}\) of parameters \(\lambda\in\mathbb{D}\setminus\{0\}\) for which the corresponding attractor is connected; and the locus \(\mathcal{M}_0\) of parameters for which the related attractor contains \(0\). The set \(\mathcal{M}\) can also be characterized as the locus of parameters for which the attractor of the IFS \(\{1+\lambda z, \lambda z, -1+\lambda z\}\) contains \(\lambda^{-1}\). Exploiting the asymptotic similarity of \(\mathcal{M}\) and \(\mathcal{M}_0\) with the respective associated attractors, we give sufficient conditions on \(\lambda\in\partial\mathcal{M}\) or \(\partial\mathcal{M}_0\) to guarantee it is path accessible from the complement \(\mathbb{D}\setminus\mathcal{M}\).</p> 
-          </div>  -<a href="https://arxiv.org/abs/1912.12606">[arXiv:1912.12606]</a>
-        </li>
-	<li class="eleceng">Alibeik, M., Nezamuddin, O., Rubin, M., Wheeler, N., Silvestri, S., dos Santos, E. <b>Airgap-less electric motor: A solution for high-torque low-speed applications</b>. <em>IEEE International Electric Machines and Drives Conference (IEMDC)</em>, pp.1-8 (2017)</br>
-          <button type="button" class="collapsible eleceng" style="font-size:15px">abstract</button>
-          <div class="abscontent" style="display:none"><p>This paper proposes a new category of electric motors able to generate high torque with reduced volume, i.e., high torque density. Such a new design is denominated as an airgapless electrical motor since the rotor touches the stator as it spins. Due to its zero airgap, the proposed motor will maximize the generated torque, allowing such type of motors to be competitive in applications where hydraulic motors are prevalent, i.e., low-speed and high-torque requirements. Unlike hydraulic motor systems that face two major problems with their braking system and also with low efficiency due to a large number of energy conversion stages (i.e., motor-pump, hydraulic connections and the hydraulic motor itself),
-	the proposed electric motor converts electrical energy directly to mechanical energy with no extra braking system necessary and with higher efficiency. A proof-of-concept electric motor prototype along with its drive system is built to validate the theoretical assumptions proposed in this paper.</p></div> -<a href="files/Final_9Phase_V03.pdf">[preprint]</a> </li>
-        <li class="purem">Blanchard, P., Cuzzocreo, D., Devaney, R. L., Fitzgibbon, E., and Silvestri, S. <b>A Dynamical Invariant for Sierpi&#324ski Cardioid Julia Sets</b>. <em>Fundamenta Mathematicae</em>, <b>226</b>, pp.253-277 (2014).</br>
-          <button type="button" class="collapsible purem" style="font-size:15px">abstract</button>
-          <div class="abscontent" style="display:none"><p>For the family of rational maps \(z^n + \lambda~/~z^n\) where \(n \geq 3 \), it is known that there are infinitely many copies of the Mandelbrot set that are buried in the paramenter plane, i.e., they do not extend to the outer boundary of this set. For parameters lying in the main cardioids of these Mandelbrot sets, the corresponding Julia sets are always Sierpi&#324ski curves, and so they are all homeomorphic to one another. However, it is known that only those cardioids that aresymmetrically located in the parameter plane have conjugate dynamics. We produce a dynamical invariant that explains why these maps have different dynamics.</p></div> -<a href="http://math.bu.edu/people/bob/papers/dyn-invt.pdf">[preprint]</a></li>
-        <li class="purem">Fitzgibbon, E. and Silvestri S. <b>Rational Maps: Julia Sets of Accessible Mandelbrot Sets are not Homeomorphic.</b> To appear in <em>Topology Proceedings</em>.</br>
-          <button type="button" class="collapsible purem" style="font-size:15px">abstract</button>
-          <div class="abscontent" style='display:none'><p>In this paper we investigate the Julia sets of singularly perturbed complex rational maps of the form \(f(z) = z^n + \lambda~/~z^d\). We will show that, for the case \(n = d = 2\), two maps drawn from main cardioids of distinct accessible Mandelbrot sets containing a cycle of period \(m\) do not have homeomorphic Julia sets, unless
-these cardioids are complex conjugates of one another.</p></div> -<a href="files/FitzgibbonSilvestri.pdf">[preprint]</a> </li>
-        <li class="purem">Silvestri, S. <b>Non Homeomorphic Julia Sets of Singularly Perturbed Rational Maps.</b> <em>Pi Mu Epsilon Journal</em>, 13:10 (2014).</br>
-          <button type="button" class="collapsible purem" style="font-size:15px">abstract</button>
-          <div class="abscontent" style="display:none"><p>In this paper we investigate the Julia sets of singularly perturbed complex rational maps of the form \(f(z) = z^2 + \lambda~/~z^2\). We will show that two maps drawn from different main cardioids of accessible baby Mandelbrot sets containing a cycle of period \(4\) are not homeomorphic on their Julia sets, unless these cardioids are complex conjugates of one another.</p></div> -<a href="
-https://www.jstor.org/stable/24345288">[Journal]</a> </li>
-        <li class="applm">Bose, K., Cox, T., Silvestri S., and Varin, P. <b>Invasion Front and Pattern Formation in a Model of Chemotaxis in One and Two Dimensions.</b> <em>SIAM Undergraduate Research Online 6</em> (2013).</br>
-          <button type="button" class="collapsible applm" style="font-size:15px">abstract</button>
-          <div class="abscontent" style="display:none"><p>The purpose of this paper is to explore spatio-temporal pattern formation via invasion fronts in the
-            one and two dimensional Keller-Segel chemotaxis model. In the one-dimensional case, simulations show
-            that solutions that begin near an unstable equilibrium evolve into periodic patterns. These in turn evolve
-            into new patterns through a process known as coarsening. In the two-dimensional case, we encounter
-            only periodic patterns in the wake of the initial front. Transverse patterning only arises as a result of a
-            transverse instability of these periodic patterns from the leading invasion front.</p></div> -<a href="http://www.siam.org/students/siuro/vol6/S01200.pdf">[pdf]</a></li>
-          </ol>
-		<p>My <a href="https://mathscinet.ams.org/mathscinet/freeTools.html?version=2">Erd&oumls number</a> is 4. </p>
-    </div>
-
-    <div class="section_info collapsible">
-    <h3>Posters</h3>
-  </div>
-  <div style="display:none">
-		<ol reversed>
-			<li><a href="files/FitzSilv-MWDS2013.pdf">Rational Maps: Julia Sets of Accessible M-Sets Are Not Homeomorphic (MWDS 2013)</a></li>
-		</ol>
-    </div>
-		 </div>
-		<div class="right">
-	<figure>
-		<img src="img/attrs.gif" width="299" height="299" />
-		<figcaption> <font size="-5"> Various attractors for the family of IFS \(\{\mathfrak{s}_-(z),\mathfrak{s}_+(z)\}\)</font></figcaption>
-	</figure>
-        <p>&nbsp;</p>
-	<figure>
-                <img src="img/pn2d2.jpg" alt="pn2d2" width="299"  />
-                <figcaption> <font size="-5"> Parameter plane for \(f(z) = z^2 + \lambda / z^2\), where \(z, \lambda \in \mathbb{C}\).</font></figcaption>
-        </figure>
-        <p>&nbsp;</p>
-        <figure>
-                <img src="img/jn2d2.jpg" alt="jn2d2" width="299" />
-                <figcaption> <font size="-5">We obtain a Checkerboard Julia set when \(\lambda = 0.08\).</font></figcaption>
-        </figure>
+  
+</nav>
+  
+<br>
+<br>
+<br>
+<div class="container-fluid text-center">    
+  <div class="row justify-content-md-center">
+  
+    <div class="col-sm-9 text-left"> 
+      <h2>Research</h2>
+      <p>My research interests lie in complex dynamical systems, iterated function systems, 
+        symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.</p>
+		    <div class="d-flex justify-content-center">
+          <figure class="figure">
+            <img class="figure-img img-fluid" src="img/Christiane_Hair.png" name="Christiane Hair"/>
+            <figcaption class="figure-caption" font size="-5"> Acacia Trees (modified version of 
+              <a href="https://www.maa.org/programs/maa-awards/writing-awards/christiane-s-hair">Christiane's Hair</a>) 
+              a set built by stacking Cantor sets with continuously varying scaling factors.</figcaption>
+          </figure>
         </div>
+    <p></p>
+    
+    <div id="accordion">
+      <!------Graduate Research------>
+      <div class="card">
+        <div class="card-header">
+          <h5><a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#curRes">Current Research</a></h5>
+        </div>
+        <div id="curRes" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <p>My research project concerns the sets pictured below.</p>
+            <div class="d-flex justify-content-center">
+              <div class="w-35">
+                <img src="img/mset.png" class="img-fluid rounded-circle" alt="M">
+              </div>
+              <div class="w-35">
+                <img src="img/m0set.png" class="img-fluid rounded-circle" alt="M0">
+              </div>
+            </div>
+            <p>Colored in dark blue is \(\mathcal{M}\) which is the closure of the set of roots in \(\mathbb{D}\) of polynomials with coefficients
+              in \(\lbrace-1,0,+1\rbrace\). In magenta is \(\mathcal{M}_0\) which is the closure of the set of roots in \(\mathbb{D}\) of with
+              coefficients in \(\lbrace-1,+1\rbrace\), commonly known as Littlewood’s polynomials. Both are bounded outside by the unit circle,
+              and usually depicted in overlap as \(\mathcal{M}_0\subset\mathcal{M}\). Interest in these sets spiked recently after <a href="https://arxiv.org/abs/1310.7647">G. Tiozzo</a>,
+              inspired by a conjecture of <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3289916">W.P. Thurston</a>, proved that \(\mathcal{M}_0\)
+              equals the closure in \(\mathbb{D}\) of the set of Galois conjugates of entropies of superattracting real quadratic polynomials.
+              From a different point of view, the set \(\mathcal{M}\) is the connectedness locus of the family of iterated function systems (IFS)
+              \( \langle \mathfrak{s}_-(z), \mathfrak{s}_+(z)\rangle=-1+\langle \lambda z, +1+\lambda z\rangle \) namely the set of parameters \( \lambda \)
+              for which the associated limit set of the IFS is connected.
+            </p>
+            <!--<div class="container-slider">-->
+            <div id="attrCarousel" class="carousel slide" data-interval="false" data-ride="carousel" >
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#attrCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#attrCarousel" data-slide-to="1"></li>
+                <li data-target="#attrCarousel" data-slide-to="2"></li>
+                <li data-target="#attrCarousel" data-slide-to="3"></li>
+                <li data-target="#attrCarousel" data-slide-to="4"></li>
+                <li data-target="#attrCarousel" data-slide-to="5"></li>
+                <li data-target="#attrCarousel" data-slide-to="6"></li>
+                <li data-target="#attrCarousel" data-slide-to="7"></li>
+                <li data-target="#attrCarousel" data-slide-to="8"></li>
+                <li data-target="#attrCarousel" data-slide-to="9"></li>
+                <li data-target="#attrCarousel" data-slide-to="10"></li>
+                <li data-target="#attrCarousel" data-slide-to="11"></li>
+                <li data-target="#attrCarousel" data-slide-to="12"></li>
+              </ol>
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" ><!--style="height:300px !important; width:300px !important;">-->
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/miniplus2.png"  alt="miniplus2" >
+                </div>
+                  
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/mini.png"  alt="mini" >
+                </div>
+                  
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/twominis.png"  alt="twominis" >
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/idk.png"  alt="idk" >
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/justone.png"  alt="justone" >
+                </div>
+                
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/atcutpoint.png"  alt="atcutpoint" >
+                </div>
+            
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/cantor1.png"  alt="cantor" >
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/tametwindragron.png"  alt="tametwindragron" >
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/justtwo.png"  alt="justtwo" >
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/justfour.png"  alt="justfour" >
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/justeight.png"  alt="justeight" >
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/troublemaker.png"  alt="troublemaker" >
+                </div>
+
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#attrCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#attrCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+            
+            <p>The limit set is the unique invariant compact set satisfying \( \mathsf{A}_\lambda=\mathfrak{s}_-(\mathsf{A}_\lambda)\cup\mathfrak{s}_+(\mathsf{A}_\lambda) \).
+              Some examples of \( \mathsf{A}_\lambda \) are shown above. The cyan colored set is \(\mathfrak{s}_-(\mathsf{A}_\lambda)\),
+              the "minus" copy of \( \mathsf{A}_\lambda\); while the orange one is \(\mathfrak{s}_+(\mathsf{A}_\lambda)\), the "plus" copy of \( \mathsf{A}_\lambda\).
+              As you can see these attractors are symmetric with respect to center \(0\), and sometimes this point is not part of the attractor. You may also notice how the plus and minus copies
+              can touch either at a point or segments, or overlap substantially (the yellow part). In the case the overlap is nonempty, it is easy to prove that \(\mathsf{A}_\lambda\) is connected
+              (a little harder, but possible, to show locally connected). In the opposite case, the attractor is totally disconnected and, hence, homeomorphic to a Cantor set. It can be shown then that
+            </p>
+            <p>
+            \(\mathcal{M}=\left\{ \lambda\in\mathbb{D}~|~\mathsf{A}_\lambda\text{ is connected} \right\}\)
+              and 
+              \(\mathcal{M}_0=\left\{\lambda\in\mathbb{D}~|~0\in\mathsf{A}_\lambda\right\}.\)
+            </p>
+            <p>
+            The two sets are not at all equal! <em>Notice the contrast with what happens with the Mandelbrot set.</em>
+            </p>
+            <p>
+            These sets were first introduced by <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=793899">M.F. Barnsley
+            and A.N. Harrington</a> in the mid 1980s. In 1988-1992 <a href="https://www.math.u-psud.fr/~bousch/">Bousch</a> proved that \(\mathcal{M}\) and \(\mathcal{M}_0\)
+            are connected, and locally connected. In 2002, <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1912290">C. Bandt</a>
+            proved the existence of a hole in \(\mathcal{M}\), and conjectured that there are in fact infinitely many. In 2014, <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3719268">D. Calegari, S. Koch, and
+            A. Walker</a> gave a positive answer to the conjecture, for both \(\mathcal{M}\) and \(\mathcal{M}_0\). Furthermore, they constructed infinite sequences of holes accumulating at certain parameters in \(\partial\mathcal{M}\).
+            These are <em>buried points</em> of \(\partial\mathcal{M}\), i.e. not path accessible from the complement \(\mathbb{D}\setminus\mathcal{M}\).
+            </p>
+            <p>
+            The question of classifying these connected components of \(\mathbb{D}\setminus\mathcal{M}\) is still open; however the results in my thesis, are a step in that direction.
+            I concentrated on boundary parameters that are not buried. I gave sufficient conditions on \(\lambda\in\partial\mathcal{M}\) or \(\partial\mathcal{M}_0\) to guarantee it is accessible from \(\mathbb{D}\setminus\mathcal{M}\).
+            Moreover, I showed that a parameters in \(\partial\mathcal{M}\) is accessible from the largest connected component of \(\mathbb{D}\setminus\mathcal{M}\) by directly constructing a path connecting it to \(0\).
+            </p>
+              <!-- <p style="font-size:small">If you are interested, you can download the <a href="files/Defense.pdf">slides of my Defense</a>. There is an animation at the end which only works if you open it on the computer and not on the browser. It might not work on a Linux OS.</p> -->
+            <p>Currently, I am working on extending these results using techniques from kneading theory and complex dynamics inspired by the work of <a href="https://icerm.brown.edu/video_archive/?play=2099">G. Tiozzo K. Lindsey</a> and
+            <a href="https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/quasisymmetric-conjugacy-between-quadratic-dynamics-and-iterated-function-systems/F7D829F84D00CEC3F3801D8BE1B06470">K.L. Ero&#287lu, S. Rohde, &amp B. Solomyak</a>.</p>
+            <div class="d-flex justify-content-center">
+              <img class="img-fluid" src="img/Uniformization.png" alt="Uniformization_of_the_complement"/>
+            </div>
+            <p>Furthermore, I am developing a combinatorial method to describe the boundary of \(\mathcal{M}\) around the point \(\mathrm{i}/\sqrt{2}\) using techniques developed by <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.505.5694&rep=rep1&type=pdf">C. Bandt &amp M. Mesing</a></p>
+            <div class="d-flex justify-content-center">
+              <img class="img-fluid" src="img/window.png" alt="near_i_over_sqrt_2" />
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!------Undergraduate Research------>
+      <div class="card">
+          <div class="card-header">
+            <h5><a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#undRes">Undergraduate Research</a></h5>
+          </div>
+      <div id="undRes" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>During my  studies at Boston University (<a class="bu" href="http://www.bu.edu/math" target="_blank"><span class="bu">BU</span></a>) 
+            I was working under the supervision of <a href="http://math.bu.edu/people/bob/">Dr. Robert L. Devaney</a>.
+            We were interested in the topology and dynamics of the Julia sets created by the rational maps</p>
+          <p>\(F_\lambda(z)=z^n+\dfrac{\lambda}{z^d}\quad n\geq2, ~ d\geq1, \)</p>
+          <p>singular perturbations of the power maps \(z^n\). I mainly focused on the case \(n = d = 2\), but also considered the more general case \(n=d\geq3\) 
+            with the Dynamical System group at <a class="bu" href="http://math.bu.edu/dynamics/" target="_blank"><span class="bu">BU</span></a>.
+            <!-- <br>The Julia sets behave in three different ways as \(\lambda\rightarrow 0\). In the case \(d=1\), the Julia set converges to the closed
+            unit disk as \(\lambda\rightarrow 0\) along \(n-1\) special rays in \(\mathbb{C}\). For \(n=d=2\) the Julia set converges to the unit 
+            disk as \(\lambda\rightarrow 0\) from all directions in \(\mathbb{C}\), in other words it is a circle. In cases with \(n,d>2\), 
+            regardless of how small \(\lvert\lambda\rvert\) Julia sets no longer converge, as there is always an annulus of fixed size about the 
+            origin in the complement of the Julia set. --></p>
+          <p>The results appeared in three articles, two of which have been published in the <em>Pi Mu Epsilon journal</em> and 
+            <em>Fundamenta Mathematicae</em>, while the other is awaiting publication in <em>Topology Preceedings</em>.</p>
+          <p>I presented this work at three conferences:
+            <ul>
+              <li>at the Symposium for Undergraduate in the Mathematical Sciences (SUMS) hosted by Brown University on March 2013,</li>
+              <li>at the <a href="http://www.math.illinois.edu/mwds/">Midwest Dynamical System Conference</a> hosted by University Illinois at Urbana-Champaign on November 2013 (poster),</li>
+              <li>at the <a href="http://at.yorku.ca/c/b/i/t/70.htm">48th Spring Topology and Dynamics Conference</a> hosted by University of Richmond on March 2014.
+            </ul>
+          </p>
+          <p></p>
+          <p>I have also participated in a Research Experience for Undergraduate (<a href="http://www.math.umn.edu/~scheel/reu/reu-opportunities.html">REU</a>) at University of Minnesota Twin Cities (<a href="http://www.math.umn.edu">UMN</a>).
+          Here I worked under the guidance of <a href="http://www.math.umn.edu/~scheel/">Dr. Arnd Scheel</a> and his, at the time, postdoctoral student <a href="http://math.gmu.edu/~mholzer/">Dr. Matt Holzer</a>. The results appeared in the article
+          published in the <em>SIAM Undergraduate Research Online journal</em>.
+          </p>
+        </div>
+      </div>
+      </div>
+
+      <!------Publications and Preprints------>
+      <div class="card">
+        <div class="card-header">
+          <h5><a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#pubprep">Publications &amp; Preprints</a></h5>
+        </div>
+      <div id="pubprep" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        
+          <div class="table-responsive table-borderless">
+          <table class="table ">
+            <th class="purem", id="box">Pure Math</th>
+            <th class="applm", id="box">Applied Math</th>
+            <th class="histm", id="box">History of Math</th>
+            <th class="eleceng", id="box">Electrical Engineering	</th>
+          </table>
+          </div>
+            <p></p>
+            <p>My <a href="https://mathscinet.ams.org/mathscinet/freeTools.html?version=2">Erd&oumls number</a> is 4. </p>
+            <ol reversed>
+            <li class="histm">P&eacuterez, R. A. and Silvestri, S. <b>A Catalog of Geometric Progression References in
+        the Historical Record.</b><br> -<em>in preparation</em></li>
+                <li class="purem">P&eacuterez, R. A. and Silvestri, S. <b>Accessibility of the Boundary of the Thurston Set.</b> <em>submitted</em><br>
+                  <a href="#abs6" data-toggle="collapse" type="button" class="btn purem" style="font-size:15px; color:#004d99;">abstract</a>
+                  <div id="abs6" class="collapse abscontent" ><p>Consider two objects associated to the Iterated Function System (IFS) \(\{1+\lambda z,-1+\lambda z\}\): the locus \(\mathcal{M}\) of parameters \(\lambda\in\mathbb{D}\setminus\{0\}\) for which the corresponding attractor is connected; and the locus \(\mathcal{M}_0\) of parameters for which the related attractor contains \(0\). The set \(\mathcal{M}\) can also be characterized as the locus of parameters for which the attractor of the IFS \(\{1+\lambda z, \lambda z, -1+\lambda z\}\) contains \(\lambda^{-1}\). Exploiting the asymptotic similarity of \(\mathcal{M}\) and \(\mathcal{M}_0\) with the respective associated attractors, we give sufficient conditions on \(\lambda\in\partial\mathcal{M}\) or \(\partial\mathcal{M}_0\) to guarantee it is path accessible from the complement \(\mathbb{D}\setminus\mathcal{M}\).</p> 
+                  </div>  -<a href="https://arxiv.org/abs/1912.12606">[arXiv:1912.12606]</a>
+                </li>
+          <li class="eleceng">Alibeik, M., Nezamuddin, O., Rubin, M., Wheeler, N., Silvestri, S., dos Santos, E. <b>Airgap-less electric motor: A solution for high-torque low-speed applications</b>. <em>IEEE International Electric Machines and Drives Conference (IEMDC)</em>, pp.1-8 (2017)</br>
+                  <a href="#abs5" data-toggle="collapse" type="button" class="btn eleceng" style="font-size:15px; color:#004d99;">abstract</a>
+                  <div id="abs5" class="collapse abscontent"><p>This paper proposes a new category of electric motors able to generate high torque with reduced volume, i.e., high torque density. Such a new design is denominated as an airgapless electrical motor since the rotor touches the stator as it spins. Due to its zero airgap, the proposed motor will maximize the generated torque, allowing such type of motors to be competitive in applications where hydraulic motors are prevalent, i.e., low-speed and high-torque requirements. Unlike hydraulic motor systems that face two major problems with their braking system and also with low efficiency due to a large number of energy conversion stages (i.e., motor-pump, hydraulic connections and the hydraulic motor itself),
+          the proposed electric motor converts electrical energy directly to mechanical energy with no extra braking system necessary and with higher efficiency. A proof-of-concept electric motor prototype along with its drive system is built to validate the theoretical assumptions proposed in this paper.</p></div> -<a href="files/Final_9Phase_V03.pdf">[preprint]</a> </li>
+                <li class="purem">Blanchard, P., Cuzzocreo, D., Devaney, R. L., Fitzgibbon, E., and Silvestri, S. <b>A Dynamical Invariant for Sierpi&#324ski Cardioid Julia Sets</b>. <em>Fundamenta Mathematicae</em>, <b>226</b>, pp.253-277 (2014).</br>
+                  <a href="#abs4"  data-toggle="collapse" type="button" class="btn purem" style="font-size:15px; color:#004d99;">abstract</a>
+                  <div id="abs4" class="collapse abscontent" ><p>For the family of rational maps \(z^n + \lambda~/~z^n\) where \(n \geq 3 \), it is known that there are infinitely many copies of the Mandelbrot set that are buried in the paramenter plane, i.e., they do not extend to the outer boundary of this set. For parameters lying in the main cardioids of these Mandelbrot sets, the corresponding Julia sets are always Sierpi&#324ski curves, and so they are all homeomorphic to one another. However, it is known that only those cardioids that aresymmetrically located in the parameter plane have conjugate dynamics. We produce a dynamical invariant that explains why these maps have different dynamics.</p></div> -<a href="http://math.bu.edu/people/bob/papers/dyn-invt.pdf">[preprint]</a></li>
+                <li class="purem">Fitzgibbon, E. and Silvestri S. <b>Rational Maps: Julia Sets of Accessible Mandelbrot Sets are not Homeomorphic.</b> To appear in <em>Topology Proceedings</em>.</br>
+                  <a href="#abs3"  data-toggle="collapse" type="button" class="btn purem" style="font-size:15px; color:#004d99;">abstract</a>
+                  <div id="abs3" class="collapse abscontent" ><p>In this paper we investigate the Julia sets of singularly perturbed complex rational maps of the form \(f(z) = z^n + \lambda~/~z^d\). We will show that, for the case \(n = d = 2\), two maps drawn from main cardioids of distinct accessible Mandelbrot sets containing a cycle of period \(m\) do not have homeomorphic Julia sets, unless
+        these cardioids are complex conjugates of one another.</p></div> -<a href="files/FitzgibbonSilvestri.pdf">[preprint]</a> </li>
+                <li class="purem">Silvestri, S. <b>Non Homeomorphic Julia Sets of Singularly Perturbed Rational Maps.</b> <em>Pi Mu Epsilon Journal</em>, 13:10 (2014).</br>
+                  <a href="#abs2"  data-toggle="collapse" type="button" class="btn purem" style="font-size:15px; color:#004d99;">abstract</a>
+                  <div id="abs2" class="collapse abscontent" ><p>In this paper we investigate the Julia sets of singularly perturbed complex rational maps of the form \(f(z) = z^2 + \lambda~/~z^2\). We will show that two maps drawn from different main cardioids of accessible baby Mandelbrot sets containing a cycle of period \(4\) are not homeomorphic on their Julia sets, unless these cardioids are complex conjugates of one another.</p></div> -<a href="
+        https://www.jstor.org/stable/24345288">[Journal]</a> </li>
+                <li class="applm">Bose, K., Cox, T., Silvestri S., and Varin, P. <b>Invasion Front and Pattern Formation in a Model of Chemotaxis in One and Two Dimensions.</b> <em>SIAM Undergraduate Research Online 6</em> (2013).</br>
+                  <a href="#abs1"  data-toggle="collapse" type="button" class="btn applm" style="font-size:15px; color:#004d99;">abstract</a>
+                  <div id="abs1" class="collapse abscontent" ><p>The purpose of this paper is to explore spatio-temporal pattern formation via invasion fronts in the
+                    one and two dimensional Keller-Segel chemotaxis model. In the one-dimensional case, simulations show
+                    that solutions that begin near an unstable equilibrium evolve into periodic patterns. These in turn evolve
+                    into new patterns through a process known as coarsening. In the two-dimensional case, we encounter
+                    only periodic patterns in the wake of the initial front. Transverse patterning only arises as a result of a
+                    transverse instability of these periodic patterns from the leading invasion front.</p></div> -<a href="http://www.siam.org/students/siuro/vol6/S01200.pdf">[pdf]</a></li>
+                  </ol>
+
+
+        </div>
+      </div>
+      </div>
+
+      <!------Posters------>
+      <div class="card">
+        <div class="card-header">
+          <h5><a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#poster">Posters</a></h5>
+        </div>
+        <div id="poster" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <ol reversed>
+              <li><a href="files/FitzSilv-MWDS2013.pdf">Rational Maps: Julia Sets of Accessible M-Sets Are Not Homeomorphic (MWDS 2013)</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!------Talks------>
+      <div class="card">
+        <div class="card-header">
+          <h5><a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#talks">Talks</a></h5>
+        </div>
+        <div id="talks" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            
+            <div id="talklist">
+              <!------Graduate Student Seminars------>
+              <div class="card">
+                <div class="card-header">
+                  <h6><a class="card-link" data-toggle="collapse" data-parent="#talklist" href="#GradSem">Graduate Student Seminar at 
+                    <span class="iu">IU</span><span class="pu">PU</span><span class="iu">I</span></a></h6>
+                </div>
+                <div id="GradSem" class="collapse" data-parent="#talklist">
+                  <div class="card-body">
+                    <ol reversed>
+                      <li>"The Law of Iterated Logarithm''  <em>Spring 2019</em></li>
+                      <li>"Dynamical Systems: Terminology and Notation''  <em>Spring 2018</em></li>
+                      <li>"Nash's Theorem and Fixed Point Theorems''  <em>Fall 2017</em></li>
+                      <li>"Combinatorics - Latin Squares''  <em>Spring 2017</em></li>
+                      <li>"Fourier Transforms of Schwartz Functions''  <em>Spring 2016</em></li>
+                      <li>"The Field of \(p\)-adic Numbers, \(\mathbb{Q}_p\)''  <em>Spring 2015</em></li>
+                      <li>"Binomial Coefficients &amp; Generating Functions''  <em>Fall 2014</em></li>
+                      <li>"Hyperbolic Geometry in \(N\)-Dimensions''  <em>Spring 2017</em></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!------Dynamics Seminars------>
+              <div class="card ">
+                <div class="card-header">
+                  <h6><a class="card-link" data-toggle="collapse" data-parent="#talklist" href="#DymSem">Dynamics Seminars</a></h6>
+                </div>
+                <div id="DymSem" class="collapse" data-parent="#talklist">
+                  <div class="card-body">
+                    <p>At <span class="iu">IU</span><span class="pu">PU</span><span class="iu">I</span></p>
+                    <ol reversed>
+                      <li>''Accessible Points on the Boundary of the Mandelbrot Set for a Pair of Linear Maps''   <em>Spring 2019</em></li>
+                      <li>''Extremal Boundary of \(\mathcal{M}_0\)''   <em>Fall 2018</em></li>
+                      <li>''Rational Rays in a Family of Iterated Function Systems''   <em>Spring 2017</em></li>
+                    </ol>
+                    <p>At <span class="utoronto">University of Toronto</span></p>
+                    <ol reversed>
+                      <li>''Boundary of the Mandelbrot Set for a Pair of Linear Maps'' (<em style="font-variant-caps: small-caps;">invited</em>)   <em>Spring 2019</em></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!------Workshops------>
+              <div class="card">
+                <div class="card-header">
+                  <h6><a class="card-link" data-toggle="collapse" data-parent="#talklist" href="#Workshop">Workshops</a></h6>
+                </div>
+                <div id="Workshop" class="collapse" data-parent="#talklist">
+                  <div class="card-body">
+                    <ul>
+                      <li>''Compactness Theorems for Subharmonic Functions'' at the <a href="http://math.iupui.edu/~roederr/2016workshop.html"><em><strong>Connections Between Complex Dynamics, Statistical Physics, 
+                        and Limiting Spectra of Self-similar Group Actions</strong></em></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!------Conferences------>
+              <div class="card ">
+                <div class="card-header">
+                  <h6><a class="card-link" data-toggle="collapse" data-parent="#talklist" href="#Conf">Conferences</a></h6>
+                </div>
+                <div id="Conf" class="collapse" data-parent="#talklist">
+                  <div class="card-body">
+                    <ol reversed>
+                      <li>Invited to the <a href="https://aimsconference.org/AIMS-Conference/conf-reg2020/ss/changeApp12.php?ssid=5">
+                        <strong>13th AIMS Conference on Dynamical Systems, Differential Equations and Applications.</strong> <em>Special Session 5: 
+                          Fractal Geometry, Dynamical Systems, and Their Applications</em>.</a> (July 2020)</li>
+                      <li>Invited to the <a href="http://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_program_ss91.html#title">
+                      <strong>Joint Math Meetings</strong>. <em>AMS Special Session on Groups and Topological Dynamics</em>.</a> 
+                      ''Accessibility of the Boundary of the Thurston Set'' (January 2020)</li>
+                      <li>''The Boundary of the Mandelbrot set for a pair of Linear Maps'' at the <a href="https://ux1.eiu.edu/~gdt/2019.html">
+                        <strong>Integrated Conference in Geometry, Dynamics, and Topology</strong>.</a> (March 2019)</li>
+                      <li>''The Boundary of the Mandelbrot set for a pair of Linear Maps'' at the <a href="https://sites.google.com/view/pccd19">
+                        <strong>Postgraduate Conference in Complex Dynamics</strong>.</a> (February 2019)</li>
+                      <li>''Existence of homeomorphisms between Julia sets of singularly perturbed complex polynomials with attracting periodic cycles'' 
+                        at the  <a href="http://at.yorku.ca/c/b/i/t/70.htm"><strong>48th Spring Topology and Dynamics Conference</strong>.</a> (March 2014)</li>
+                      <li>''Non Homeomorphic Julia Sets of Singularly Perturbed Rational Maps'' at the 
+                        <a href="https://sites.google.com/brown.edu/sums/archives-of-past-symposia/sums-2013?authuser=0#h.p_yDzoxR6rFldb">
+                        <strong>Symposium for Undergraduate in the Mathematical Sciences (SUMS)</strong>.</a> (March 2013)</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Awards and Certificates-->
+      <div class="card">
+        <div class="card-header">
+          <h5><a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#awards">Awards &amp; Certificates</a></h5>
+        </div>
+        <div id="awards" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li>University of Cape Town &amp; Coursera: <strong>Julia Scientific Programming</strong>. <a href="https://www.coursera.org/account/accomplishments/certificate/GH2SEGUR2LPF">Credential ID: GH2SEGUR2LPF</a></li>
+              <li><strong>Best Student Presentation</strong> at the <a href="https://sites.google.com/view/pccd19">
+                <strong>Postgraduate Conference in Complex Dynamics</strong>.</a></li>
+              <li><strong>Outstanding Graduate Student Teaching Award</strong> from the 
+                <span class="iu">IU</span><span class="pu">PU</span><span class="iu">I</span></a> School of Science.</li>
+              <li><strong>Certificate in College Teaching</strong> from the <a href="https://ctl.iupui.edu/Programs/TA-Development/Emerging-Scholars-of-College-Instruction">
+                Center for Teaching and Learning: <em>Emerging Scholars of College Instruction Program</em>.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div> 
+  </div>
+    <!-- <div class="col-sm-2 sidenav">
+    <div class="card bg-light">
+      <div class="card-body text-left">
+      <em>Office Hours</em>: <strong>TR</strong> 11:00am-1:00pm<br>
+      <em>Office</em>: <strong>JH 270-E</strong><br>
+      <em>Email</em>: <a href="mailto:ssilvestri@butler.edu">ssilvestri@butler.edu</a></div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center"></div>
+        <p><font size="-2pt"><em>Nature's beauty dies.<br />
+        The day dawns when the nautilus is no more.<br />
+        The rainbow passes, the flower fades,<br />
+        the mountains crumble, the stars grow cold.<br  />
+        But beauty in Mathematics endures forever.</em><br />
+        &nbsp; -H. E. Huntley</font></p>
+      </div>
+    </div> -->
+  </div>
+  </div>
+</div>
+
+<!-- <footer class="container-fluid text-left">
+  <p><font size="-2"><a href="https://www.butler.edu/math-actuarial" target="_blank">Department of Mathematics, Statistics, and Actuarial Science</a><br>
+    <span class="butun">Butler University</span><br>
+  4600 Sunset Avenue, Indianapolis, IN, 46202</font></p>
+</footer>
+ -->
+
 
 <!-- Scripts to activate Abstract link -->
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var content = this.nextElementSibling;
-  if (content.style.display === "block") {
-      content.style.display = "none";
-  } else {
-    content.style.display = "block";
+<!-- <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+    });
   }
-  });
-}
-</script>
+</script> -->
+
 </body>
 </html>
