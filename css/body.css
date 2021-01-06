@@ -2,6 +2,12 @@
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.navbar-brand {
+    padding-bottom: 0;
+    padding-top: 0.1;
 }
 
 /* .row.content {height: 450px} */
