@@ -1,0 +1,6 @@
+<footer>
+    {% include "icons.njk" %}
+    <p>
+        &copy; <time datetime="{% year %}">{% year %}</time> {% if site.name %} {{ site.name }}{% endif %} • {% if site.github %} <a href="{{site.github}}"><svg aria-labelledby="github_title" role="img"><title id="github_title">Github</title><use href="#_icon_github"></svg></a> {% endif %}
+    </p>
+</footer>

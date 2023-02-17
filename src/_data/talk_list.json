@@ -1,0 +1,175 @@
+[
+    {
+        "type":"graduate student seminar",
+        "talks":[
+            {
+                "title":"The Law of Iterated Logarithm.",
+                "date":"Spring 2019"
+            },
+            {
+                "title":"Dynamical Systems: Terminology and Notation.",
+                "date":"Spring 2018"
+            },
+            {
+                "title":"Nash's Theorem and Fixed Point Theorems.",
+                "date":"Fall 2017"
+            },
+            {
+                "title":"Combinatorics - Latin Squares.",
+                "date":"Spring 2017"
+            },
+            {
+                "title":"Fourier Transforms of Schwartz Functions.",
+                "date":"Spring 2016"
+            },
+            {
+                "title":"The Field of $p$-adic Numbers, $\\mathbb{Q}_p$.",
+                "date":"Spring 2015"
+            },
+            {
+                "title":"Binomial Coefficients &amp; Generating Functions.",
+                "date":"Spring 2014"
+            },
+            {
+                "title":"Hyperbolic Geometry in $N$-Dimensions.",
+                "date":"Fall 2013"
+            }
+        ]
+    },
+    {
+        "type":"seminar",
+        "talks":[
+            {
+                "university":"Butler University",
+                "name":"Operator Theory Seminar",
+                "title":"Bicomplex Probabilities and Chaos.",
+                "abstract":"",
+                "date":"Fall 2019",
+                "invited":false
+            },
+            {
+                "university":"Indiana University Purdue University of Indianapolis",
+                "name":"Dynamics Seminar",
+                "title":"Accessible Points on the Boundary of the Mandelbrot Set for a Pair of Linear Maps.",
+                "abstract":"",
+                "date":"Spring 2019",
+                "invited":false
+            },
+            {
+                "university":"Indiana University Purdue University of Indianapolis",
+                "name":"Dynamics Seminar",
+                "title":"Extremal Boundary of $\\mathcal{M}_0$.",
+                "abstract":"",
+                "date":"Fall 2018",
+                "invited":false
+            },
+            {
+                "university":"Indiana University Purdue University of Indianapolis",
+                "name":"Dynamics Seminar",
+                "title":"Rational Rays in a Family of Iterated Function Systems.",
+                "abstract":"",
+                "date":"Spring 2017",
+                "invited":false
+            },
+            {
+                "university":"University of Toronto",
+                "name":"Dynamics Seminar",
+                "title":"Boundary of the Mandelbrot Set for a Pair of Linear Maps.",
+                "abstract":"",
+                "date":"Spring 2019",
+                "invited":true
+            }
+        ]
+    },
+    {
+        "type":"colloquium",
+        "talks":[
+            {
+                "university":"Butler University",
+                "name":"Mathematics, Statistics, & Actuarial Science Undergraduate Colloquium",
+                "title":"The Chaos Game.",
+                "abstract":"",
+                "date":"Fall 2019",
+                "invited":false
+            }
+        ]
+    },
+    {
+        "type":"workshop",
+        "talks":[
+            {
+                "name":"Connections Between Complex Dynamics, Statistical Physics, and Limiting Spectra of Self-similar Group Actions",
+                "title":"Compactness Theorems for Subharmonic Functions.",
+                "abstract":"",
+                "link":"https://math.iupui.edu/~roederr/2016workshop.html",
+                "date":"2016",
+                "invited":false
+            }
+        ]
+    },
+    {
+        "type":"conference",
+        "talks":[
+            {
+                "location":"",
+                "name":"13th AIMS Conference on Dynamical Systems, Differential Equations and Applications",
+                "session": "Special Session 5: Fractal Geometry, Dynamical Systems, and Their Applications.",
+                "link":"https://aimsconference.org/AIMS-Conference/conf-reg2020/ss/changeApp12.php?ssid=5",
+                "title":"",
+                "abstract":"",
+                "date":"07-2019",
+                "invited":true
+            },
+            {
+                "location":"Denver Convention Center",
+                "name":"Joint Math Meetings",
+                "session": "AMS Special Session on Groups and Topological Dynamics.",
+                "link":"https://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_program_ss91.html#title",
+                "title":"Accessibility of the Boundary of the Thurston Set.",
+                "abstract":"",
+                "date":"01-2020",
+                "invited":true
+            },
+            {
+                "location":"",
+                "name":"Integrated Conference in Geometry, Dynamics, and Topology",
+                "session": "",
+                "link":"https://ux1.eiu.edu/~gdt/2019.html",
+                "title":"The Boundary of the Mandelbrot set for a pair of Linear Maps.",
+                "abstract":"",
+                "date":"03-2019",
+                "invited":false
+            },
+            {
+                "location":"Open University, London (UK)",
+                "name":"Postgraduate Conference in Complex Dynamics",
+                "session": "",
+                "link":"https://sites.google.com/view/pccd19",
+                "title":"The Boundary of the Mandelbrot set for a pair of Linear Maps.",
+                "abstract":"",
+                "date":"02-2019",
+                "invited":false
+            },
+            {
+                "location":"",
+                "name":"48th Spring Topology and Dynamics Conference",
+                "session": "",
+                "link":"https://at.yorku.ca/c/b/i/t/70.htm",
+                "title":"Existence of homeomorphisms between Julia sets of singularly perturbed complex polynomials with attracting periodic cycles.",
+                "abstract":"",
+                "date":"03-2014",
+                "invited":false
+            },
+            {
+                "location":"Brown University",
+                "name":"Symposium for Undergraduate in the Mathematical Sciences (SUMS)",
+                "session": "",
+                "link":"https://sites.google.com/brown.edu/sums/archives-of-past-symposia/sums-2013?authuser=0#h.p_yDzoxR6rFldb",
+                "title":"Non Homeomorphic Julia Sets of Singularly Perturbed Rational Maps.",
+                "abstract":"",
+                "date":"03-2013",
+                "invited":false
+            }
+        ]
+    }
+]
