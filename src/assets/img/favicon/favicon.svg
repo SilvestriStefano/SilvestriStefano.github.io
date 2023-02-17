@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke-width="4" fill="none">
+  <style>
+      .pz{--stroke: #000;}
+      @media (prefers-color-scheme: dark){ .pz{--stroke: #fff;} }
+  </style>
+  <path class="pz" stroke="var(--stroke)" d="M 200 137.5 A 54.5 54.5, 0, 0, 1, 200 262.5 A 117 117, 0, 0, 1, 200 12.5 L 200 137.5" stroke-width="16"/>
+  <path class="pz" stroke="var(--stroke)" d="M 200 262.5 A 54.5 54.5, 0, 0, 1, 200 137.5 A 117 117, 0, 0, 1, 200 387.5 L 200 262.5" stroke-width="16"/>
+</svg>
