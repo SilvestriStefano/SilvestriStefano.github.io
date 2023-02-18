@@ -221,7 +221,8 @@ button {
 
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  row-gap: var(--gap, 1rem);
+  column-gap: var(--gap, 1rem);
 }
 
 .sr-only {
@@ -328,16 +329,19 @@ footer{
 .primary-navigation {
   --gap: clamp(1.25rem, 4vw, 3rem);
   --ul-pad-margin: 1rem;
-  padding-block: var(--ul-pad-margin);
-  padding-inline: clamp(2rem, 7vw, 10rem);
-  background-color: hsl(var(--clr-fg-hsl, 0 0% 0%)/0.75);
+  padding-block-start: var(--ul-pad-margin);
+  padding-block-end: var(--ul-pad-margin);
+  padding-inline-start: clamp(2rem, 7vw, 10rem);
+  padding-inline-end: clamp(2rem, 7vw, 10rem);
+  background-color: hsl(var(--clr-fg-hsl)/0.1);
   list-style: none;
   font-size: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
 }
 
-@supports (backdrop-filter: blur(1rem)) {
+@supports (backdrop-filter: blur(1rem)) or (-webkit-backdrop-filter: blur(1rem)) {
   .primary-navigation {
-    background-color: hsl(var(--clr-fg-hsl, 0 0% 0%) / .1);
+    background-color: hsl(var(--clr-fg-hsl)/0.1);
+    -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
   }
 }
@@ -350,10 +354,15 @@ footer{
   .primary-navigation {
     --gap: 2em;
     position: fixed;
-    inset: 0 0 0 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 65%;
     flex-direction: column;
     padding: min(30vh, 10rem) 1em;
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transition: transform 350ms ease-out;
     transition: transform 350ms ease-out;
     z-index: 1000;
   }
