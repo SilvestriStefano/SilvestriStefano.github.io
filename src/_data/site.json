@@ -3,6 +3,8 @@
   "url": "https://silvestristefano.github.io",
   "title": "Stefano Silvestri's Website",
   "description": "Website of Stefano Silvestri Ph.D., a mathematician and developer.",
+  "locale": "en_EN",
+  "lang": "en",
   "github": "https://github.com/SilvestriStefano",
   "linkedin": "",
   "robots": "/robots.txt",

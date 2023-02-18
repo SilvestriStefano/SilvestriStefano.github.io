@@ -13,6 +13,6 @@ During the pandemic I helped my brother [Luciano](https://lucianogsilvestri.gith
 
 In mid September 2021 I enrolled in a 14(+3)-weeks bootcamp [EPICODE School](https://epicode.com) to learn about Full Stack development.
 
-Currently, I am a software developer at [OLAB](https://olab-studio.com) and I work as a sub-contractor with [SAS Italy](https://www.sas.com/it_it/home.html).
+Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I work as a sub-contractor with [SAS Italy](https://www.sas.com/it_it/home.html).
 
 ***More info to come soon... I hope...***
