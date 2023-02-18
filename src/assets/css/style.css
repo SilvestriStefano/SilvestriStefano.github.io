@@ -357,7 +357,7 @@ footer{
     top: 0;
     right: 0;
     bottom: 0;
-    left: 65%;
+    left: 52%;
     flex-direction: column;
     padding: min(30vh, 10rem) 1em;
     -webkit-transform: translateX(100%);
