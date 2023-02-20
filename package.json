@@ -12,7 +12,7 @@
     "eleventy",
     "personal"
   ],
-  "author": "Stefano Silvestri",
+  "author": "Stefano Silvestri, Ph.D.",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
