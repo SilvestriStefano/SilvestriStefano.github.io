@@ -1,5 +1,5 @@
 {
-  "name": "personal11ty",
+  "name": "Silvas",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -10,9 +10,9 @@
   "keywords": [
     "11ty",
     "eleventy",
-    "11ty-template"
+    "personal"
   ],
-  "author": "",
+  "author": "Stefano Silvestri",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
