@@ -512,6 +512,7 @@ main li:not(:last-of-type) {
   flex-direction: column;
   justify-content: space-around;
   border-bottom: 0.125rem solid var(--clr-fg);
+  margin: 2rem 0;
 }
 
 .accordion__container h2, .accordion__container h3,.accordion__container h4 {
