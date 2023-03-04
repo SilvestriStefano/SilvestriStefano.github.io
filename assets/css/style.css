@@ -10,8 +10,10 @@
 /*--------------*/
 @font-face {
   font-display: swap;
+  font-weight: 500;
   font-family: 'NeoEuler';
-  src: url("/assets/fonts/neoeuler.woff2") format('woff2'),
+  src: local('Neo Euler Euler'), local('Neo-Euler'),
+    url("/assets/fonts/neoeuler.woff2") format('woff2'),
     url("/assets/fonts/neoeuler.woff") format('woff');
 }
 :root {
@@ -323,7 +325,6 @@ footer{
 /*--------------*/
 
 /* navbar stuff */
-
 .mobile-nav-toggle {
   display: none;
 }
@@ -338,14 +339,6 @@ footer{
   background-color: hsl(var(--clr-fg-hsl)/0.1);
   list-style: none;
   font-size: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
-}
-
-@supports (backdrop-filter: blur(1rem)) or (-webkit-backdrop-filter: blur(1rem)) {
-  .primary-navigation {
-    background-color: hsl(var(--clr-fg-hsl)/0.1);
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
-  }
 }
 
 .primary-navigation a {
@@ -430,8 +423,7 @@ footer{
   .sub-navigation {
     position: absolute;
     margin-top: var(--ul-pad-margin);
-    /* same as padding-block of primary-navigation*/
-    background-color: hsl(var(--clr-fg-hsl, 0 0% 100%) / .1);
+    background-color: hsl(var(--clr-fg-hsl)/0.1);
     -webkit-transform: scale(0%);
     transform: scale(0%);
     transition: transform 350ms ease-out;
@@ -454,6 +446,12 @@ footer{
   }
 }
 
+@supports (backdrop-filter: blur(1rem)) or (-webkit-backdrop-filter: blur(1rem)) {
+  .primary-navigation, .sub-navigation {
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+  }
+}
 
 @media (min-width:42rem) and (max-width:56rem) {
   .primary-navigation {
