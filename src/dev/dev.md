@@ -19,7 +19,7 @@ Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I w
 ### Contribution to Open Source
 Some of my free time I spend it in contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
 
-Here is a list of projects I have contributed:
+Here is a list of my contributions:
 - [Wagtail documentation](https://github.com/wagtail/wagtail/pull/8759): translated some `.rst` pages to `.md`.
 - [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pull/338): added the Track *Git an Github for poets*. 
 - [sasctl](https://github.com/sassoftware/python-sasctl/pull/129): expanded usage for `cas_management` service. 
