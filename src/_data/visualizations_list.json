@@ -1,0 +1,42 @@
+[
+  {
+    "title": "The Chaos Game",
+    "description": "Javascript implementation of a game designed by Voolich and Devaney.",
+    "link": "https://editor.p5js.org/silvas/full/t7mLU3dyF",
+    "language": "p5.js",
+    "thumbnail": "assets/img/screenshots/TheChaosGame.jpg",
+    "alt": "screenshot of The Chaos Game."
+  },
+  {
+    "title": "Light Switch Problem",
+    "description": "Two visualizations (triangle and square) of the light switch problem. It is possible to save a GIF of the animation by clicking once with your mouse.",
+    "link": "https://editor.p5js.org/silvas/full/t7mLU3dyF",
+    "language": "p5.js",
+    "thumbnail": "assets/img/screenshots/LightSwitch.jpg",
+    "alt": "screenshot of the Light Switch Problem."
+  },
+  {
+    "title": "Digits of $\\pi$",
+    "description": "A visual representation of the digits of $\\pi$ using an iterated function system with $10$ functions. It is another way to show (visually) that its digits are actually random.",
+    "link": "https://editor.p5js.org/silvas/full/zllj1loyg",
+    "language": "p5.js",
+    "thumbnail": "assets/img/screenshots/PiRandomDigits.png",
+    "alt": "screenshot of a representation of the digits of pi."
+  },
+  {
+    "title": "WFC with Wang tiles",
+    "description": "Animation of an aperiodic tiling with 11 Wang Tiles using the Wave function collapse. It is a contribution to [Challenge \\#171](https://thecodingtrain.com/challenges/171-wave-function-collapse) from The Coding Train, YouTube channel.",
+    "link": "https://editor.p5js.org/silvas/sketches/_EZa0urJ1",
+    "language": "p5.js",
+    "thumbnail": "assets/img/screenshots/wfcWang.jpg",
+    "alt": "screenshot of the animation of the aperiodic tiling with 11 Wang Tiles using the Wave Function Collapse."
+  },
+  {
+    "title": "Barnsley and Thurston set",
+    "description": "Interactive tool to visualize the space of 2-generator semigroup of dilations of the plane.",
+    "link": "https://editor.p5js.org/silvas/full/2GL02NekB",
+    "language": "p5.js",
+    "thumbnail": "assets/img/screenshots/BarnsleyThurston.jpg",
+    "alt": "screenshot of the interactive tool."
+  }
+]

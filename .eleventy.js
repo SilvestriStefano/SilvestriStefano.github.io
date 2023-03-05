@@ -23,6 +23,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("navlist", require("./lib/shortcodes/navlist.js"));
   eleventyConfig.addShortcode("accordionItem", require("./lib/shortcodes/accordionItem.js"));
   eleventyConfig.addAsyncShortcode('image', require('./lib/shortcodes/image.js'));
+  eleventyConfig.addAsyncShortcode("showcase", require("./lib/shortcodes/showcase.js"));
+  eleventyConfig.addAsyncShortcode('imageBg', require('./lib/shortcodes/imageBg.js'));
   eleventyConfig.addAsyncShortcode('imageGroup', require('./lib/shortcodes/figureGroup.js'));
     
   return {

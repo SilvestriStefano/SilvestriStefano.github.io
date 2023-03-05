@@ -1,0 +1,22 @@
+[
+  {
+    "title": "SARKAS: Pyhton MD code for Plasma Physics",
+    "description": "Documentation of the Python package SARKAS developed by [Murillo Group](https://murillogroupmsu.com/) at Michigan State University.",
+    "link": "https://murillo-group.github.io/sarkas/",
+    "source": "https://github.com/murillo-group/sarkas/",
+    "framework": "Sphinx",
+    "details": ["Bootstrap CSS"],
+    "thumbnail": "assets/img/screenshots/Sarkas.jpg",
+    "alt": "screenshot of the homepage of SARKAS."
+  },
+  {
+    "title": "Stefano Silvestri, Ph.D.",
+    "description": "My personal website.",
+    "link": "https://silvestristefano.github.io",
+    "source": "https://github.com/SilvestriStefano/silvestristefano.github.io/",
+    "framework": "11ty",
+    "details": ["Custom design"],
+    "thumbnail": "assets/img/screenshots/mywebsite.jpg",
+    "alt": "screenshot of the homepage of Stefano's website."
+  }
+]
