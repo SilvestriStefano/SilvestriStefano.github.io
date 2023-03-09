@@ -1,0 +1,19 @@
+name: pagespeed metrics
+on:
+  push: 
+    branches: ["master"]
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Succinct report
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.pagespeed.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEEDMETRIC }}
+          plugin_pagespeed_url: https://silvestristefano.github.io
