@@ -1,7 +1,7 @@
 name: pagespeed metrics
 on:
-  push: 
-    branches: ["master"]
+  # 💡 The following line lets you run workflow manually from the action tab!
+  workflow_dispatch:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -9,6 +9,7 @@ jobs:
       contents: write
     steps:
       - name: Succinct report
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.pagespeed.svg
