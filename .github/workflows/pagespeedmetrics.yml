@@ -1,6 +1,7 @@
 name: pagespeed metrics
 on:
-  # 💡 The following line lets you run workflow manually from the action tab!
+  push:
+    branches: ["master"]
   workflow_dispatch:
 jobs:
   github-metrics:
@@ -9,12 +10,12 @@ jobs:
       contents: write
     steps:
       - name: Succinct report
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.pagespeed.svg
-          token: NOT_NEEDED
+          filename: pagespeed.svg
+          token: ${{ secrets.METRIC_TOKEN }}
           base: ""
+          template: classic
           plugin_pagespeed: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEEDMETRIC }}
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://silvestristefano.github.io
