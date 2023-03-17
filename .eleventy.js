@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
   //Shortcodes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("navlist", require("./lib/shortcodes/navlist.js"));
+  eleventyConfig.addShortcode("breadcrumbs", require("./lib/shortcodes/breadcrumb.js"));
   eleventyConfig.addShortcode("accordionItem", require("./lib/shortcodes/accordionItem.js"));
   eleventyConfig.addAsyncShortcode('image', require('./lib/shortcodes/image.js'));
   eleventyConfig.addAsyncShortcode("showcase", require("./lib/shortcodes/showcase.js"));

@@ -11,7 +11,7 @@ I first thought of becoming a mathematician during my last year of highschool, t
 
 {% set navPages = collections.all | eleventyNavigation("Maths") %}
 
-More info on my maths research can be found in the [Graduate]({{ navPages[0].url | safe }}) and [Undergraduate]({{ navPages[1].url | safe }}) pages.
+Check out the [Graduate]({{ navPages[0].url | safe }}) and [Undergraduate]({{ navPages[1].url | safe }}) pages for more info on my maths research.
 
 There is also a [Teaching]({{ navPages[2].url | safe }}) page.
 

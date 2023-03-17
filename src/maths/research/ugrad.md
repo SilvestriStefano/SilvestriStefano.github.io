@@ -6,7 +6,11 @@ eleventyNavigation:
   key: Ugrad
   parent: Maths
   order: 220
+navOptions:
+  includeSelf: true
 ---
+
+{% breadcrumbs collections.all | eleventyNavigationBreadcrumb("Ugrad", { includeSelf: true }) %}
 
 While an undergraduate I had the opportunity to do some research both in pure and applied mathematics.
 

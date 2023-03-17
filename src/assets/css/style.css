@@ -120,6 +120,7 @@ em{
 }
 p,li,h1,h2,h3,h4,h5,h6 {
   overflow-wrap: break-word;
+  -webkit-hyphens: auto;
   hyphens: auto;
 }
 
@@ -332,10 +333,10 @@ footer{
 .primary-navigation {
   --gap: clamp(1.25rem, 4vw, 3rem);
   --ul-pad-margin: 1rem;
-  padding-block-start: var(--ul-pad-margin);
-  padding-block-end: var(--ul-pad-margin);
-  padding-inline-start: clamp(2rem, 7vw, 10rem);
-  padding-inline-end: clamp(2rem, 7vw, 10rem);
+  padding-top: var(--ul-pad-margin);
+  padding-bottom: var(--ul-pad-margin);
+  padding-left: clamp(2rem, 7vw, 10rem);
+  padding-right: clamp(2rem, 7vw, 10rem);
   background-color: hsl(var(--clr-fg-hsl)/0.1);
   list-style: none;
   font-size: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
@@ -398,17 +399,15 @@ footer{
   }
 }
 
-.sub-navigation {
+/* .sub-navigation {
   --gap: 1.25rem;
   padding: 0 1rem;
   flex-direction: column;
   list-style: none;
 }
-
 .subnav-toggle {
   display: none;
 }
-
 @media (min-width:56rem) {
   .subnav-toggle {
     display: inline-block;
@@ -419,7 +418,6 @@ footer{
     cursor: pointer;
     background-color: transparent;
   }
-
   .sub-navigation {
     position: absolute;
     margin-top: var(--ul-pad-margin);
@@ -429,25 +427,22 @@ footer{
     transition: transform 350ms ease-out;
     z-index: 2000;
   }
-
   .sub-navigation[data-visible="true"] {
     -webkit-transform: scale(100%);
     transform: scale(100%);
   }
-
   .subnav-toggle .arrow {
     transition: 0.5s;
     transform-origin: center;
   }
-
   .subnav-toggle[aria-expanded="true"] .arrow {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
-}
+} */
 
 @supports (backdrop-filter: blur(1rem)) or (-webkit-backdrop-filter: blur(1rem)) {
-  .primary-navigation, .sub-navigation {
+  .primary-navigation {
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
   }
@@ -459,10 +454,27 @@ footer{
     --ul-pad-margin: 0.625rem;
     padding-right: 0.125em;
   }
-
-  .sub-navigation {
+  /* .sub-navigation {
     --gap: 0.5em;
-  }
+  } */
+}
+
+.breadcrumb {
+  padding: 0.625rem .25rem 0;
+  border: 0.0125rem solid var(--clr-blue_a);
+  border-left: 0.5rem solid var(--clr-blue_a);
+}
+.breadcrumb ul {
+  --gap:0;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.breadcrumb li::before  {
+  content: "/";
+  display: inline-block;
+  margin: 0 .25rem;
 }
 
 /*--------------*/

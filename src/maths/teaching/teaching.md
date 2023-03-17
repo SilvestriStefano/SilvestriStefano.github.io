@@ -6,7 +6,11 @@ eleventyNavigation:
   key: Teach
   parent: Maths
   order: 230
+navOptions:
+  includeSelf: true
 ---
+
+{% breadcrumbs collections.all | eleventyNavigationBreadcrumb("Teach", { includeSelf: true }) %}
 
 ## Teaching
 In the Spring of 2018 I received the *Outstanding Graduate Student Teaching Award* from the School of Science at [IUPUI](https://science.iupui.edu/)

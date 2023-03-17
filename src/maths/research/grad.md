@@ -6,6 +6,8 @@ eleventyNavigation:
   key: Grad
   parent: Maths
   order: 210
+navOptions:
+  includeSelf: true
 dataM:
   src: "assets/img/mset.png"
   alt: "The set M"
@@ -27,6 +29,8 @@ attThree:
   alt: "The limit set associated to the parameter 0.366+520i"
   caption: "$\\lambda\\approx 0.366+0.520i$"
 ---
+
+{% breadcrumbs collections.all | eleventyNavigationBreadcrumb("Grad", { includeSelf: true }) %}
 
 ## Research Focus
 My research interests lie in complex dynamical systems, iterated function systems, symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.
