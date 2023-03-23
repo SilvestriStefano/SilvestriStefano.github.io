@@ -8,6 +8,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/js/");
     //favicon
   eleventyConfig.addPassthroughCopy("./src/assets/img/favicon/*.(svg|ico)");
+    //social images
+  eleventyConfig.addPassthroughCopy("./src/assets/img/social/*.png");
    //
   eleventyConfig.addPassthroughCopy("./src/assets/files/*.pdf");
   
