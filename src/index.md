@@ -1,6 +1,5 @@
 ---
 title: Home | Stefano Silvestri, Ph.D.
-description: Stefano Silvestri's homepage where he explains who he is.
 layout: base.njk
 eleventyNavigation:
   key: Home
