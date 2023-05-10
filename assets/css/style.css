@@ -13,6 +13,10 @@
   src: local('Neo Euler Euler'), local('Neo-Euler'),
     url("/assets/fonts/neoeuler.woff2") format('woff2'),
     url("/assets/fonts/neoeuler.woff") format('woff');
+  size-adjust: 114.14473684210%; /* avgCharacterWidth of web font / avgCharacterWidth of fallback font */
+  ascent-override: 64.93605907781%; /* web font ascent / (web font UPM * size-adjust) */
+  descent-override: 21.30313400576%; /* web font descent / (web font UPM * size-adjust) */
+  line-gap-override: 0%; /* web font line-gap / (web font UPM * size-adjust) */
 }
 :root {
   /*Gruvbox Dark*/
