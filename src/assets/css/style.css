@@ -290,7 +290,7 @@ footer {text-align: center;}
 .primary-navigation {
   --ul-padding: 1rem;
   flex-direction: column;
-  width: 10rem;
+  width: 10.125rem;
   padding: var(--ul-padding);
   list-style: none;
   font-size: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
