@@ -16,12 +16,13 @@ In mid September 2021 I enrolled in a 14(+3)-weeks bootcamp [EPICODE School](htt
 Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I work as a sub-contractor with [SAS Italy](https://www.sas.com/it_it/home.html).
 
 ***More info to come soon... I hope...***
+
 ### Contribution to Open Source
 Some of my free time I spend it in contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
 
 Here is a list of my contributions:
 - [Wagtail documentation](https://github.com/wagtail/wagtail/pull/8759): translated some `.rst` pages to `.md`.
-- [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pull/338): added the Track *Git an Github for poets*. 
+- [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pulls?q=is%3Apr+author%3ASilvestriStefano): added a couple of Tracks. 
 - [sasctl](https://github.com/sassoftware/python-sasctl/pull/129): expanded usage for `cas_management` service. 
 
 ### Visualizations

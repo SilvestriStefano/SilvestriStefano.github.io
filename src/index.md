@@ -22,4 +22,4 @@ Co-founder of the [AMS Student Chapter at IUPUI](https://sites.google.com/view/a
 
 Juggling, coding (mostly in Mathematica, p5js, python), making origami, and, most importantly, playing with animals.
 
-{% image "assets/img/EkBalam.jpg", "Stefano in front of the ruins of Ek Balam", "In front of the ruins of Ek Balam." %}
+{% image "assets/img/EkBalam.jpg", "Stefano on the Acroplis of Ek' Balam", "View from the Acropolis of Ek' Balam." %}
