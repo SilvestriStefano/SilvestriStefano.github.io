@@ -7,13 +7,11 @@ eleventyNavigation:
   order: 200
 ---
 
+
+{% set siblingPages = collections.all | eleventyNavigation("Maths") %}
+{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
+
 I first thought of becoming a mathematician during my last year of highschool, thanks to a couple of special programs with [Rome's Third University](https://matematicafisica.uniroma3.it/terza-missione/per-la-scuola/). The thought then became a goal while an undergraduate at [Boston University](https://bu.edu) once [Professor R.L. Devaney](https://math.bu.edu/people/bob) agreed to supervise me on a research project.
-
-{% set navPages = collections.all | eleventyNavigation("Maths") %}
-
-Check out the [Graduate]({{ navPages[0].url | safe }}) and [Undergraduate]({{ navPages[1].url | safe }}) pages for more info on my maths research.
-
-There is also a [Teaching]({{ navPages[2].url | safe }}) page.
 
 {% accordionItem maths %}
 

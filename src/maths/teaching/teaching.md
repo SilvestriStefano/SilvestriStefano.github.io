@@ -10,7 +10,8 @@ navOptions:
   includeSelf: true
 ---
 
-{% breadcrumbs collections.all | eleventyNavigationBreadcrumb("Teach", { includeSelf: true }) %}
+{% set siblingPages = collections.all | eleventyNavigation("Maths") %}
+{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
 ## Teaching
 In the Spring of 2018 I received the *Outstanding Graduate Student Teaching Award* from the School of Science at [IUPUI](https://science.iupui.edu/)

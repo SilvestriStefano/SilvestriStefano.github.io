@@ -30,7 +30,8 @@ attThree:
   caption: "$\\lambda\\approx 0.366+0.520i$"
 ---
 
-{% breadcrumbs collections.all | eleventyNavigationBreadcrumb("Grad", { includeSelf: true }) %}
+{% set siblingPages = collections.all | eleventyNavigation("Maths") %}
+{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
 ## Research Focus
 My research interests lie in complex dynamical systems, iterated function systems, symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.
@@ -69,7 +70,7 @@ Furthermore, I am developing a combinatorial method to describe the boundary of 
 
 {% image "assets/img/window.png", "The set M in a neighborhood of the parameter i over square root of 2", "The set $\\mathcal{M}$ in a neighborhood of the parameter $i/\\sqrt{2}$." %}
 
-## Student Mentorship at Butler University
+## Student Research Mentored
 In early-mid August each year the Department of Mathematics, Statistics, and Actuarial Science and the Department of Computer Science at Butler University organize the Mathematics Research Camp, a week long focused research experience for undergraduates.
 
 In the summer of 2019 I participated as a Faculty Advisor to Jayme Brickley, a sophomore majoring in Mathematics and Chemistry. We studied the Checkerboard Julia sets associated with the McMullen maps $z\mapsto z^n+\lambda/z^d$ for integers $n, d\geq2$ and $\lambda$ taken from principal Mandelbrot sets. Jayme obtained necessary and sufficient conditions on $n$ and $d$ for which all the $n+d$ critical points are strictly periodic.

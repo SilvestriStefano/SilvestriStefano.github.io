@@ -10,7 +10,8 @@ navOptions:
   includeSelf: true
 ---
 
-{% breadcrumbs collections.all | eleventyNavigationBreadcrumb("Ugrad", { includeSelf: true }) %}
+{% set siblingPages = collections.all | eleventyNavigation("Maths") %}
+{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
 While an undergraduate I had the opportunity to do some research both in pure and applied mathematics.
 

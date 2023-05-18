@@ -295,28 +295,27 @@ footer {text-align: center;}
   list-style: none;
   font-size: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
 }
-.primary-navigation li::before {content: "/";}
-.primary-navigation .active::before, .primary-navigation li:hover::before, .primary-navigation li:focus-visible::before {content: ">/";}
+.primary-navigation li::before, .secondary-navigation li::before{content: "/";}
+.primary-navigation .active::before, .primary-navigation li:hover::before, .primary-navigation li:focus-visible::before, .secondary-navigation .active::before {content: ">/";}
 .primary-navigation a {text-decoration: none;}
 
-.breadcrumb {
-  padding: 0.625rem .25rem 0;
+.submenu {
+  margin-bottom: 0.25rem;
+  padding: 0.625rem .25rem;
   border: 0.0125rem solid var(--clr-blue_a);
   border-left: 0.5rem solid var(--clr-blue_a);
 }
-.breadcrumb ul {
-  --gap:0;
+.secondary-navigation {
+  --gap: 0;
   margin: 0;
-  padding: 0;
+  padding: 0.25rem 0 0 0.5rem;
   flex-wrap: wrap;
   list-style: none;
 }
-.breadcrumb li::before  {
-  content: "/";
-  display: inline-block;
-  margin: 0 .25rem;
+@media (min-width:56rem) {
+  .secondary-navigation {padding: 0 0 0 5rem;}
 }
-
+.secondary-navigation > *+* {margin-left: 1.25rem;}
 /*--------------*/
 main a {border-bottom: 0.25rem dotted var(--clr-blue_a);}
 main a:visited {border-bottom: 0.25rem dotted var(--clr-purple_a);}
