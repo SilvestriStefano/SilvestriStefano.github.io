@@ -1,11 +1,10 @@
 {
-  "name": "Silvas",
+  "name": "silvas",
   "version": "1.0.0",
-  "description": "",
+  "description": "personal website of Stefano Silvestri Ph.D.",
   "main": "index.html",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "start": "npx @11ty/eleventy --serve"
   },
   "keywords": [
     "11ty",
@@ -15,8 +14,8 @@
   "author": "Stefano Silvestri, Ph.D.",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-img": "^3.0.0",
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "markdown-it": "^13.0.1",
     "markdown-it-mathjax3": "^4.3.2"
