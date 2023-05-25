@@ -436,10 +436,11 @@ li .btn-abstract[aria-expanded="true"]::after {
   justify-content: space-around;
   list-style: none;
 }
-.portfolio > * {flex: 1;}
+.portfolio > * {flex: 1 1 15rem;}
 .card {
   --br-rad: 1.5em;
   flex-direction: column;
+  align-content: baseline;
   min-width: 10rem;
   max-width: 20rem;
   border: 0.125rem solid var(--clr-fg);
@@ -474,8 +475,7 @@ li .btn-abstract[aria-expanded="true"]::after {
 }
 .card-description > a, .card-description > a:hover, .card-description > a:focus {
   --border-style: dotted;
-  border: 0.25rem var(--border-style) var(--clr-blue_a);
-  border-radius: var(--br-rad);
+  border-bottom: 0.25rem var(--border-style) var(--clr-blue_a);
   text-align: center;
   text-transform: uppercase;
 }
@@ -483,6 +483,7 @@ li .btn-abstract[aria-expanded="true"]::after {
   --border-style: solid;
   text-decoration: none;
 }
+.card-link {align-self: center;}
 /*--------------*/
 
 /* code stuff */
