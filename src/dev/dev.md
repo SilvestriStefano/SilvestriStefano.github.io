@@ -1,6 +1,6 @@
 ---
 title: Developer | Stefano Silvestri Ph.D.
-description: Stefano Silvestri explains what he has done as a developer at OLAB.
+description: Stefano Silvestri explains what he has done as a developer and showcases some of his work.
 layout: base.njk
 eleventyNavigation:
   key: Dev

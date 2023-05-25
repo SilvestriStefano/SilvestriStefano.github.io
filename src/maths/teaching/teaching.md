@@ -42,16 +42,3 @@ Below you can find a list of all the classes I have taught.
 ### Teaching Assistant at IUPUI
 
 - Math 16500 - Analytic Geometry and Calculus I (*Sp15, Fa15*)
-<!-- 
-
-    
-    <div class="col-sm-3 sidenav">
-      <div class="card bg-light">
-        <div class="card-body text-center">
-          <img class="img-fluid"  src="img/hobbes1.gif" alt="hobbes" width=350px />
-          <img class="img-fluid"  src="img/hobbes2.gif" alt="hobbes" width=350px />
-          <p style="font-size: x-small"><a href="https://www.gocomics.com/calvinandhobbes/2011/03/09">https://www.gocomics.com/calvinandhobbes/2011/03/09</a></p>
-          <p></p>
-        </div>
-      </div>      
-    </div> -->
