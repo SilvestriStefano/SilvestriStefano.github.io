@@ -143,11 +143,14 @@ figure, figure > figure {
   display: flex;
   flex-flow: column;
 }
-figure[role="img"] {
-  display: inline-flex;
-  flex-flow: row;
+@media screen and (min-width: 48em) {
+  figure[role="img"] {
+    display: inline-flex;
+    flex-flow: row;
+  }
+  figure[role="img"] > * {margin-right: 0.5rem;}
 }
-figure[role="img"] > * {margin-right: 0.5rem;}
+figure[role="img"] > * {margin-bottom: 0.5rem;}
 img, picture {
   display: flex;
   align-self: center;
@@ -235,7 +238,7 @@ button {outline-color: transparent;}
     auto 1fr auto;
   min-height: 100vh;
   min-height: 100vdh;
-  margin: 0 1.25rem;
+  margin: 0 1rem;
 }
 main, header, footer {grid-column: 1/4;}
 header {justify-content: space-between;}
