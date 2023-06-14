@@ -17,8 +17,8 @@ Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I w
 
 ***More info to come soon... I hope...***
 
-### Contribution to Open Source
-Some of my free time I spend it in contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
+### Contributions to Open Source
+I spend some of my free time in contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
 
 Here is a list of my contributions:
 - [Wagtail documentation](https://github.com/wagtail/wagtail/pull/8759): translated some `.rst` pages to `.md`.
