@@ -13,7 +13,7 @@ During the pandemic I helped my brother [Luciano](https://lucianogsilvestri.gith
 
 In mid September 2021 I enrolled in a 14(+3)-weeks bootcamp [EPICODE School](https://epicode.com) to learn about Full Stack development.
 
-Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I work as a sub-contractor with [SAS Italy](https://www.sas.com/it_it/home.html).
+Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I work as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html).
 
 ***More info to come soon... I hope...***
 
@@ -21,6 +21,7 @@ Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I w
 I spend some of my free time in contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
 
 Here is a list of my contributions:
+- [Sarkas: Python MD code for plasma physics](https://github.com/murillo-group/sarkas/pulls?q=is%3Apr+author%3ASilvestriStefano): builder/mantainer of the website and some code refactoring and tests writer.
 - [Wagtail documentation](https://github.com/wagtail/wagtail/pull/8759): translated some `.rst` pages to `.md`.
 - [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pulls?q=is%3Apr+author%3ASilvestriStefano): added a couple of Tracks. 
 - [sasctl](https://github.com/sassoftware/python-sasctl/pull/129): expanded usage for `cas_management` service. 

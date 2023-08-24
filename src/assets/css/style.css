@@ -317,13 +317,13 @@ main a {border-bottom: 0.25rem dotted var(--clr-blue_a);}
 main a:visited {border-bottom: 0.25rem dotted var(--clr-purple_a);}
 main a:hover, main a:focus {
   border: 0;
-  text-decoration: underline overline 0.25rem solid var(--clr-blue_a);
+  text-decoration: underline 0.25rem solid var(--clr-blue_a);
   text-decoration-skip-ink: none;
   outline: transparent;
 }
 main a:visited, main a:visited:focus {
   border: 0;
-  text-decoration: underline overline 0.25rem solid var(--clr-purple_a);
+  text-decoration: underline 0.25rem solid var(--clr-purple_a);
   text-decoration-skip-ink: none;
   outline: transparent;
 }
@@ -444,8 +444,8 @@ li .btn-abstract[aria-expanded="true"]::after {
   max-width: 20rem;
   border: 0.125rem solid var(--clr-fg);
   border-radius: var(--br-rad);
-	box-shadow: 0 0.5rem 0.5rem 0 hsl(var(--clr-fg-hsl)/0.5);
-	font-size: var(--fs-300);
+  box-shadow: 0 0.5rem 0.5rem 0 hsl(var(--clr-fg-hsl)/0.5);
+  font-size: var(--fs-300);
 }
 .card-description {
   position: relative;

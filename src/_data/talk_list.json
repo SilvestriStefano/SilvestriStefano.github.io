@@ -48,6 +48,14 @@
                 "invited":false
             },
             {
+                "university":"University of Toronto",
+                "name":"Dynamics Seminar",
+                "title":"Boundary of the Mandelbrot Set for a Pair of Linear Maps.",
+                "abstract":"",
+                "date":"Spring 2019",
+                "invited":true
+            },
+            {
                 "university":"Indiana University Purdue University of Indianapolis",
                 "name":"Dynamics Seminar",
                 "title":"Accessible Points on the Boundary of the Mandelbrot Set for a Pair of Linear Maps.",
@@ -70,14 +78,6 @@
                 "abstract":"",
                 "date":"Spring 2017",
                 "invited":false
-            },
-            {
-                "university":"University of Toronto",
-                "name":"Dynamics Seminar",
-                "title":"Boundary of the Mandelbrot Set for a Pair of Linear Maps.",
-                "abstract":"",
-                "date":"Spring 2019",
-                "invited":true
             }
         ]
     },

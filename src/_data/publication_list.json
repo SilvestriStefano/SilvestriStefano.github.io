@@ -1,6 +1,6 @@
 [
     {
-        "title":"A Catalog of Geometric Progression References in        the Historical Record.",
+        "title":"A Catalog of Geometric Progression References in the Historical Record.",
         "authors":"P&eacute;rez, R. A. and **Silvestri, S.**",
         "category":"histm",
         "abstract":"",
@@ -44,7 +44,7 @@
         "title":"A Dynamical Invariant for Sierpi&#324;ski Cardioid Julia Sets.",
         "authors":"Blanchard, P., Cuzzocreo, D., Devaney, R. L., Fitzgibbon, E., and **Silvestri, S.**",
         "category":"purem",
-        "abstract":"For the family of rational maps $z^n + \\lambda~/~z^n$ where $n \\geq 3$, it is known that there are infinitely many copies of the Mandelbrot set that are buried in the paramenter plane, i.e., they do not extend to the outer boundary of this set. For parameters lying in the main cardioids of these Mandelbrot sets, the corresponding Julia sets are always Sierpi&#324ski curves, and so they are all homeomorphic to one another. However, it is known that only those cardioids that aresymmetrically located in the parameter plane have conjugate dynamics. We produce a dynamical invariant that explains why these maps have different dynamics.",
+        "abstract":"For the family of rational maps $z^n + \\lambda~/~z^n$ where $n \\geq 3$, it is known that there are infinitely many copies of the Mandelbrot set that are buried in the paramenter plane, i.e., they do not extend to the outer boundary of this set. For parameters lying in the main cardioids of these Mandelbrot sets, the corresponding Julia sets are always Sierpi&#324;ski curves, and so they are all homeomorphic to one another. However, it is known that only those cardioids that are symmetrically located in the parameter plane have conjugate dynamics. We produce a dynamical invariant that explains why these maps have different dynamics.",
         "journal":"Fundamenta Mathematicae",
         "journallink":"https://www.impan.pl/en/publishing-house/journals-and-series/fundamenta-mathematicae/all/226/3/88854/a-dynamical-invariant-for-sierpinski-cardioid-julia-sets",
         "volume": "226",
@@ -72,7 +72,7 @@
         "title":"Rational Maps: Julia Sets of Accessible Mandelbrot Sets are not Homeomorphic.",
         "authors":"Fitzgibbon, E. and **Silvestri, S.**",
         "category":"purem",
-        "abstract":"In this paper we investigate the Julia sets of singularly perturbed complex rational maps of the form $f(z) = z^n + \\lambda~/~z^d$. We will show that, for the case $n = d = 2$, two maps drawn from main cardioids of distinct accessible Mandelbrot sets containing a cycle of period $m$ do not have homeomorphic Julia sets, unlessthese cardioids are complex conjugates of one another.",
+        "abstract":"In this paper we investigate the Julia sets of singularly perturbed complex rational maps of the form $f(z) = z^n + \\lambda~/~z^d$. We will show that, for the case $n = d = 2$, two maps drawn from main cardioids of distinct accessible Mandelbrot sets containing a cycle of period $m$ do not have homeomorphic Julia sets, unless these cardioids are complex conjugates of one another.",
         "journal":"Topology Proceedings",
         "journallink":"",
         "volume": "",
