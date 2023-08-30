@@ -160,6 +160,7 @@ img, picture {
 figcaption {
   font-size: var(--fs-300);
   text-align: center;
+  line-height: 2;
 }
 a, a:visited {
   text-decoration: none;

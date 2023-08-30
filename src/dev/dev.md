@@ -15,13 +15,15 @@ In mid September 2021 I enrolled in a 14(+3)-weeks bootcamp [EPICODE School](htt
 
 Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I work as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html).
 
+On the side, I am developing in Python some tools to help in my maths research. The [source code](https://github.com/silvestriStefano/coreEntropy_neighborIFS/) is available on GitHub. I am still not set on the name though, so it might change in the future *(if and)* when it is complete.
+
 ***More info to come soon... I hope...***
 
 ### Contributions to Open Source
 I spend some of my free time in contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
 
 Here is a list of my contributions:
-- [Sarkas: Python MD code for plasma physics](https://github.com/murillo-group/sarkas/pulls?q=is%3Apr+author%3ASilvestriStefano): builder/mantainer of the website and some code refactoring and tests writer.
+- [Sarkas: Python MD code for plasma physics](https://github.com/murillo-group/sarkas/pulls?q=is%3Apr+author%3ASilvestriStefano): builder/mantainer of the website, some code refactoring, and tests writer.
 - [Wagtail documentation](https://github.com/wagtail/wagtail/pull/8759): translated some `.rst` pages to `.md`.
 - [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pulls?q=is%3Apr+author%3ASilvestriStefano): added a couple of Tracks. 
 - [sasctl](https://github.com/sassoftware/python-sasctl/pull/129): expanded usage for `cas_management` service. 

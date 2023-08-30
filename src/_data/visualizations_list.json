@@ -38,5 +38,13 @@
     "language": "p5.js",
     "thumbnail": "assets/img/screenshots/BarnsleyThurston.jpg",
     "alt": "screenshot of the interactive tool."
+  },
+  {
+    "title": "McMullen Maps",
+    "description": "Interactive tool to visualize the parameter space and the Julia sets of singular perturbation of $z^n$.",
+    "link": "https://editor.p5js.org/silvas/full/FJf9cRclo",
+    "language": "p5.js",
+    "thumbnail": "assets/img/screenshots/McMullenMaps.png",
+    "alt": "screenshot of the interactive tool."
   }
 ]
