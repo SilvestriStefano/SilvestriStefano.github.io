@@ -314,19 +314,20 @@ footer {
 }
 .secondary-navigation > *+* {margin-left: 1.25rem;}
 /*--------------*/
-main a {border-bottom: 0.25rem dotted var(--clr-blue_a);}
-main a:visited {border-bottom: 0.25rem dotted var(--clr-purple_a);}
+main a {
+    --border-style: dotted;
+    --border-color: var(--clr-blue_a);
+    border-bottom: 0.25em var(--border-style) var(--border-color);}
+main a:visited {--border-color: var(--clr-purple_a);}
 main a:hover, main a:focus {
-  border: 0;
-  text-decoration: underline 0.25rem solid var(--clr-blue_a);
-  text-decoration-skip-ink: none;
-  outline: transparent;
+    --border-style: solid;
+    --border-color: var(--clr-blue_a);
+    outline: transparent;
 }
 main a:visited, main a:visited:focus {
-  border: 0;
-  text-decoration: underline 0.25rem solid var(--clr-purple_a);
-  text-decoration-skip-ink: none;
-  outline: transparent;
+    --border-style: solid;
+    --border-color: var(--clr-purple_a);
+    outline: transparent;
 }
 
 @media screen and (min-width:64em) {
@@ -347,11 +348,11 @@ main li:not(:last-of-type) {margin-bottom: 0.625rem;}
 .accordion__container h2, .accordion__container h3,.accordion__container h4 {margin-bottom: 0.125rem;}
 .accordion__container button {
   padding-left: 0.5rem;
-  border-top: 0.125rem solid var(--clr-fg);
-  border-left: 0.125rem solid var(--clr-fg);
+  border-top: 0.0625em solid var(--clr-fg);
+  border-left: 0.0625em solid var(--clr-fg);
   border-right:0;
   border-bottom:0;
-  border-radius: 0.625rem 0.625rem 0 0;
+  border-radius: 0.625em 0.625em 0 0;
   width: 100%;
   background: 0;
   cursor: pointer;
@@ -359,9 +360,14 @@ main li:not(:last-of-type) {margin-bottom: 0.625rem;}
   text-transform: capitalize;
   color: var(--clr-fg);
 }
+.accordion__container button:focus-within, .accordion__container button:hover {
+    outline: transparent;
+    border-right: 0.0125em solid var(--clr-fg);
+    border-bottom: 0.0125em solid var(--clr-fg);
+}
 .accordion__panel {
   padding: 0.5rem;
-  border-left: 0.0125rem solid var(--clr-gray_a);
+  border-left: 0.125em solid var(--clr-gray_a);
 }
 .accordion__panel ul {list-style-type: none;}
 .accordion__panel li {padding-bottom: 0.625rem;}
@@ -448,6 +454,7 @@ li .btn-abstract[aria-expanded="true"]::after {
   box-shadow: 0 0.5rem 0.5rem 0 hsl(var(--clr-fg-hsl)/0.5);
   font-size: var(--fs-300);
 }
+.card:focus-within, .card:hover {box-shadow: 0 0 0 0.25rem;}
 .card-description {
   position: relative;
   flex-direction: column;
@@ -473,17 +480,11 @@ li .btn-abstract[aria-expanded="true"]::after {
   border-top-left-radius: inherit !important;
   border-top-right-radius: inherit !important;
 }
-.card-description > a, .card-description > a:hover, .card-description > a:focus {
-  --border-style: dotted;
-  border-bottom: 0.25rem var(--border-style) var(--clr-blue_a);
-  text-align: center;
-  text-transform: uppercase;
+.card-link {
+    margin: 0.25em;
+    align-self: center;
+    text-transform: uppercase;
 }
-.card-description > a:hover, .card-description > a:focus {
-  --border-style: solid;
-  text-decoration: none;
-}
-.card-link {align-self: center;}
 /*--------------*/
 
 /* code stuff */
