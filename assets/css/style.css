@@ -197,6 +197,10 @@ p {margin: 1rem 0;}
 
 button {outline-color: transparent;}
 
+@media (prefers-reduced-motion: reduce) {
+    .logo ~ *, details[open] summary ~ *{animation: none;}
+  } 
+
 /* Utility classes */
 .grid {
   display: grid;
@@ -286,33 +290,43 @@ footer {
 .primary-navigation {
   --ul-padding: 1rem;
   flex-direction: column;
-  width: 10.125rem;
+  width: 10.25rem;
   padding: var(--ul-padding);
   list-style: none;
   font-size: var(--fs-400);
+  font-family: var(--ff-mono);
 }
 .primary-navigation > * {margin-bottom: 1rem;}
-.primary-navigation li::before, .secondary-navigation li::before{content: "/";}
-.primary-navigation .active::before, .primary-navigation li:hover::before, .primary-navigation li:focus-visible::before, .secondary-navigation .active::before {content: ">/";}
+.primary-navigation a:hover::before, .primary-navigation a:focus-visible::before {
+    content: "cd ~";
+    font-size: var(--fs-300);
+}
+.secondary-navigation a:hover::before, .secondary-navigation a:focus-visible::before {
+    content: "cd ~/Maths";
+    font-size: var(--fs-300);
+}
 .primary-navigation a {text-decoration: none;}
 
 .submenu {
+  width: max-content;
   margin-bottom: 0.25rem;
-  padding: 0.625rem .25rem;
+  padding: 0.625rem;
   border: 0.0125rem solid var(--clr-blue_a);
   border-left: 0.5rem solid var(--clr-blue_a);
+  background-color: var(--clr-bgh);
+  font-family: var(--ff-mono);
 }
+.submenu span {font-size: var(--fs-300);}
 .secondary-navigation {
   --gap: 0;
   margin: 0;
   padding: 0.25rem 0 0 0.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
   list-style: none;
 }
 @media screen and (min-width:64em) {
   .secondary-navigation {padding: 0 0 0 5rem;}
 }
-.secondary-navigation > *+* {margin-left: 1.25rem;}
 /*--------------*/
 main a {
     --border-style: dotted;
@@ -337,33 +351,21 @@ main ul {margin-bottom: 1rem;}
 main li:not(:last-of-type) {margin-bottom: 0.625rem;}
 
 /* Accordion stuff */
-.accordion__container {
-  --gap: 0.125rem;
-  flex-direction: column;
-  justify-content: space-around;
-  border-bottom: 0.125rem solid var(--clr-fg);
-  margin: 2rem 0;
+summary {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+summary > * {display: inline;}
+details[open] summary::after {transform: rotate(0deg);}
+details[open] summary ~ * {animation: sweep .5s ease-in-out;}
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
 }
 
-.accordion__container h2, .accordion__container h3,.accordion__container h4 {margin-bottom: 0.125rem;}
-.accordion__container button {
-  padding-left: 0.5rem;
-  border-top: 0.0625em solid var(--clr-fg);
-  border-left: 0.0625em solid var(--clr-fg);
-  border-right:0;
-  border-bottom:0;
-  border-radius: 0.625em 0.625em 0 0;
-  width: 100%;
-  background: 0;
-  cursor: pointer;
-  text-align: left;
-  text-transform: capitalize;
-  color: var(--clr-fg);
-}
-.accordion__container button:focus-within, .accordion__container button:hover {
-    outline: transparent;
-    border-right: 0.0125em solid var(--clr-fg);
-    border-bottom: 0.0125em solid var(--clr-fg);
+.accordion__container {
+  border-bottom: 0.125rem solid var(--clr-fg);
+  margin: 2rem 0;
 }
 .accordion__panel {
   padding: 0.5rem;
@@ -401,30 +403,6 @@ span[data-category] {border-bottom: 0.125rem solid var(--clr-category);}
   font-weight: 900;
 }
 
-li .btn-abstract {
-  width: auto;
-  padding-right: 0.5rem;
-  border-radius: 0.25rem;
-  border: 0.125rem solid var(--clr-fg);
-  position: relative;
-  text-transform: lowercase;
-}
-li .btn-abstract[aria-expanded="true"] {
-  position: relative;
-  border-bottom-right-radius: 0;
-  background-color: var(--clr-gray);
-  color: var(--clr-bg);
-}
-li .btn-abstract[aria-expanded="true"]::after {
-  content:'';
-  position: absolute;
-  bottom: -0.65rem;
-  right: -0.125rem;
-  
-  border-style: solid;
-  border-width: 0.5rem 0.65rem 0 0.65rem;
-  border-color: var(--clr-fg) transparent transparent transparent;
-}
 .abstract {
   margin-top:0.5rem;
   padding: 0.125rem 0.5rem;
