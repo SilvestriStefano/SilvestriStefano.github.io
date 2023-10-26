@@ -1,7 +1,7 @@
 ---
 title: Maths | Stefano Silvestri Ph.D.
 description: Stefano Silvestri lists the maths talks given, the posters presented, the awards received, and his publications.
-layout: accordion.njk
+layout: base.njk
 eleventyNavigation:
   key: Maths
   order: 200
