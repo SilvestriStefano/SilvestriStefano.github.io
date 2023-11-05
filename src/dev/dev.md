@@ -25,8 +25,8 @@ I spend some of my free time in contributing to Open Source projects. In this wa
 Here is a list of my contributions:
 - [Sarkas: Python MD code for plasma physics](https://github.com/murillo-group/sarkas/pulls?q=is%3Apr+author%3ASilvestriStefano): builder/mantainer of the website, some code refactoring, and tests writer.
 - [Wagtail documentation](https://github.com/wagtail/wagtail/pull/8759): translated some `.rst` pages to `.md`.
-- [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pulls?q=is%3Apr+author%3ASilvestriStefano): added a couple of Tracks. 
-- [sasctl](https://github.com/sassoftware/python-sasctl/pulls?q=is%3Apr+author%3ASilvestriStefano): some code and documentation updates. 
+- [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pulls?q=is%3Apr+author%3ASilvestriStefano): added some Tracks. 
+- [sasctl: Python package and CLI for integration with SAS Viya](https://github.com/sassoftware/python-sasctl/pulls?q=is%3Apr+author%3ASilvestriStefano): some code and documentation updates. 
 
 ### Visualizations
 

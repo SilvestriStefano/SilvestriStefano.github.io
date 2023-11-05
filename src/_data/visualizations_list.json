@@ -1,7 +1,7 @@
 [
   {
     "title": "The Chaos Game",
-    "description": "Javascript implementation of a game designed by Voolich and Devaney.",
+    "description": "Javascript implementation of a game designed by Voolich and Devaney. Three variations each with four level of difficulty.",
     "link": "https://editor.p5js.org/silvas/full/t7mLU3dyF",
     "language": "p5.js",
     "thumbnail": "assets/img/screenshots/TheChaosGame.jpg",
@@ -41,10 +41,18 @@
   },
   {
     "title": "McMullen Maps",
-    "description": "Interactive tool to visualize the parameter space and the Julia sets of singular perturbation of $z^n$.",
+    "description": "Interactive tool to visualize the parameter space and the Julia sets of singular perturbation of $z^n$. Hovering over the dynamical plane draws the orbit.",
     "link": "https://editor.p5js.org/silvas/full/FJf9cRclo",
     "language": "p5.js",
     "thumbnail": "assets/img/screenshots/McMullenMaps.png",
     "alt": "screenshot of the interactive tool."
+  },
+  {
+    "title": "Rolling Circles",
+    "description": "My spin on a classical animation: circles rolling inside each other. You can control the number of circles, the ratio between consecutive radii, the speed of the animation, and whether to connect all the tangent points.",
+    "link": "https://editor.p5js.org/silvas/full/r9NuatQyd",
+    "language": "p5.js",
+    "thumbnail": "assets/img/screenshots/RollingCircles.png",
+    "alt": "screenshot of the rolling circles animation"
   }
 ]

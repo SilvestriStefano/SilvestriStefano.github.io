@@ -5,7 +5,7 @@
     "link": "https://murillo-group.github.io/sarkas/",
     "source": "https://github.com/murillo-group/sarkas/",
     "framework": "Sphinx",
-    "details": ["Logo design","Bootstrap CSS"],
+    "details": ["Logo design", "Bootstrap CSS"],
     "thumbnail": "assets/img/screenshots/Sarkas.jpg",
     "alt": "screenshot of the homepage of SARKAS."
   },
@@ -15,7 +15,7 @@
     "link": "https://silvestristefano.github.io",
     "source": "https://github.com/SilvestriStefano/silvestristefano.github.io/",
     "framework": "11ty",
-    "details": ["Custom design","Logo design", "Vanilla JS"],
+    "details": ["Custom design", "Logo design", "No JS"],
     "thumbnail": "assets/img/screenshots/mywebsite.jpg",
     "alt": "screenshot of the homepage of Stefano's website showing both light and dark theme."
   }
