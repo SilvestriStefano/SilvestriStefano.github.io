@@ -20,7 +20,7 @@ On the side, I am developing in Python some tools to help in my maths research. 
 ***More info to come soon... I hope...***
 
 ### Contributions to Open Source
-I spend some of my free time in contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
+I spend some of my free time contributing to Open Source projects. In this way I hope to get more confident in my programming skills.
 
 Here is a list of my contributions:
 - [Sarkas: Python MD code for plasma physics](https://github.com/murillo-group/sarkas/pulls?q=is%3Apr+author%3ASilvestriStefano): builder/mantainer of the website, some code refactoring, and tests writer.
