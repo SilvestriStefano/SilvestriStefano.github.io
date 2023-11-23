@@ -197,9 +197,16 @@ p {margin: 1rem 0;}
 
 button {outline-color: transparent;}
 
+hr {
+    margin: 1em 0;
+    height: 0.125em;
+    border: none;
+    background-image: linear-gradient(0.25turn,transparent,var(--clr-aqua_a),var(--clr-green_a),var(--clr-aqua_a),transparent);
+}
+
 @media (prefers-reduced-motion: reduce) {
     .logo ~ *, details[open] summary ~ *{animation: none;}
-  } 
+} 
 
 /* Utility classes */
 .grid {
