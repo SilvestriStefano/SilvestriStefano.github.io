@@ -13,6 +13,16 @@ navOptions:
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}
 {% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
+---
+***I firmly believe in [Federico Ardila](https://fardila.com/)'s basic axioms***
+
+- **Axiom 1**: Mathematical potential is equally present in different groups, irrespective of geographic, demographic, and economic boundaries.
+- **Axiom 2**: Everyone can have joyful, meaningful, and empowering mathematical experiences.
+- **Axiom 3**: Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.
+- **Axiom 4**: Every student deserves to be treated with dignity and respect. 
+
+---
+
 ## Teaching
 In the Spring of 2018 I received the *Outstanding Graduate Student Teaching Award* from the School of Science at [IUPUI](https://science.iupui.edu/)
 
