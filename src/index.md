@@ -1,6 +1,7 @@
 ---
 title: Home | Stefano Silvestri, Ph.D.
 layout: base.njk
+carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io/
 eleventyNavigation:
   key: Home
   order: 100

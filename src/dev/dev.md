@@ -2,6 +2,7 @@
 title: Developer | Stefano Silvestri Ph.D.
 description: Stefano Silvestri explains what he has done as a developer and showcases some of his work.
 layout: base.njk
+carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-dev/
 eleventyNavigation:
   key: Dev
   order: 300

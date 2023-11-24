@@ -2,6 +2,7 @@
 title: Maths Undergraduate Research | Stefano Silvestri Ph.D.
 description: Stefano Silvestri describes the maths he has pursued while an undergraduate.
 layout: base.njk
+carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-maths-research-ugrad/
 eleventyNavigation:
   key: Ugrad
   parent: Maths

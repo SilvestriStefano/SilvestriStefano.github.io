@@ -2,6 +2,7 @@
 title: Maths | Stefano Silvestri Ph.D.
 description: Stefano Silvestri lists the maths talks given, the posters presented, the awards received, and his publications.
 layout: base.njk
+carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-maths/
 eleventyNavigation:
   key: Maths
   order: 200

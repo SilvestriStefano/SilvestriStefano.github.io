@@ -2,6 +2,7 @@
 title: Teaching | Stefano Silvestri Ph.D.
 description: Stefano Silvestri lists the courses he has taught and rewards/certifications he has obtained.
 layout: base.njk
+carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-maths-teaching/
 eleventyNavigation:
   key: Teach
   parent: Maths

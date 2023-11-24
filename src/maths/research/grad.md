@@ -2,6 +2,7 @@
 title: Maths Research | Stefano Silvestri Ph.D.
 description: Stefano Silvestri explains his current math research focus. He describes the maths he has pursued as a graduate student at IUPUI and instructor at Butler University.
 layout: base.njk
+carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-maths-research-grad/
 eleventyNavigation:
   key: Grad
   parent: Maths
