@@ -1,7 +1,7 @@
 <footer>
     {% include "icons.njk" %}
     <p>
-        {% if site.name %} {{ site.name }}{% endif %} &copy; <time datetime="{% year %}">{% year %}</time> {% if site.github %}• <a href="{{site.github}}"><svg width="16px" height="16px" aria-labelledby="github_title" role="img"><title id="github_title">Github</title><use href="#_icon_github"></svg></a> {% endif %} {% if carbonLink %}•  <a href="{{carbonLink}}"><svg width="16px" height="16px" aria-labelledby="carbon_title" role="img"><title id="carbon_title">Check page's carbon emissions</title><use href="#_seedling"></svg></a>
+        {% if site.name %} {{ site.name }}{% endif %} &copy; <time datetime="{% year %}">{% year %}</time> {% if site.github %}• <a href="{{site.github}}"><svg width="16px" height="16px" aria-labelledby="github_title" role="img"><title id="github_title">Github profile</title><use href="#_icon_github"></svg></a> {% endif %} {% if carbonLink %}•  <a href="{{carbonLink}}"><svg width="16px" height="16px" aria-labelledby="carbon_title" role="img"><title id="carbon_title">Check this page's carbon emissions</title><use href="#_seedling"></svg></a>
         {% endif %} 
     </p>
 </footer>
