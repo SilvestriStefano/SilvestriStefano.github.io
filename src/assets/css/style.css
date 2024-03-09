@@ -338,7 +338,7 @@ footer {
 main a {
     --border-style: dotted;
     --border-color: var(--clr-blue_a);
-    border-bottom: 0.25em var(--border-style) var(--border-color);}
+    border-bottom: 0.125em var(--border-style) var(--border-color);}
 main a:visited {--border-color: var(--clr-purple_a);}
 main a:hover, main a:focus {
     --border-style: solid;
@@ -387,7 +387,7 @@ details[open] summary ~ * {animation: sweep .5s ease-in-out;}
   justify-content: space-evenly;
   margin-bottom: 0.625rem;
 }
-span[data-category] {border-bottom: 0.125rem solid var(--clr-category);}
+span[data-category], [data-category]>cite {border-bottom: 0.125rem solid var(--clr-category);}
 [data-category]::before {
   border: 0.25rem solid var(--clr-category);
   margin-right: 0.125rem;
