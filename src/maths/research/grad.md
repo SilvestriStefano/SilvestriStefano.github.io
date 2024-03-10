@@ -32,7 +32,7 @@ attThree:
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}
-{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
+{% secondaryNavigation collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
 ## Research Focus
 My research interests lie in complex dynamical systems, iterated function systems, symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.
@@ -41,11 +41,11 @@ My research interests lie in complex dynamical systems, iterated function system
 ## Research at IUPUI and Current
 My research project concerns two subsets of the unit disk. The set $\mathcal{M}$ is the closure of the set of roots in $\mathbb{D}$ of polynomials with coefficients in $\lbrace-1,0,+1\rbrace$. Similarly, the set $\mathcal{M}_0$ is the closure of the set of roots in $\mathbb{D}$ of with coefficients in $\lbrace-1,+1\rbrace$, commonly known as Littlewood's polynomials. By their definition then we have $\mathcal{M}_0\subset\mathcal{M}$.
 
-{% imageGroup [dataM, dataM0], "The two sets M and M_0" %} 
+{% figureGroup [dataM, dataM0], "The two sets M and M_0" %} 
 
 Interest in these sets spiked recently after [G. Tiozzo](https://arxiv.org/abs/1310.7647), inspired by a conjecture of [W.P. Thurston](https://mathscinet.ams.org/mathscinet-getitem?mr=3289916), proved that $\mathcal{M}_0$ equals the closure in $\mathbb{D}$ of the set of Galois conjugates of entropies of superattracting real quadratic polynomials. From a different point of view, the set $\mathcal{M}$ is the connectedness locus of the family of iterated function systems (IFS) $\langle\mathfrak{s}_-(z), \mathfrak{s}_+(z)\rangle= \langle-1+ \lambda z, +1+ \lambda z\rangle$ namely the set of parameters $\lambda$ for which the associated limit set of the IFS is connected.
 
-{% imageGroup [attOne, attTwo, attThree], "Three examples of limit sets: the Tame Twin Dragon, the Twin Dragon, and a Dendrite." %}
+{% figureGroup [attOne, attTwo, attThree], "Three examples of limit sets: the Tame Twin Dragon, the Twin Dragon, and a Dendrite." %}
 
 *See more attractors by playing with my [p5.js](https://p5js.org) code: [just the limit set](https://editor.p5js.org/silvas/full/3iKx8wslr) or [the limit set and parameter plane](https://editor.p5js.org/silvas/full/2GL02NekB) (the first load might take a little bit).*
 

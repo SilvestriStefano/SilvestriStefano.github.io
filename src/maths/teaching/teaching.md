@@ -12,7 +12,7 @@ navOptions:
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}
-{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
+{% secondaryNavigation collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
 ---
 ***I firmly believe in [Federico Ardila](https://fardila.com/)'s basic axioms***
