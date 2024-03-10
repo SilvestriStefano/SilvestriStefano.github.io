@@ -36,7 +36,7 @@ j37:
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}
-{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
+{% secondaryNavigation collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
 While an undergraduate I had the opportunity to do some research both in pure and applied mathematics.
 
@@ -57,7 +57,7 @@ The McMullen maps have some interesting properties from a dynamical systems as w
 - a Cantor set of disjoint simple closed curves surrounding the origin, if the critical values lie in the preimage of $B_{\lambda}$, the trap door $T_{\lambda}$; 
 - a Sierpi&#324;ski curve when the $k$th image, with $k\geq1$, of the the critical value lies in $T_\lambda$.
 
-{% imageGroup [trich1, trich2, trich3], "The three distinct Julia sets when n is 2 containing a cycle of period 3." %}
+{% figureGroup [trich1, trich2, trich3], "The three distinct Julia sets when n is 2 containing a cycle of period 3." %}
 
 *In the Julia sets pictured above the location of the critical points and of the critical values are indicated by white X and green disks.*
 
@@ -69,7 +69,7 @@ When $n>2$, we see that $F_\lambda(\nu_\lambda)\to\infty$ as $\lambda\to0$. Howe
 
 E. Fitzgibbon and I have focused on the case $n=d=2$ and proved that two Julia sets of maps drawn from the main cardiods of distinct Mandelbrot sets located on the boundary of the parameter plane and containing a cycle of period $m$ are not homeomorphic, unless these cardioids are complex conjugates of each other. In our proof we assigned to the periodic critical points an itinerary derived from the structure of the respective Julia set and through comparison, showed the non existence of a homeomorphism between them.
 
-{% imageGroup [j17, j27, j37], "The three possible Julia sets of the McMullen maps when lambda is taken from the main cardioid of principal Mandelbrot sets with base period 3." %}
+{% figureGroup [j17, j27, j37], "The three possible Julia sets of the McMullen maps when lambda is taken from the main cardioid of principal Mandelbrot sets with base period 3." %}
 
 *When $n=2$ there are, up to complex conjugation, only three Mandelbrot sets on the boundary of the parameter plane whose main cardioid contains a cycle of period $3$. The pictures above are the Julia sets associated to a parameter in these cardioids.*
 

@@ -10,11 +10,26 @@ eleventyNavigation:
 
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}
-{% secondaryNav collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
+{% secondaryNavigation collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
 I first thought of becoming a mathematician during my last year of highschool, thanks to a couple of special programs with [Rome's Third University](https://matematicafisica.uniroma3.it/terza-missione/per-la-scuola/). The thought then became a goal while an undergraduate at [Boston University](https://bu.edu) once [Professor R.L. Devaney](https://math.bu.edu/people/bob) agreed to supervise me on a research project.
 
-{% accordionItem maths %}
+
+## Publications
+
+{% listItems maths, "publications" %}
+
+## Talks
+
+{% listItems maths, "talks" %}
+
+## Posters
+
+{% listItems maths, "posters" %}
+
+## Awards
+
+{% listItems maths, "awards" %}
 
 ## Fun Facts
 
