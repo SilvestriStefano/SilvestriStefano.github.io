@@ -33,7 +33,7 @@ I first thought of becoming a mathematician during my last year of highschool, t
 
 ## Fun Facts
 
-My **Erd&ouml;s number** is 4 (check yours using the [AMS MathSciNet's free Collaboration Distance tool](https://mathscinet.ams.org/mathscinet/freeTools.html?version=2)):
+My **Erd&ouml;s number** is 4 (check yours using the [AMS MathSciNet's free Collaboration Distance tool](https://mathscinet.ams.org/mathscinet/freetools/collab-dist?source=1069952&target=189017)):
 following either *Erd&ouml;s, P. > Dixmier, J. > Duoady, A. > Devaney, R.L. > Silvestri, S.* or *Erd&ouml;s, P. > Alladi, K. > Andrews, G.E. > Pérez, R.A. > Silvestri, S.*
 
 Check out my mathematical family tree at [Mathematics Genealogy Project](https://mathgenealogy.org/id.php?id=258126). Here are some mathematician in my tree: Friedrich Leibniz, Karl Theodor Wilhelm Weierstraß, Carl Gustav Jacob Jacobi, Carl Gottfried Neumann, Solomon Lefschetz, John Willard Milnor, and Mikhail Yu Lyubich. 
