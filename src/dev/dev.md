@@ -28,6 +28,7 @@ Here is a list of my contributions:
 - [Wagtail documentation](https://github.com/wagtail/wagtail/pull/8759): translated some `.rst` pages to `.md`.
 - [The Coding Train website](https://github.com/CodingTrain/thecodingtrain.com/pulls?q=is%3Apr+author%3ASilvestriStefano): added some Tracks. 
 - [sasctl: Python package and CLI for integration with SAS Viya](https://github.com/sassoftware/python-sasctl/pulls?q=is%3Apr+author%3ASilvestriStefano): some code and documentation updates. 
+- [Pandas documentation](https://github.com/pandas-dev/pandas/pulls?q=is%3Apr+author%3ASilvestriStefano): a couple of minor CSS improvements on the documentation.
 
 ### Visualizations
 
