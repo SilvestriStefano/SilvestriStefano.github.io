@@ -1,7 +1,7 @@
 [
   {
     "title": "SARKAS: Pyhton MD code for Plasma Physics",
-    "description": "Documentation of the Python package SARKAS developed by [Murillo Group](https://murillogroupmsu.com/) at Michigan State University.",
+    "description": "Documentation of SARKAS developed by the [Murillo Group](https://murillogroupmsu.com/) at Michigan State University. I am the builder and maintainer of the website. The content is written in ReStructuredText and Jupyter notebooks at the moment but I am planning to convert the `.rst` files to `.md` in the near future.",
     "link": "https://sarkas.readthedocs.io/",
     "source": "https://github.com/murillo-group/sarkas/",
     "framework": "Sphinx",
@@ -10,13 +10,23 @@
     "alt": "screenshot of the homepage of SARKAS."
   },
   {
-    "title": "Stefano Silvestri, Ph.D.",
-    "description": "My personal website. Built to be [eco-friendly](https://www.websitecarbon.com/website/silvestristefano-github-io/) and with accessibility in mind.",
-    "link": "https://silvestristefano.github.io",
-    "source": "https://github.com/SilvestriStefano/silvestristefano.github.io/",
-    "framework": "11ty",
-    "details": ["Custom design", "Logo design", "No JS"],
-    "thumbnail": "assets/img/screenshots/mywebsite.jpg",
-    "alt": "screenshot of the homepage of Stefano's website showing both light and dark theme."
-  }
+      "title": "Stefano Silvestri, Ph.D.",
+      "description": "My personal website. Built to be [eco-friendly](https://www.websitecarbon.com/website/silvestristefano-github-io/) and with accessibility in mind. The content is written in Markdown and uses Nunjucks templates.",
+      "link": "https://silvestristefano.github.io",
+      "source": "https://github.com/SilvestriStefano/silvestristefano.github.io/",
+      "framework": "11ty",
+      "details": ["Custom design", "Logo design", "No JS"],
+      "thumbnail": "assets/img/screenshots/mywebsite.jpg",
+      "alt": "screenshot of the homepage of Stefano's website showing both light and dark theme."
+    },
+    {
+      "title": "Mobilificio d'Arte Colantonio",
+      "description": "Family run furniture workshop in Pescara, Italy. I took over the maintenance of the website: removed a lot of clutter, improved SEO, and added some security. Slowly trying to increase accessibility and reduce its carbon footprint.",
+      "link": "https://www.colantoniomobili.com/",
+      "source": "",
+      "framework": "Wordpress",
+      "details": [],
+      "thumbnail": "assets/img/screenshots/ColantonioMobili.jpg",
+      "alt": "screenshot of the homepage of Mobilificio d'Arte Colantonio."
+    }
 ]
