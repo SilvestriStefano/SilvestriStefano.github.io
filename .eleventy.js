@@ -4,19 +4,13 @@ const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   // Passthrough
-    //fonts
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
-    //css
   eleventyConfig.addPassthroughCopy("./src/assets/css/");
-    //favicon
   eleventyConfig.addPassthroughCopy("./src/assets/img/favicon/*.(svg|ico)");
-    //social images
   eleventyConfig.addPassthroughCopy("./src/assets/img/social/*.png");
-   //
   eleventyConfig.addPassthroughCopy("./src/assets/files/*.pdf");
   
   // Plugin
-    // navigation
   eleventyConfig.addPlugin( require("@11ty/eleventy-navigation") );
 
   // Libraries
@@ -24,24 +18,25 @@ module.exports = function (eleventyConfig) {
     
   //Shortcodes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-  fs.readdirSync("./lib/shortcodes").forEach(function(fp) {
-    if (fp=="async") {
-        fs.readdirSync(`./lib/shortcodes/${fp}`).forEach(function(file) {
-            if (file.endsWith(".js")) {
-                const fName = path.parse(file).name;
+  fs.readdirSync("./lib/shortcodes").forEach(function(pathString) {
+    if (pathString=="async") {
+        fs.readdirSync(`./lib/shortcodes/${pathString}`).forEach(function(fileString) {
+            if (fileString.endsWith(".js")) {
+                const fName = path.parse(fileString).name;
                 eleventyConfig.addAsyncShortcode(fName, require(`./lib/shortcodes/async/${fName}.js`));
             }
         })
     };
-    if (fp.endsWith(".js")) {
-        const fileName = path.parse(fp).name;
+    if (pathString.endsWith(".js")) {
+        const fileName = path.parse(pathString).name;
         eleventyConfig.addShortcode(fileName, require(`./lib/shortcodes/${fileName}.js`));
     }
   });
     
 
+  // Minify HTML 
+  // https://www.11ty.dev/docs/config/#transforms
   eleventyConfig.addTransform("htmlmin", function(content) {
-    // Prior to Eleventy 2.0: use this.outputPath instead
     if( this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
