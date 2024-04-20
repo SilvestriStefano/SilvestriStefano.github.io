@@ -19,9 +19,9 @@
         "abstract":"Consider two objects associated to the Iterated Function System (IFS) $\\{ 1+\\lambda z,-1+\\lambda z\\}$: the locus $\\mathcal{M}$ of parameters $\\lambda\\in\\mathbb{D}\\setminus\\{ 0\\}$ for which the corresponding attractor is connected; and the locus $\\mathcal{M}_0$ of parameters for which the related attractor contains $0$. The set $\\mathcal{M}$ can also be characterized as the locus of parameters for which the attractor of the IFS $\\{1+\\lambda z, \\lambda z, -1+\\lambda z\\}$ contains $\\lambda^{-1}$. Exploiting the asymptotic similarity of $\\mathcal{M}$ and $\\mathcal{M}_0$ with the respective associated attractors, we give sufficient conditions on $\\lambda\\in\\partial\\mathcal{M}$ or $\\partial\\mathcal{M}_0$ to guarantee it is path accessible from the complement $\\mathbb{D}\\setminus\\mathcal{M}$.",
         "journal":"Experimental Mathematics",
         "journallink":"https://www.tandfonline.com/doi/full/10.1080/10586458.2021.1974984",
-        "volume":"",
-        "pages":"",
-        "year":"2021",
+        "volume":"32 (2)",
+        "pages":"405--422",
+        "year":"2023",
         "doi":"10.1080/10586458.2021.1974984",
         "preprint":"https://arxiv.org/abs/1912.12606",
         "inpreparation":false
