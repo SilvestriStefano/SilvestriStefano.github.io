@@ -315,13 +315,26 @@ footer {
 .primary-navigation a {text-decoration: none;}
 
 .submenu {
+  position: relative;
   width: max-content;
   margin-bottom: 0.25rem;
-  padding: 0.625rem;
   border: 0.0125rem solid var(--clr-blue_a);
-  border-left: 0.5rem solid var(--clr-blue_a);
+  padding: 0.125em 0.625em 0.625em 1.625em;
   background-color: var(--clr-bgh);
   font-family: var(--ff-mono);
+}
+.submenu::before{
+    content: "SUBPAGES";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1.5em;
+    background-color: var(--clr-blue_a);
+    font-size: var(--fs-300);
+    color: var(--clr-bgh);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
 }
 .submenu span {font-size: var(--fs-300);}
 .secondary-navigation {
