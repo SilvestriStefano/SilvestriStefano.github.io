@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const htmlmin = require("html-minifier");
+// const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   // Passthrough
@@ -36,19 +36,19 @@ module.exports = function (eleventyConfig) {
 
   // Minify HTML 
   // https://www.11ty.dev/docs/config/#transforms
-  eleventyConfig.addTransform("htmlmin", function(content) {
-    if( this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        conservativeCollapse: true
-      });
-      return minified;
-    }
+//   eleventyConfig.addTransform("htmlmin", function(content) {
+//     if( this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
+//       let minified = htmlmin.minify(content, {
+//         useShortDoctype: true,
+//         removeComments: true,
+//         collapseWhitespace: true,
+//         conservativeCollapse: true
+//       });
+//       return minified;
+//     }
 
-    return content;
-  });
+//     return content;
+//   });
 
   return {
     dir: {

@@ -125,7 +125,7 @@
 ::selection {background-color: var(--clr-gray_a);}
 :focus-visible {outline: 0.125rem solid var(--clr-gray_a);}
 html {
-  color-scheme: light dark;
+  color-scheme: dark light;
   font-size: 16px;
   scroll-behavior: smooth;
 }
