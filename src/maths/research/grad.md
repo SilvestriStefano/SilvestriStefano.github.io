@@ -36,14 +36,14 @@ attThree:
 
 ## Research Focus
 My research interests lie in complex dynamical systems, iterated function systems, symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.
-{% image "assets/img/grad/Christiane_Hair.png", "Image of a set built by stacking Cantor sets with continuously varying scaling factors", "*Acacia Trees* (modified version of [Christiane's Hair](https://www.maa.org/programs/maa-awards/writing-awards/christiane-s-hair)) a set built by stacking Cantor sets with continuously varying scaling factors." %}
+{% image "assets/img/grad/Christiane_Hair.png", "Image of a set built by stacking Cantor sets with continuously varying scaling factors", "*Acacia Trees* (modified version of [Christiane's Hair](https://www.tandfonline.com/doi/abs/10.4169/amer.math.monthly.120.09.771)) a set built by stacking Cantor sets with continuously varying scaling factors." %}
 
 ## Research at IUPUI and Current
 My research project concerns two subsets of the unit disk. The set $\mathcal{M}$ is the closure of the set of roots in $\mathbb{D}$ of polynomials with coefficients in $\lbrace-1,0,+1\rbrace$. Similarly, the set $\mathcal{M}_0$ is the closure of the set of roots in $\mathbb{D}$ of with coefficients in $\lbrace-1,+1\rbrace$, commonly known as Littlewood's polynomials. By their definition then we have $\mathcal{M}_0\subset\mathcal{M}$.
 
 {% figureGroup [dataM, dataM0], "The two sets M and M_0" %} 
 
-Interest in these sets spiked recently after [G. Tiozzo](https://arxiv.org/abs/1310.7647), inspired by a conjecture of [W.P. Thurston](https://mathscinet.ams.org/mathscinet-getitem?mr=3289916), proved that $\mathcal{M}_0$ equals the closure in $\mathbb{D}$ of the set of Galois conjugates of entropies of superattracting real quadratic polynomials. From a different point of view, the set $\mathcal{M}$ is the connectedness locus of the family of iterated function systems (IFS) $\langle\mathfrak{s}_-(z), \mathfrak{s}_+(z)\rangle= \langle-1+ \lambda z, +1+ \lambda z\rangle$ namely the set of parameters $\lambda$ for which the associated limit set of the IFS is connected.
+Interest in these sets spiked recently after [G. Tiozzo](https://academic.oup.com/imrn/article-abstract/2020/2/607/4948413), inspired by a conjecture of [W.P. Thurston](https://mathscinet.ams.org/mathscinet-getitem?mr=3289916), proved that $\mathcal{M}_0$ equals the closure in $\mathbb{D}$ of the set of Galois conjugates of entropies of superattracting real quadratic polynomials. From a different point of view, the set $\mathcal{M}$ is the connectedness locus of the family of iterated function systems (IFS) $\langle\mathfrak{s}_-(z), \mathfrak{s}_+(z)\rangle= \langle-1+ \lambda z, +1+ \lambda z\rangle$ namely the set of parameters $\lambda$ for which the associated limit set of the IFS is connected.
 
 {% figureGroup [attOne, attTwo, attThree], "Three examples of limit sets: the Tame Twin Dragon, the Twin Dragon, and a Dendrite." %}
 
