@@ -1,8 +1,8 @@
-const path = require('path');
-const Image = require('@11ty/eleventy-img');
-const presets = require('./imgPresets.js');
+import path from 'path';
+import Image from '@11ty/eleventy-img';
+import presets from './imgPresets.js';
 
-module.exports = async function (src, alt, classes, preset = 'default') {
+export const imgCreate = async (src, alt, classes, preset = 'default') => {
   let metadata = await Image(path.join('./src', src), {
       outputDir:"public/assets/img/",
       urlPath: "/assets/img/",

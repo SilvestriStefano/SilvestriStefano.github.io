@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 const talksData = fs.readFileSync(`${process.cwd()}/src/_data/talk_list.json`, 'utf-8')
 const talks = JSON.parse(talksData);
@@ -12,6 +12,9 @@ const publications = JSON.parse(pubData);
 const awardsData = fs.readFileSync(`${process.cwd()}/src/_data/awards_list.json`, 'utf-8')
 const awards = JSON.parse(awardsData);
 
-const maths={"talks":talks,"posters":posters,"publications":publications,"awards":awards};
-
-module.exports = maths;
+export default {
+    "talks":talks,
+    "posters":posters,
+    "publications":publications,
+    "awards":awards
+};

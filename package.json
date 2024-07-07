@@ -1,6 +1,7 @@
 {
   "name": "silvas",
   "version": "1.0.0",
+  "type": "module",
   "description": "personal website of Stefano Silvestri Ph.D.",
   "main": "index.html",
   "scripts": {
