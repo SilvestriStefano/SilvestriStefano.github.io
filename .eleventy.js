@@ -1,8 +1,12 @@
-const fs = require("fs");
-const path = require("path");
+// const fs = require("fs");
+// const path = require("path");
 // const htmlmin = require("html-minifier");
+import shortcodes from './_config/shortcodes/shortcodes.js';
+import asyncShortcodes from './_config/shortcodes/async/asyncShortcodes.js';
+import md from './_config/libraries/markdown.js';
+import eleventyNavigation from '@11ty/eleventy-navigation';	
 
-module.exports = function (eleventyConfig) {
+export default function(eleventyConfig) {
   // Passthrough
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/css/");
@@ -11,27 +15,34 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/files/*.pdf");
   
   // Plugin
-  eleventyConfig.addPlugin( require("@11ty/eleventy-navigation") );
+  eleventyConfig.addPlugin( eleventyNavigation );
 
   // Libraries
-  eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
+  eleventyConfig.setLibrary('md', md);
     
   //Shortcodes
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-  fs.readdirSync("./lib/shortcodes").forEach(function(pathString) {
-    if (pathString=="async") {
-        fs.readdirSync(`./lib/shortcodes/${pathString}`).forEach(function(fileString) {
-            if (fileString.endsWith(".js")) {
-                const fName = path.parse(fileString).name;
-                eleventyConfig.addAsyncShortcode(fName, require(`./lib/shortcodes/async/${fName}.js`));
-            }
-        })
-    };
-    if (pathString.endsWith(".js")) {
-        const fileName = path.parse(pathString).name;
-        eleventyConfig.addShortcode(fileName, require(`./lib/shortcodes/${fileName}.js`));
-    }
-  });
+   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+   eleventyConfig.addShortcode("listItems", shortcodes.listItems);
+   eleventyConfig.addShortcode("primaryNavigation", shortcodes.primaryNavigation);
+   eleventyConfig.addShortcode("secondaryNavigation", shortcodes.secondaryNavigation);
+   eleventyConfig.addAsyncShortcode("figureGroup", asyncShortcodes.figureGroup);
+   eleventyConfig.addAsyncShortcode("imageBg", asyncShortcodes.imageBg);
+   eleventyConfig.addAsyncShortcode("image", asyncShortcodes.image);
+   eleventyConfig.addAsyncShortcode("showcase", asyncShortcodes.showcase);
+//   fs.readdirSync("./lib/shortcodes").forEach(function(pathString) {
+//     if (pathString=="async") {
+//         fs.readdirSync(`./lib/shortcodes/${pathString}`).forEach(function(fileString) {
+//             if (fileString.endsWith(".js")) {
+//                 const fName = path.parse(fileString).name;
+//                 eleventyConfig.addAsyncShortcode(fName, require(`./lib/shortcodes/async/${fName}.js`));
+//             }
+//         })
+//     };
+//     if (pathString.endsWith(".js")) {
+//         const fileName = path.parse(pathString).name;
+//         eleventyConfig.addShortcode(fileName, require(`./lib/shortcodes/${fileName}.js`));
+//     }
+//   });
     
 
   // Minify HTML 

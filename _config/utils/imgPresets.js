@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   default: {
     formats: ['avif','webp','jpeg'],
     sizes: '100vw',
