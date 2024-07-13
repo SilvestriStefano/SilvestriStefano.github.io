@@ -40,39 +40,39 @@ This website was built using the wonderful Static Site Generator [11ty](https://
 <details>
   <summary>Details</summary>
   
-    I have decided to go with **Neo-Euler** with a fallback to **Palatino Linotype**. The first font is used often in the mathematics community: it is extremely lightweight, as it has only one style, and it is beautiful. The fallback font has similar style and it is installed already on most (if not all) computer. 
+I have decided to go with **Neo-Euler** with a fallback to **Palatino Linotype**. The first font is used often in the mathematics community: it is extremely lightweight, as it has only one style, and it is beautiful. The fallback font has similar style and it is installed already on most (if not all) computer. 
 
-    For the headings I have decided to use **Lucida Console** which is a monospace font available on every computer as well.
+For the headings I have decided to use **Lucida Console** which is a monospace font available on every computer as well.
 
-    Fun facts:
-    1. Hermann Zapf designed both Neo Euler and Palatino. 
-    2. Donald Knuth assisted in the creation of Neo Euler.
+Fun facts:
+1. Hermann Zapf designed both Neo Euler and Palatino. 
+2. Donald Knuth assisted in the creation of Neo Euler.
 
-    #### Web Fonts
+#### Web Fonts
 
-    You can donwload Neo Euler from [fontSpace](https://www.fontspace.com/neo-euler-font-f39945) or [fontLibrary](https://fontlibrary.org/en/font/euler-otf)
-    
-    I used [FontSquirrel](https://fontsquirrel.com) to create the webfont (`.woff`  and `.woff2` extension)
-    
-    #### CLS
-    Be careful of the Cumulative Layout Shift (CLS) that font loading can cause. See [this article on font fallbacks](https://developer.chrome.com/blog/font-fallbacks/). Below is how I dealt with it in my case.
+You can donwload Neo Euler from [fontSpace](https://www.fontspace.com/neo-euler-font-f39945) or [fontLibrary](https://fontlibrary.org/en/font/euler-otf)
 
-    ```css
-    @font-face{
-        font-display: swap; /* uses the fallbacks while the font is downloading */
-        font-family: 'NeoEuler'; /* the name you want to use */
-        src:url("/assets/fonts/neoeuler.woff2") format('woff2'), /* use the lightest first */
-            url("/assets/fonts/neoeuler.woff") format('woff');
-        size-adjust: 114.14473684210%; /* avgCharacterWidth of web font / avgCharacterWidth of fallback font */
-        ascent-override: 64.93605907781%; /* web font ascent / (web font UPM * size-adjust) */
-        descent-override: 21.30313400576%; /* web font descent / (web font UPM * size-adjust) */
-        line-gap-override: 0%; /* web font line-gap / (web font UPM * size-adjust) */
-    }
-    :root{
-        /* other code ...*/
-        --ff-serif:'NeoEuler','Palatino Linotype',serif;
-    }
-    ```
+I used [FontSquirrel](https://fontsquirrel.com) to create the webfont (`.woff`  and `.woff2` extension)
+
+#### CLS
+Be careful of the Cumulative Layout Shift (CLS) that font loading can cause. See [this article on font fallbacks](https://developer.chrome.com/blog/font-fallbacks/). Below is how I dealt with it in my case.
+
+```css
+@font-face{
+    font-display: swap; /* uses the fallbacks while the font is downloading */
+    font-family: 'NeoEuler'; /* the name you want to use */
+    src:url("/assets/fonts/neoeuler.woff2") format('woff2'), /* use the lightest first */
+        url("/assets/fonts/neoeuler.woff") format('woff');
+    size-adjust: 114.14473684210%; /* avgCharacterWidth of web font / avgCharacterWidth of fallback font */
+    ascent-override: 64.93605907781%; /* web font ascent / (web font UPM * size-adjust) */
+    descent-override: 21.30313400576%; /* web font descent / (web font UPM * size-adjust) */
+    line-gap-override: 0%; /* web font line-gap / (web font UPM * size-adjust) */
+}
+:root{
+    /* other code ...*/
+    --ff-serif:'NeoEuler','Palatino Linotype',serif;
+}
+```
 </details>
 
 ### Fluid Type Scale
