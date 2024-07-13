@@ -122,7 +122,10 @@
   }
 }
 [hidden] {display: none !important;}
-::selection {background-color: var(--clr-gray_a);}
+::selection {
+    background-color: var(--clr-gray_a);
+    color: var(--clr-bg);
+}
 :focus-visible {outline: 0.125rem solid var(--clr-gray_a);}
 html {
   color-scheme: dark light;
@@ -352,12 +355,21 @@ main a {
     --border-size: 0.125em;
     --border-style: dotted;
     --border-color: var(--clr-blue_a);
-    border-bottom: var(--border-size) var(--border-style) var(--border-color);}
+    --bg-x-pos:right;
+    border-bottom: var(--border-size) var(--border-style) var(--border-color);
+    padding-top: var(--border-size);
+    background: var(--bg-x-pos) / 0% 100% no-repeat linear-gradient(var(--border-color),var(--border-color));
+    transition: background-size 500ms;
+}
 main a:visited {--border-color: var(--clr-purple_a);}
+main a:hover{ --bg-x-pos:left; }
+main a:focus{ --bg-x-pos:center; }
 main a:hover, main a:focus {
     --border-style: solid;
     --border-color: var(--clr-blue_a);
     outline: transparent;
+    background: var(--bg-x-pos) / 100% 100% no-repeat linear-gradient(var(--border-color),var(--border-color));
+    color: var(--clr-bg);
 }
 main a:visited, main a:visited:focus {
     --border-style: solid;
