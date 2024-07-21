@@ -21,7 +21,7 @@ I built the website with the following goals in mind:
 - [ ] be responsible of the environment (see [WebsiteCarbon](https://websitecarbon.com) and [LowTechMagazine](https://solar.lowtechmagazine.com))
 - [ ] have good SEO
 
-So far I am happy with the results, but it is always a work in progress.
+So far, I am happy with the results, but alas, it is always a work in progress.
 
 ### Static Site
 This website was built using the wonderful Static Site Generator [11ty](https://11ty.dev). It started with **v1** back in February 2023, in May 2023 I upgraded to **v2.0.1**, and finally in May 2024 I upgraded to **v3.0.0-alpha.10**. Also in July 2024 I switched to using ESM from CJS.
