@@ -5,8 +5,8 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-    paths:
-      - '!README.md'
+    paths-ignore:
+      - 'README.md'
   
 jobs:
   # Build job
