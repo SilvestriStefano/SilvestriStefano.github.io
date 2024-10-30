@@ -17,7 +17,7 @@ The estimated carbon footprint for my
 
 ### Goals
 I built the website with the following goals in mind:
-- [ ] be accessible (see [A11yProject](https://a11yproject.com))
+- [ ] be accessible (see [A11yProject](https://a11yproject.com) and [WAVE](https://wave.webaim.org/))
 - [ ] be responsible of the environment (see [WebsiteCarbon](https://websitecarbon.com) and [LowTechMagazine](https://solar.lowtechmagazine.com))
 - [ ] have good SEO
 
