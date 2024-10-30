@@ -231,7 +231,9 @@ hr {
 
 .skip-nav-link {
   position: absolute;
-  background-color: var(--clr-aqua);
+  background-color: var(--clr-bg);
+  outline-color: var(--clr_aqua);
+  outline-width: 1em;
   padding: 0.5rem 1.5rem;
   border-radius: 0 5rem 5rem 0;
   left: 0.5rem;
@@ -406,7 +408,7 @@ details[open] summary ~ * {animation: sweep .5s ease-in-out;}
     0%    {opacity: 0; margin-top: -10px}
     100%  {opacity: 1; margin-top: 0px}
 }
-
+li > span {display: block;}
 .accordion__container {
   border-bottom: 0.125rem solid var(--clr-fg);
   margin: 2rem 1rem;
