@@ -48,7 +48,7 @@ F_\lambda(z)=z^n+\dfrac{\lambda}{z^d}\quad n\geq2, ~ d\geq1.
 $$
 These are often called *McMullen maps*. I mainly focused on the case $n = d = 2$, but also participated in the discussions about the more general case $n=d\geq3$ with the [Dynamical System group at BU](https://math.bu.edu/dynamics/).
 
-{% image "assets/img/ugrad/paramSpaceN2.jpg", "Image of the parameter space for the McMullen map when n is 2", "Parameter space when $n=2$. The lower left corner is $\\lambda=-0.5-0.4\\textrm i$ while the top right corner is $\\lambda=0.3+0.4\\textrm i$." %}
+{% image "assets/img/ugrad/paramSpaceN2.jpg", "", "Parameter space when $n=2$. The lower left corner is $\\lambda=-0.5-0.4\\textrm i$ while the top right corner is $\\lambda=0.3+0.4\\textrm i$." %}
 
 *Visualize the parameter space and the Julia sets of these maps with my [p5.js code.](https://editor.p5js.org/silvas/full/FJf9cRclo)*
 
@@ -80,4 +80,4 @@ I have also participated in a Research Experience for Undergraduate ([REU](https
 
 Pattern formation is the study of general mechanisms leading to the appearance of complex spatial patterns. It is motivated by the existence of similar patterns in seemingly dissimilar systems (e.g. animal coat markings, vegetation patterns, phase separation problems, convection patterns). Our project was focused on the exploration of spatio-temporal pattern formation via invasion fronts in the one and two dimensional Keller-Segel chemotaxis model.
 
-We have also helped our mentors in writing their article [M. Holzer &amp; A. Scheel **Criteria for pointwise growth and their role in invasion processes** Journal of Nonlinear Science 24 (2014), 661--709](https://link.springer.com/article/10.1007/s00332-014-9202-0) [(pdf)](https://www-users.cse.umn.edu/~scheel/preprints/da.pdf).
+We have also helped our mentors in writing their article [M. Holzer &amp; A. Scheel **Criteria for pointwise growth and their role in invasion processes** Journal of Nonlinear Science 24 (2014), 661--709](https://link.springer.com/article/10.1007/s00332-014-9202-0) [(PDF)](https://www-users.cse.umn.edu/~scheel/preprints/da.pdf).
