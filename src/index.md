@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ## whoami
 
-Software developer Jr. at [O-LAB](https://olab-studio.com) principally working as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html).
+Software developer Jr. at [OLAB](https://olab-studio.com) principally working as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html).
 
 Instructor at Butler University ([BU](https://www.butler.edu)) from August 2019 until May 2020 and at Indiana University Purdue University Indianapolis ([IUPUI](https://www.iupui.edu/)) from August 2014 until July 2019.
 
@@ -23,4 +23,4 @@ Co-founder of the [AMS Student Chapter at IUPUI](https://sites.google.com/view/a
 
 Juggling, coding (mostly in Mathematica, p5js, python), making origami, and, most importantly, playing with animals.
 
-{% image "assets/img/EkBalam.jpg", "Stefano on the Acroplis of Ek' Balam", "View from the Acropolis of Ek' Balam." %}
+{% image "assets/img/EkBalam.jpg", "", "View from the Acropolis of Ek' Balam." %}

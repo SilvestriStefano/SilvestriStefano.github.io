@@ -14,7 +14,7 @@ During the pandemic I helped my brother [Luciano](https://lucianogsilvestri.gith
 
 In mid September 2021 I enrolled in a 14(+3)-weeks bootcamp [EPICODE School](https://epicode.com) to learn about Full Stack development.
 
-Currently, I am a software developer at [O-LAB](https://olab-studio.com) and I work as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html). My work often involves leveraging REST APIs, streamlining data analytics processes, and automating complex tasks. Of course, I make sure to document everything I develop whether or not it is required.
+Currently, I am a software developer at [OLAB](https://olab-studio.com) and I work as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html). My work often involves leveraging REST APIs, streamlining data analytics processes, and automating complex tasks. Of course, I make sure to document everything I develop whether or not it is required.
 
 On the side, I am developing in Python some tools to help in my maths research. The [source code](https://github.com/silvestriStefano/coreEntropy_neighborIFS/) is available on GitHub. I am still not set on the name though, so it might change in the future *(if and)* when it is complete.
 

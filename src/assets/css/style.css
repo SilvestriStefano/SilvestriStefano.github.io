@@ -250,7 +250,7 @@ hr {
 /* BODY */
 
 .main-layout {
-  grid-template-columns: minmax(4vw, 1fr) minmax(15rem, 75rem) minmax(4vw, 1fr);
+  grid-template-columns: minmax(4vw, 1fr) minmax(15rem, 80ch) minmax(4vw, 1fr);
   grid-template-rows:
     auto 1fr auto;
   min-height: 100vh;
