@@ -35,7 +35,7 @@ function posterList(items) {
     items.forEach((item) => {
         list += `<li><cite>"${md.renderInline(item.title)}"</cite> `;
         list += `<em>${item.authors}</em> <strong>${item.conference}</strong> <time>${item.date}</time>.`;
-        list += (item.file) ? ` <a href="${item.file}">(.pdf)</a>` : '';
+        list += (item.file) ? ` <a href="${item.file}" download>(PDF <svg aria-hidden="true" focusable="false"width="18px" height="18px" role="img"><use href="#_pdf"></svg>)</a>` : '';
         list += '</li>';
     }
     );
@@ -69,10 +69,14 @@ function publicationsList(items) {
             if (item.journallink) {
                 list += `<a href="${item.journallink}">Journal`;
                 if (item.doi) list += ` DOI:${item.doi}`;
+                if (item.journallink.indexOf("pdf")>-1) list+=` (PDF <svg aria-hidden="true" focusable="false"width="18px" height="18px" role="img"><use href="#_pdf"></svg>)`;
                 list += '</a> ';
             }
         }
-        if (item.preprint) list += `<a href="${item.preprint}">Preprint (.pdf)</a> `;
+        if (item.preprint) {
+            if (item.preprint.indexOf("pdf")>-1) list += `<a href="${item.preprint}" download>Preprint (PDF <svg aria-hidden="true" focusable="false"width="18px" height="18px" role="img"><use href="#_pdf"></svg>)</a>`;
+            else list += `<a href="${item.preprint}">Preprint (arXiv)</a> `;
+        }    
         if (item.abstract) {
             list += `<details id="abstract-pub-${index}"><summary>abstract</summary>`;
             list += `<div id="pub-${index}" class="abstract">${md.renderInline(item.abstract)}</div>`;
@@ -97,7 +101,7 @@ function seminarList(items) {
     items.forEach((item, index) => {
         list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (${item.date})`;
         if (item.abstract) list += ` <button type="button" id="abstract-seminar-${index}" class="btn-abstract" aria-controls="seminar-${index}" aria-expanded="false">abstract</button>`;
-        list += `<p><em>${item.name}</em> at <strong>${item.university}</strong></p></li>`;
+        list += `<span><em>${item.name}</em> at <strong>${item.university}</strong></span></li>`;
         if (item.abstract) list += ` <div id="seminar-${index}" aria-label="abstract-seminar-${index}" class="abstract" hidden>${md.renderInline(item.abstract)}</div>`;
     });
     list += '</ul>';
@@ -109,7 +113,7 @@ function colloquiumList(items) {
     items.forEach((item, index) => {
         list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (${item.date})`;
         if (item.abstract) list += ` <button type="button" id="abstract-colloquium-${index}" class="btn-abstract" aria-controls="colloquium-${index}" aria-expanded="false">abstract</button>`;
-        list += `<p><em>${item.name}</em> at <strong>${item.university}</strong></p>`;
+        list += `<span><em>${item.name}</em> at <strong>${item.university}</strong></span>`;
         if (item.abstract) list += ` <div id="colloquium-${index}" aria-label="abstract-colloquium-${index}" class="abstract" hidden>${md.renderInline(item.abstract)}</div>`;
         list += '</li>';
     });
@@ -122,7 +126,7 @@ function workshopList(items) {
     items.forEach((item, index) => {
         list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (<time>${item.date}</time>)`;
         if (item.abstract) list += ` <button type="button" id="abstract-workshop-${index}" class="btn-abstract" aria-controls="workshop-${index}" aria-expanded="false">abstract</button>`;
-        list += '<p><em>' + ((item.link) ? `<a href="${item.link}">${item.name}</a>` : `${item.name}`) + '</em></p>';
+        list += '<span><em>' + ((item.link) ? `<a href="${item.link}">${item.name}</a>` : `${item.name}`) + '</em></span>';
         if (item.abstract) list += ` <div id="workshop-${index}" aria-label="abstract-workshop-${index}" class="abstract" hidden>${md.renderInline(item.abstract)}</div>`;
         list += '</li>';
     });
@@ -133,11 +137,11 @@ function workshopList(items) {
 function conferenceList(items) {
     let list = '<ul role="list">';
     items.forEach((item) => {
-        list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (<time>${item.date}</time>)<p><em>`;
+        list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (<time>${item.date}</time>)<span><em>`;
         list += (item.link) ? `<a href="${item.link}">${item.name}</a>` : `${item.name}`;
         list += '</em>' + ((item.session) ? `: ${item.session}` : '');
         if (item.abstract) list += ` <button type="button" id="abstract-conference-${index}" class="btn-abstract" aria-controls="conference-${index}" aria-expanded="false">abstract</button>`;
-        list += '</p>';
+        list += '</span>';
         if (item.abstract) list += ` <div id="conference-${index}" aria-label="abstract-conference-${index}" class="abstract" hidden>${md.renderInline(item.abstract)}</div>`;
         list += '</li>';
     });

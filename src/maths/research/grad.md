@@ -36,7 +36,7 @@ attThree:
 
 ## Research Focus
 My research interests lie in complex dynamical systems, iterated function systems, symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.
-{% image "assets/img/grad/Christiane_Hair.png", "Image of a set built by stacking Cantor sets with continuously varying scaling factors", "*Acacia Trees* (modified version of [Christiane's Hair](https://www.tandfonline.com/doi/abs/10.4169/amer.math.monthly.120.09.771)) a set built by stacking Cantor sets with continuously varying scaling factors." %}
+{% image "assets/img/grad/Christiane_Hair.png", "", "*Acacia Trees* (modified version of [Christiane's Hair](https://www.tandfonline.com/doi/abs/10.4169/amer.math.monthly.120.09.771)) a set built by stacking Cantor sets with continuously varying scaling factors." %}
 
 ## Research at IUPUI and Current
 My research project concerns two subsets of the unit disk. The set $\mathcal{M}$ is the closure of the set of roots in $\mathbb{D}$ of polynomials with coefficients in $\lbrace-1,0,+1\rbrace$. Similarly, the set $\mathcal{M}_0$ is the closure of the set of roots in $\mathbb{D}$ of with coefficients in $\lbrace-1,+1\rbrace$, commonly known as Littlewood's polynomials. By their definition then we have $\mathcal{M}_0\subset\mathcal{M}$.
@@ -51,11 +51,7 @@ Interest in these sets spiked recently after [G. Tiozzo](https://academic.oup.co
 
 The limit set is the unique invariant compact set satisfying $\mathsf{A}_\lambda=\mathfrak{s}_-(\mathsf{A}_\lambda)\cup\mathfrak{s}_+(\mathsf{A}_\lambda)$. Some examples of $\mathsf{A}_\lambda$ are shown above. The left set is $\mathfrak{s}_-(\mathsf{A}_\lambda)$, the ''minus'' copy of $\mathsf{A}_\lambda$; while the right one is $\mathfrak{s}_+(\mathsf{A}_\lambda)$, the ''plus'' copy of $\mathsf{A}_\lambda$. As you can see these attractors are symmetric with respect to center $0$, and sometimes this point is not part of the attractor. You may also notice how the plus and minus copies can touch either at a finite set of points, or a curve, or overlap substantially. In the case the overlap is nonempty, it is easy to prove that $\mathsf{A}_\lambda$ is connected (a little harder, but possible, to show locally connected). In the opposite case, the attractor is totally disconnected and, hence, homeomorphic to a Cantor set. It can be shown then that
 $$
-\mathcal{M}=\left\{ \lambda\in\mathbb{D}~|~\mathsf{A}_\lambda\text{ is connected} \right\}
-$$ 
-and 
-$$
-\mathcal{M}_0=\left\{\lambda\in\mathbb{D}~|~0\in\mathsf{A}_\lambda\right\}.
+\mathcal{M}=\left\{ \lambda\in\mathbb{D}~|~\mathsf{A}_\lambda\text{ is connected} \right\}\qquad\text{ and }\qquad\mathcal{M}_0=\left\{\lambda\in\mathbb{D}~|~0\in\mathsf{A}_\lambda\right\}.
 $$
 The two sets are not at all equal! *This is not what happens with the Mandelbrot set!*.
 
@@ -65,11 +61,11 @@ The question of classifying these connected components of $\mathbb{D}\setminus\m
 
 Currently, I am working on extending these results using techniques from kneading theory and complex dynamics inspired by the work of [G. Tiozzo &amp; K. Lindsey](https://icerm.brown.edu/video_archive/?play=2099) and [K.L. Ero&#287;lu, S. Rohde, &amp; B. Solomyak](https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/quasisymmetric-conjugacy-between-quadratic-dynamics-and-iterated-function-systems/F7D829F84D00CEC3F3801D8BE1B06470).
 
-{% image "assets/img/grad/Uniformization.png", "Uniformization of the complement of the two parameter spaces.", "Uniformization of the complement of $\\mathcal{M}$ and $\\mathcal{M}_0$." %}
+{% image "assets/img/grad/Uniformization.png", "", "Uniformization of the complement of $\\mathcal{M}$ and $\\mathcal{M}_0$." %}
 
 Furthermore, I am developing a combinatorial method to describe the boundary of $\mathcal{M}$ around the point $\mathrm{i}/\sqrt{2}$ using techniques developed by [C. Bandt &amp; M. Mesing](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.505.5694&rep=rep1&type=pdf).
 
-{% image "assets/img/grad/window.png", "The set M in a neighborhood of the parameter i over square root of 2", "The set $\\mathcal{M}$ in a neighborhood of the parameter $i/\\sqrt{2}$." %}
+{% image "assets/img/grad/window.png", "", "The set $\\mathcal{M}$ in a neighborhood of the parameter $i/\\sqrt{2}$." %}
 
 ## Student Research Mentored
 In early-mid August each year the Department of Mathematics, Statistics, and Actuarial Science and the Department of Computer Science at Butler University organize the Mathematics Research Camp, a week long focused research experience for undergraduates.
