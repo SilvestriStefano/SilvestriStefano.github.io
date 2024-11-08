@@ -13,26 +13,32 @@ trich1:
   src: "assets/img/ugrad/CantorSet.jpg"
   alt: "The Julia set for lambda=0.2 when n=4 is a Cantor set."
   caption: "$z^4+0.2/z^4$"
+  preset: "table"
 trich2:
   src: "assets/img/ugrad/CantorCurves.jpg"
   alt: "The Julia set for lambda=0.04 when n=4 is a Cantor set of curves."
   caption: "$z^4+0.04/z^4$"
+  preset: "table"
 trich3:
   src: "assets/img/ugrad/SierpinskiCurve.jpg"
   alt: "The Julia set for lambda=-0.1 when n=4 is a Sierpinski curve."
   caption: "$z^4-0.1/z^4$"
+  preset: "table"
 j17:
   src: "assets/img/ugrad/J1-7.jpg"
   alt: "The fist of the three distinct Julia set when n=2 containing a cycle of period 3."
   caption: "$z^2+(0.064+0.2\\textrm{i})/z^2$"
+  preset: "table"
 j27:
   src: "assets/img/ugrad/J2-7.jpg"
   alt: "The second of the three distinct Julia set when n=2 containing a cycle of period 3."
   caption: "$z^2+(-0.063+0.2101\\textrm{i})/z^2$"
+  preset: "table"
 j37:
   src: "assets/img/ugrad/J3-7.jpg"
   alt: "The third of the three distinct Julia set when n=2 containing a cycle of period 3."
   caption: "$z^2+(-0.2954+0.0601\\textrm{i})/z^2$"
+  preset: "table"
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}

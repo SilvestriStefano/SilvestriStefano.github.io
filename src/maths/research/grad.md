@@ -21,14 +21,17 @@ attOne:
   src: "assets/img/grad/att_tile.png"
   alt: "The limit set associated to the parameter 0.25+0.6614i"
   caption: "$\\lambda=\\dfrac{1}{4}(1+\\sqrt{7}i)$"
+  preset: "table"
 attTwo:
   src: "assets/img/grad/att_tilev2.png"
   alt: "The limit set associated to the parameter 0.5+0.5i"
   caption: "$\\lambda=\\dfrac{1}{2}(1+i)$"
+  preset: "table"
 attThree:
   src: "assets/img/grad/att_onesixth.png"
   alt: "The limit set associated to the parameter 0.366+520i"
   caption: "$\\lambda\\approx 0.366+0.520i$"
+  preset: "table"
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}

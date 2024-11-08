@@ -15,6 +15,15 @@ export const imageBg = async (src, classes, srOnly) => {
             return `${name}-${width}w.${format}`
         }
     });
-    let picUrl = picMetadata ? `--img-src: url('${picMetadata.jpeg[0].url}')` : "";
+    
+    let picUrl="";
+    if(picMetadata){
+        let text ='--img-src:';
+        for (let key in picMetadata){
+            text += `url('${picMetadata[key][0].url}'),`;
+        }
+        text = text.slice(0,-1);
+        picUrl = text+ ';';
+    } 
     return `<div class="${classes.join(' ')}" style="${picUrl}" ><span class="sr-only">${srOnly}</span></div>`;
 }
