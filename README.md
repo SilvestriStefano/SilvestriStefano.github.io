@@ -3,9 +3,7 @@
 ![screenshot](src/assets/img/screenshots/mywebsite.jpg)
 
 ## :seedling: Carbon footprint
-According to [Websitecarbon.com](https://www.websitecarbon.com) I achieve a carbon rating of **A<sup>+</sup>** on all pages. 
-
-The estimated carbon footprint for my
+According to [Websitecarbon.com](https://www.websitecarbon.com) I achieve a carbon rating of **A<sup>+</sup>** on all pages. The estimated carbon footprint for my
 - [Home](https://www.websitecarbon.com/website/silvestristefano-github-io/) page is of 0.01g of CO<sub>2</sub> 
 - [Maths](https://www.websitecarbon.com/website/silvestristefano-github-io-maths/) page is of 0.05g of CO<sub>2</sub> 
 - [Maths/Graduate](https://www.websitecarbon.com/website/silvestristefano-github-io-maths-research-grad/) page is of 0.05g of CO<sub>2</sub> 
@@ -13,12 +11,25 @@ The estimated carbon footprint for my
 - [Maths/Teaching](https://www.websitecarbon.com/website/silvestristefano-github-io-maths-teaching/) page is of 0.01g of CO<sub>2</sub>
 - [Developer](https://www.websitecarbon.com/website/silvestristefano-github-io-dev/) page is of 0.03g of CO<sub>2</sub>
 
+According to [Ecograder.com](https://ecograder.com/) I achieve a mean score of **80** on all pages.
+- on *Home* a score of **81** (**100** Pageweight; **89** UX Design; **0** Green Hosting) and a Digital Carbon Rating of **A<sup>+</sup>**. Here is the more detailed [report](https://ecograder.com/report/U15UsntFmeH5cxLmRs6vQh2Z).
+- on *Maths* a score of **81** (**100** Pageweight; **89** UX Design; **0** Green Hosting) and a Digital Carbon Rating of **A<sup>+</sup>**. Here is the more detailed [report](https://ecograder.com/report/xBfKWnvG1iWuUBjDqbZgYaWc).
+- on *Maths/Graduate* a score of **80** (**100** Pageweight; **89** UX Design; **0** Green Hosting) and a Digital Carbon Rating of **A<sup>+</sup>**. Here is the more detailed [report](https://ecograder.com/report/83GvHgwkoa7QZUmq6MZjMaOK).
+- on *Maths/Undergraduate* a score of **80** (**100** Pageweight; **89** UX Design; **0** Green Hosting) and a Digital Carbon Rating of **A<sup>+</sup>**. Here is the more detailed [report](https://ecograder.com/report/227GiOJL6rQ6C1HI2VXjtcz6).
+- on *Maths/Teaching* a score of **81** (**100** Pageweight; **89** UX Design; **0** Green Hosting) and a Digital Carbon Rating of **A<sup>+</sup>**. Here is the more detailed [report](https://ecograder.com/report/QJGS95fU2znXp3LEyfl0FnvM).
+- on *Developer* a score of **79** (**100** Pageweight; **89** UX Design; **0** Green Hosting) and a Digital Carbon Rating of **A<sup>+</sup>**. Here is the more detailed [report](https://ecograder.com/report/hUcC0xkmivaBle41X3jTu0Qy).
+
+The main issues are:
+- the Green Hosting score is 0 since GitHub is not in [The Green Web Foundation's hosting directory](https://www.thegreenwebfoundation.org/directory/)
+- the UX Design score because of the inefficient cache policy for the static assets (fonts, css, images) that GitHub Pages has set: `Cache-Control: max-age=600` (see for example [StackExchange:119286](https://webapps.stackexchange.com/questions/119286/caching-assets-in-website-served-from-github-pages); a possible [solution](https://mrmarble.dev/blog/caching-github-pages/))
+
+
 ## Website Info
 
 ### Goals
 I built the website with the following goals in mind:
 - [ ] be accessible (see [A11yProject](https://a11yproject.com) and [WAVE](https://wave.webaim.org/))
-- [ ] be responsible of the environment (see [WebsiteCarbon](https://websitecarbon.com) and [LowTechMagazine](https://solar.lowtechmagazine.com))
+- [ ] be responsible of the environment (see [WebsiteCarbon](https://websitecarbon.com), [The Green Web Foundation](https://www.thegreenwebfoundation.org/), [Ecograder](https://ecograder.com/), and [LowTechMagazine](https://solar.lowtechmagazine.com))
 - [ ] have good SEO
 
 So far, I am happy with the results, but alas, it is always a work in progress.
