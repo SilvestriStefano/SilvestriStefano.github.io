@@ -25,9 +25,9 @@ navOptions:
 ---
 
 ## Teaching
-In the Spring of 2018 I received the *Outstanding Graduate Student Teaching Award* from the School of Science at [IUPUI](https://science.iupui.edu/)
+In the Spring of 2018 I received the *Outstanding Graduate Student Teaching Award* from the School of Science at [IUPUI](https://science.indianapolis.iu.edu/)
 
-In the Fall of 2017 I received the [Certificate in College Teaching](https://ctl.iupui.edu/Programs/TA-Development/Certificate-in-College-Teaching) from the Center of Teaching and Learning at [IUPUI](https://iupui.edu/).
+In the Fall of 2017 I received the *Certificate in College Teaching* (now called [Emerging Scholars of College Instruction](https://ctl.indianapolis.iu.edu/Programs/TA-Development/Emerging-Scholars-of-College-Instruction)) from the Center of Teaching and Learning at [IUPUI](https://indianapolis.iu.edu/).
 
 Below you can find a list of all the classes I have taught.
       
