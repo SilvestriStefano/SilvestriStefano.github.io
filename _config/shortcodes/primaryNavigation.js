@@ -14,6 +14,6 @@ export const primaryNavigation = (pageNav, page) => {
     let nav = '';
     pageNav.forEach((entry) => nav += createLi(entry,page))
 
-    return `<menu id="primary-navigation" class="primary-navigation flex">${nav}</menu>`;
+    return `<ul id="primary-navigation" class="primary-navigation flex">${nav}</ul>`;
 
 };
