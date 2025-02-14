@@ -492,7 +492,8 @@ span[data-category], [data-category]>cite {border-bottom: 0.125rem solid var(--c
   top: -2rem;
   border-radius: 25%;
   padding: 0.25rem;
-  background-color: var(--clr-green);
+  background-color: var(--clr-fg);
+  color: var(--clr-bg);
   font-weight: 600;
 }
 .card-description > h4 {margin: 0 0 0.5em;}
