@@ -19,27 +19,27 @@
   line-gap-override: 0%; /* web font line-gap / (web font UPM * size-adjust) */
 }
 :root {
-  /*Gruvbox Dark*/
-  --clr-bg: #282828;
-  --clr-bg-hsl: 0 0% 16%;
-  --clr-bgh: #1d2021;
-  --clr-red: #cc241d;
-  --clr-green: #98971a;
-  --clr-yellow: #d79921;
-  --clr-blue: #458588;
-  --clr-purple: #b16286;
-  --clr-aqua: #689d6a;
-  --clr-gray: #a89984;
+  /*Catppuccin Mocha*/
+  --clr-bg: #1E1E2E;
+  --clr-bg-hsl: 240 21% 15%;
+  --clr-bgh: #585B70;
+  --clr-red: #F38BA8;
+  --clr-green: #A6E3A1;
+  --clr-yellow: #F9E2AF;
+  --clr-blue: #89B4FA;
+  --clr-purple: #F5C2E7;
+  --clr-aqua: #94E2D5;
+  --clr-gray: #F5E0DC;
 
-  --clr-gray_a: #928374;
-  --clr-red_a: #fb4934;
-  --clr-green_a: #b8bb26;
-  --clr-yellow_a: #fabd2f;
-  --clr-blue_a: #83a598;
-  --clr-purple_a: #d3869b;
-  --clr-aqua_a: #8ec07c;
-  --clr-fg: #ebdbb2;
-  --clr-fg-hsl: 43 59% 81%;
+  --clr-gray_a: #F5E0DC;
+  --clr-red_a: #F38BA8;
+  --clr-green_a: #A6E3A1;
+  --clr-yellow_a: #F9E2AF;
+  --clr-blue_a: #89B4FA;
+  --clr-purple_a: #F5C2E7;
+  --clr-aqua_a: #94E2D5;
+  --clr-fg: #CDD6F4;
+  --clr-fg-hsl: 226 64% 88%;
 
   /* Fonts */
   --ff-serif: 'NeoEuler', 'Palatino Linotype', Georgia, serif;
@@ -104,21 +104,21 @@
 @media (prefers-color-scheme: light) {
   /*TODO: change this to a class that is added via js to body */
   :root {
-    /*Gruvbox Ligth*/
-    --clr-bg: #fbf1c7;
-    --clr-bg-hsl: 48 87% 88%;
+    /*Catppuccin Latte*/
+    --clr-bg: #EFF1F5;
+    --clr-bg-hsl: 220 23% 95%;
     --clr-bgh: #f9f5d7;
     --clr-gray: #7c6f64;
 
-    --clr-gray_a: #928374;
-    --clr-red_a: #9d0006;
-    --clr-green_a: #79740e;
-    --clr-yellow_a: #b57614;
-    --clr-blue_a: #076678;
-    --clr-purple_a: #8f3f71;
-    --clr-aqua_a: #427b58;
-    --clr-fg: #3c3836;
-    --clr-fg-hsl: 20 5% 22%;
+    --clr-gray_a: #DC8A78;
+    --clr-red_a: #D20F39;
+    --clr-green_a: #40A02B;
+    --clr-yellow_a: #DF8E1D;
+    --clr-blue_a: #1E66F5;
+    --clr-purple_a: #EA76CB;
+    --clr-aqua_a: #179299;
+    --clr-fg: #4C4F69;
+    --clr-fg-hsl: 234 16% 35%;
   }
 }
 [hidden] {display: none !important;}
