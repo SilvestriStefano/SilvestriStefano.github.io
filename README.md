@@ -93,7 +93,7 @@ I used the following fluid type scale form [utopia.fyi](https://utopia.fyi/type/
 *Reference*: https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale (as of 2023-02-01 last updated on June 6th 2021).
 
 ### Color Palette
-I have decided to go with [Gruvbox](https://github.com/morhetz/gruvbox) Light and Dark palettes.
+I have decided to go with [Catppuccin](https://catppuccin.com/) Mocha and Latte palette. Previously I used [Gruvbox](https://github.com/morhetz/gruvbox) Light and Dark palettes.
 
 ### Logo
 I have designed the logo myself. It is a doodle I used to do when bored. Obviously I did the math behind it and learned how to create svgs just so I could put it on the website. Eventually I will write a note about it on the website.
