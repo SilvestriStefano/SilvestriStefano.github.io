@@ -484,9 +484,9 @@ span[data-category], [data-category]>cite {border-bottom: 0.125rem solid var(--c
 .card-description {
   position: relative;
   flex-direction: column;
-	padding: 1em 0.5em;
+  padding: 1em 0.5em;
 }
-.card-description::before {
+/* .card-description::before {
   content: var(--tag,'');
   position: absolute;
   top: -2rem;
@@ -495,7 +495,30 @@ span[data-category], [data-category]>cite {border-bottom: 0.125rem solid var(--c
   background-color: var(--clr-fg);
   color: var(--clr-bg);
   font-weight: 600;
+} */
+.ribbon {
+    font-weight: 600;
+    color: var(--clr-bg);
 }
+.ribbon {
+    --r: .4em;
+    --c: var(--clr-fg);
+
+    position: absolute;
+    top: -1rem;
+    left: calc(-1*var(--r));
+    padding: 0.25em .5em calc(2*var(--r));
+    border-radius: var(--r) 0 0 var(--r);
+    background: 
+        radial-gradient(100% 50% at left,var(--c) 98%,#0000 101%)
+        100% 0/.5lh calc(100% - 2*var(--r)),
+        radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 
+        0 100%/var(--r) calc(2*var(--r)),
+        conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,var(--c) 0)
+        0 0/calc(101% - .5lh) 100%;
+    background-repeat: no-repeat;   
+}
+
 .card-description > h4 {margin: 0 0 0.5em;}
 .card-img {
   background-image: var(--img-src,var(--clr-bg));
