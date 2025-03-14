@@ -5,6 +5,7 @@ import eleventyNavigation from '@11ty/eleventy-navigation';
 
 export default function(eleventyConfig) {
   // Passthrough
+  eleventyConfig.addPassthroughCopy("./src/_headers");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/css/");
   eleventyConfig.addPassthroughCopy("./src/assets/img/favicon/*.(svg|ico)");

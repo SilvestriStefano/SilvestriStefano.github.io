@@ -1,0 +1,10 @@
+/*  
+  Access-Control-Allow-Origin: *
+  Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none';
+  Permissions-Policy: document-domain=()
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+
+https://stefanosilvestri.pages.dev/*
+  X-Robots-Tag: noindex
