@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ## whoami
 
-Software developer Jr. at [OLAB](https://olab-studio.com) principally working as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html).
+Software developer at [OLAB](https://olab-studio.com) principally working as a solutions consultant with [SAS Italy](https://www.sas.com/it_it/home.html).
 
 Instructor at Butler University ([BU](https://www.butler.edu)) from August 2019 until May 2020 and at Indiana University Purdue University Indianapolis (IUPUI now called [Indianapolis IU](https://indianapolis.iu.edu/)) from August 2014 until July 2019.
 

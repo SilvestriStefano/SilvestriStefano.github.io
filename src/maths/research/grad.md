@@ -56,7 +56,11 @@ The limit set is the unique invariant compact set satisfying
 $$\mathsf{A}_\lambda=\mathfrak{s}_-(\mathsf{A}_\lambda)\cup\mathfrak{s}_+(\mathsf{A}_\lambda).$$ 
 Some examples of $\mathsf{A}_\lambda$ are shown above. The left set is $\mathfrak{s}_-(\mathsf{A}_\lambda)$, the ''minus'' copy of $\mathsf{A}_\lambda$; while the right one is $\mathfrak{s}_+(\mathsf{A}_\lambda)$, the ''plus'' copy of $\mathsf{A}_\lambda$. As you can see these attractors are symmetric with respect to center $0$, and sometimes this point is not part of the attractor. You may also notice how the plus and minus copies can touch either at a finite set of points, or a curve, or overlap substantially. In the case the overlap is nonempty, it is easy to prove that $\mathsf{A}_\lambda$ is connected (a little harder, but possible, to show locally connected). In the opposite case, the attractor is totally disconnected and, hence, homeomorphic to a Cantor set. It can be shown then that
 $$
-\mathcal{M}=\left\{ \lambda\in\mathbb{D}~|~\mathsf{A}_\lambda\text{ is connected} \right\}\qquad\text{ and }\qquad\mathcal{M}_0=\left\{\lambda\in\mathbb{D}~|~0\in\mathsf{A}_\lambda\right\}.
+\mathcal{M}=\left\{ \lambda\in\mathbb{D}~|~\mathsf{A}_\lambda\text{ is connected} \right\}
+$$
+and 
+$$
+\mathcal{M}_0=\left\{\lambda\in\mathbb{D}~|~0\in\mathsf{A}_\lambda\right\}.
 $$
 The two sets are not at all equal! *This is not what happens with the Mandelbrot set!*
 
