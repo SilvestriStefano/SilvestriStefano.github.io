@@ -1,14 +1,17 @@
 import md from '../../libraries/markdown.js';
-import {imageBg} from './imageBg.js';
+import {image} from './image.js';
 
 
 async function visualizationsList(items) {
     let liItems = await Promise.all(items.map(async (item) => {
-        let li = '<li class="flex card">';
-        let picture = await imageBg(item.thumbnail, ["card-img"], item.alt);
+        let li = '<li class="card">';
+        let picture = await image(item.thumbnail, item.alt, "", [],'thumb');
         li += picture;
-        li += `<article class="flex card-description"><h4>${md.renderInline(item.title)}</h4><p>${md.renderInline(item.description)}</p><span class="ribbon" aria-label="language">${item.language}</span>`;
-        li += `<a href="${item.link}" class="card-link">open</a></article></li>`;
+        li += `<h4>${md.renderInline(item.title)}</h4>`;
+        li += `<a href="${item.link}" class="card-link">open</a>`;
+        li += `<p><strong>Language</strong>: ${item.language}</p>`;
+        li += `<p>${md.renderInline(item.description)}</p>`;
+        li += '</li>'; 
         return li;
     }));
     return liItems.join('\n');
@@ -16,14 +19,16 @@ async function visualizationsList(items) {
 
 async function websList(items) {
     let liItems = await Promise.all(items.map(async (item) => {
-        let li = '<li class="flex card">';
-        let picture = await imageBg(item.thumbnail, ["card-img"], item.alt);
+        let li = '<li class="card">';
+        let picture = await image(item.thumbnail, item.alt, "", [],'thumb');
         li += picture;
-        li += `<article class="flex card-description"><h4>${md.renderInline(item.title)}</h4><p>${md.renderInline(item.description)}</p>`;
-        if (item.details.length > 0) li += `<p><strong>Details:</strong> ${item.details.join('; ')}.</p>`;
-        li += `<span class="ribbon" aria-label="framework">${item.framework}</span><a href="${item.link}" class="card-link">homepage</a>`
+        li += `<h4>${md.renderInline(item.title)}</h4>`;
         if (item.source) li += `<a href="${item.source}" class="card-link">source</a>`;
-        li += '</article></li>';
+        li += `<a href="${item.link}" class="card-link">homepage</a>`;
+        li += `<p><strong>Framework</strong>: ${item.framework}</p>`;
+        if (item.details.length > 0) li += `<p><strong>Details:</strong> ${item.details.join('; ')}.</p>`;
+        li += `<p>${md.renderInline(item.description)}</p>`;
+        li += '</li>';	
         return li;
     }));
     return liItems.join('\n');
