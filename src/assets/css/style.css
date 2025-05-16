@@ -263,6 +263,10 @@ footer {
   text-align: center;
   font-size: var(--fs-300);
 }
+.updated {
+    font-size: smaller;
+    font-style: italic;
+}
 .me {display: none;}
 @media screen and (min-width:64em){
   footer {grid-column: 2/3;} 
