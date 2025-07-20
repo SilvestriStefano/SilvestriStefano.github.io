@@ -24,6 +24,7 @@ const md = (() => {
             style: 'visually-hidden',
             assistiveText: title => `Permalink to section titled “${title}”`,
             visuallyHiddenClass: 'sr-only',
+            symbol: '🔗',
             wrapper: ['<div class="header_wrapper">', '</div>']
         })
     };

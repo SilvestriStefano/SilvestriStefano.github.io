@@ -1,7 +1,7 @@
 [
   {
     "title": "The Chaos Game",
-    "description": "Javascript implementation of a game designed by Voolich and Devaney. Three variations each with four level of difficulty.",
+    "description": "Javascript implementation of a game designed by Voolich and Devaney. Four variations each with four level of difficulty. I have added the \"Diamond\" variation of the game.",
     "link": "https://editor.p5js.org/silvas/full/t7mLU3dyF",
     "language": "p5.js",
     "thumbnail": "assets/img/screenshots/TheChaosGame.jpg",
