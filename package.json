@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "rm -rf public && npx @11ty/eleventy --serve",
-    "build": "rm -rf public && npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy"
   },
   "keywords": [
     "11ty",
