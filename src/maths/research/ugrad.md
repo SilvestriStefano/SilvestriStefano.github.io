@@ -39,6 +39,7 @@ j37:
   alt: "The third of the three distinct Julia set when n=2 containing a cycle of period 3."
   caption: "$z^2+(-0.2954+0.0601\\textrm{i})/z^2$"
   preset: "table"
+modifiedOn: 2025-03-30
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}

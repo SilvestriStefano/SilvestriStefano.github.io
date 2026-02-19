@@ -32,6 +32,7 @@ attThree:
   alt: "The limit set associated to the parameter 0.366+520i"
   caption: "$\\lambda\\approx 0.366+0.520i$"
   preset: "table"
+modifiedOn: 2025-03-30
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}
