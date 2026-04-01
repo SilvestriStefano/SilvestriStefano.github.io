@@ -1,26 +1,31 @@
 {
-  "name": "silvas",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "personal website of Stefano Silvestri Ph.D.",
-  "main": "index.html",
-  "scripts": {
-    "start": "rm -rf public && npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
-  },
-  "keywords": [
-    "11ty",
-    "eleventy",
-    "personal"
-  ],
-  "author": "Stefano Silvestri, Ph.D.",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
-    "@11ty/eleventy-img": "^6.0.4",
-    "@11ty/eleventy-navigation": "^1.0.5",
-    "markdown-it": "^14.1.1",
-    "markdown-it-anchor": "^9.2.0",
-    "markdown-it-mathjax3": "^5.2.0"
-  }
+	"name": "silvas",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "personal website of Stefano Silvestri Ph.D.",
+	"main": "index.html",
+	"scripts": {
+		"start": "rm -rf public && npx @11ty/eleventy --serve",
+		"build": "npx @11ty/eleventy"
+	},
+	"keywords": [
+		"11ty",
+		"eleventy",
+		"personal"
+	],
+	"author": "Stefano Silvestri, Ph.D.",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^3.1.5",
+		"@11ty/eleventy-img": "^6.0.4",
+		"@11ty/eleventy-navigation": "^1.0.5",
+		"markdown-it": "^14.1.1",
+		"markdown-it-anchor": "^9.2.0",
+		"markdown-it-mathjax3": "^4.3.2"
+	},
+	"overrides": {
+		"speech-rule-engine": {
+			"@xmldom/xmldom": "0.9.9"
+		}
+	}
 }
