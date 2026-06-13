@@ -1,6 +1,6 @@
 import markdownit from 'markdown-it'
 import anchor from 'markdown-it-anchor';
-import plugin from 'markdown-it-mathjax3';
+import math from "markdown-it-math/temml"
 
 const md = (() => {
 
@@ -17,6 +17,11 @@ const md = (() => {
     //     tags: "ams",
     //   }
     // };
+    const mathOptions = {
+        inlineDelimiters: ["$", ["$`", "`$"]],
+        inlineAllowWhiteSpacePadding: false,
+        blockDelimiters: "$$"
+    };
 
 
     const anchorOptions = {
@@ -30,7 +35,7 @@ const md = (() => {
     };
 
     const parser = markdownit(options)
-        .use(plugin)
+        .use(math, mathOptions)
         .use(anchor, anchorOptions);
     return parser;
 })();

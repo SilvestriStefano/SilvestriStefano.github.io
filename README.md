@@ -42,9 +42,12 @@ This website was built using the wonderful Static Site Generator [11ty](https://
 - [@11ty/eleventy-navigation](https://github.com/11ty/eleventy-navigation/) v1.0.5
 
 #### Other dependencies
-- [markdown-it](https://github.com/markdown-it/markdown-it) v14.2.0 with the following plugins
+- [markdown-it](https://github.com/markdown-it/markdown-it) (dependency of @11ty/eleventy v3.1.6) with the following plugins
   - [markdown-it-anchor](https://github.com/valeriangalliat/markdown-it-anchor) v9.2.0
-  - [markdown-it-mathjax3](https://github.com/wekan/markdown-it-mathjax3) v4.3.2
+  - [markdown-it-math](https://github.com/runarberg/markdown-it-math) v5.1.0
+    - using the [temml](https://github.com/ronkok/Temml) v0.11.11 renderer
+
+I have previously used [markdown-it-mathjax3](https://github.com/wekan/markdown-it-mathjax3) v4.3.2.
 
 ### Fonts
 
