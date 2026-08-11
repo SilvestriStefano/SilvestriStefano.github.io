@@ -13,7 +13,7 @@
 		"inpreparation": true
 	},
 	{
-		"title": "Sofic systems and extreme points in limit sets.",
+		"title": "Sofic systems and extreme points of self-affine limit sets.",
 		"authors": "**Silvestri, S.** and P&eacute;rez, R. A. ",
 		"category": "purem",
 		"abstract": "Given an iterated function system whose affine maps share a common contracting linear part, we characterize the points on the boundary of the attractor's convex hull via a sofic system described by a directed graph IFS on said boundary.",
@@ -27,7 +27,7 @@
 		"inpreparation": true
 	},
 	{
-		"title": "Bagel Bits: nibbles of an IFS parameter space.",
+		"title": "Bagel Bites: nibbles of an IFS parameter space.",
 		"authors": "P&eacute;rez, R. A. and **Silvestri, S.**",
 		"category": "purem",
 		"abstract": "An expository account of a 40-year old family of iterated function systems that captures many of the phenomena familiar from the classical Mandelbrot setting, like local connectivity and asymptotic similarity. The tools used for these structural results are not necessarily advanced, but the arguments are often quite subtle. We illustrate this with a careful rendering of Bousch's proof that the connectedness locus is itself connected. While technically sound, available proofs bury the core insight in formalism, and our version aims to make it more accessible.\n Many classical fractals appear naturally in the context of this family, arising from connections to other areas, notably the study of roots of polynomials with restricted coefficients, making it particularly rich and interesting. Recent years have seen a modest growth in interest, sparked by an exploratory article of Thurston, Tiozzo's work linking to the concept of core entropy in quadratic Julia sets, and the resolution of several prominent questions by Calegari, Koch and Walker.",
