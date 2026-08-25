@@ -62,7 +62,7 @@
     ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
       var(--fluid-bp)
   );
-  
+
   --f-1-min: 19.20;
   --f-1-max: 22.62;
   --fs-400: calc(
@@ -209,7 +209,7 @@ hr {
 
 @media (prefers-reduced-motion: reduce) {
     .logo ~ *, details[open] summary ~ *{animation: none;}
-} 
+}
 
 /* Utility classes */
 .grid {
@@ -269,7 +269,7 @@ footer {
 }
 .me {display: none;}
 @media screen and (min-width:64em){
-  footer {grid-column: 2/3;} 
+  footer {grid-column: 2/3;}
   header {
     flex-direction: row;
     align-items: center;
@@ -367,7 +367,7 @@ main a {
     background: var(--bg-x-pos) / 0% 100% no-repeat linear-gradient(var(--border-color),var(--border-color));
     transition: background-size 500ms;
 }
-main a:hover{ 
+main a:hover{
     --bg-x-pos:left;
     background: var(--bg-x-pos) / 100% 100% no-repeat linear-gradient(var(--border-color),var(--border-color));
     color: var(--clr-bg);
@@ -391,9 +391,9 @@ main li:not(:last-of-type) {margin-bottom: 0.8rem;}
 
 /* permalink stuff */
 .header_wrapper h2,
-.header_wrapper h3, 
-.header_wrapper h4, 
-.header_wrapper h5, 
+.header_wrapper h3,
+.header_wrapper h4,
+.header_wrapper h5,
 .header_wrapper h6 {display: inline;}
 .header-anchor {
     height: 1rem;
@@ -462,6 +462,28 @@ span[data-category], [data-category]>cite {border-bottom: 0.125rem solid var(--c
   border: 0.25rem solid var(--clr-fg);
 }
 
+[data-type]{
+	max-width: max-content;
+	position: relative;
+	padding: 0.625em 0.125em 0.125em 0.625em;
+	border-left: solid var(--clr-fg);
+	font-style: italic;
+}
+[data-type]::before{
+	position: absolute;
+	content: attr(data-type);
+	left: -0.2em;
+    top: -1em;
+    max-width: max-content;
+    border-width: 0.125em;
+	border-color: var(--clr-fg);
+	border-style: solid;
+    background-color: var(--clr-blue_a);
+    color: var(--clr-bg);
+    font-size: var(--fs-300);
+    font-style: normal;
+    text-transform: capitalize;
+}
 /* Portfolio stuff */
 .portfolio {
     flex-direction: column;
@@ -489,7 +511,7 @@ span[data-category], [data-category]>cite {border-bottom: 0.125rem solid var(--c
 }
 
 .card {
-  font-size: var(--fs-300); 
+  font-size: var(--fs-300);
   flex-grow: 1;
 }
 .card:focus-within {

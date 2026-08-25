@@ -6,7 +6,7 @@ carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-mat
 eleventyNavigation:
   key: Ugrad
   parent: Maths
-  order: 220
+  order: 230
 navOptions:
   includeSelf: true
 trich1:

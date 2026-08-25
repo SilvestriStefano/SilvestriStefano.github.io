@@ -6,7 +6,7 @@ carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-mat
 eleventyNavigation:
   key: Grad
   parent: Maths
-  order: 210
+  order: 220
 navOptions:
   includeSelf: true
 dataM:
@@ -32,17 +32,13 @@ attThree:
   alt: "The limit set associated to the parameter 0.366+520i"
   caption: "$\\lambda\\approx 0.366+0.520i$"
   preset: "table"
-modifiedOn: 2025-03-30
+modifiedOn: 2026-08-25
 ---
 
 {% set siblingPages = collections.all | eleventyNavigation("Maths") %}
 {% secondaryNavigation collections.all | eleventyNavigationBreadcrumb("Maths", { includeSelf: true }), siblingPages, page  %}
 
-## Research Focus
-My research interests lie in complex dynamical systems, iterated function systems, symbolic dynamics, fractal geometry, aperiodic tilings &amp; quasicrystals.
-{% image "assets/img/grad/Christiane_Hair.png", "", "*Acacia Trees* (modified version of [Christiane's Hair](https://www.tandfonline.com/doi/abs/10.4169/amer.math.monthly.120.09.771)) a set built by stacking Cantor sets with continuously varying scaling factors." %}
-
-## Research at IUPUI and Current
+## Research at IUPUI
 My research project concerns two subsets of the unit disk. The set $\mathcal{M}$ is the closure of the set of roots in $\mathbb{D}$ of polynomials with coefficients in $\lbrace-1,0,+1\rbrace$. Similarly, the set $\mathcal{M}_0$ is the closure of the set of roots in $\mathbb{D}$ of with coefficients in $\lbrace-1,+1\rbrace$, commonly known as Littlewood's polynomials. By their definition then we have $\mathcal{M}_0\subset\mathcal{M}$.
 
 {% figureGroup [dataM, dataM0], "The two sets M and M_0" %} 
@@ -69,11 +65,11 @@ These sets were first introduced by [M.F. Barnsley &amp; A.N. Harrington](https:
 
 The question of classifying these connected components of $\mathbb{D}\setminus\mathcal{M}$ is still open; however the results in my thesis, are a step in that direction. I concentrated on boundary parameters that are not buried. I gave sufficient conditions on $\lambda\in\partial\mathcal{M}$ or $\partial\mathcal{M}_0$ to guarantee it is accessible from $\mathbb{D}\setminus\mathcal{M}$. Moreover, I showed that a parameters in $\partial\mathcal{M}$ is accessible from the largest connected component of $\mathbb{D}\setminus\mathcal{M}$ by directly constructing a path connecting it to $0$.
 
-Currently, I am working on extending these results using techniques from kneading theory and complex dynamics inspired by the work of [G. Tiozzo &amp; K. Lindsey](https://icerm.brown.edu/video_archive/?play=2099) and [K.L. Ero&#287;lu, S. Rohde, &amp; B. Solomyak](https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/quasisymmetric-conjugacy-between-quadratic-dynamics-and-iterated-function-systems/F7D829F84D00CEC3F3801D8BE1B06470).
+Future plans were on extending these results using techniques from kneading theory and complex dynamics inspired by the work of [G. Tiozzo &amp; K. Lindsey](https://icerm.brown.edu/video_archive/?play=2099) and [K.L. Ero&#287;lu, S. Rohde, &amp; B. Solomyak](https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/quasisymmetric-conjugacy-between-quadratic-dynamics-and-iterated-function-systems/F7D829F84D00CEC3F3801D8BE1B06470).
 
 {% image "assets/img/grad/Uniformization.png", "", "Uniformization of the complement of $\\mathcal{M}$ and $\\mathcal{M}_0$." %}
 
-Furthermore, I am developing a combinatorial method to describe the boundary of $\mathcal{M}$ around the point $\mathrm{i}/\sqrt{2}$ using techniques developed by [C. Bandt &amp; M. Mesing](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.505.5694&rep=rep1&type=pdf).
+Furthermore, I was developing a combinatorial method to describe the boundary of $\mathcal{M}$ around the point $\mathrm{i}/\sqrt{2}$ using techniques developed by [C. Bandt &amp; M. Mesing](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.505.5694&rep=rep1&type=pdf).
 
 {% image "assets/img/grad/window.png", "", "The set $\\mathcal{M}$ in a neighborhood of the parameter $i/\\sqrt{2}$." %}
 

@@ -17,10 +17,11 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.6",
-		"@11ty/eleventy-img": "^6.0.4",
+		"@11ty/eleventy-img": "^7.0.0",
 		"@11ty/eleventy-navigation": "^1.0.5",
 		"markdown-it-anchor": "^9.2.0",
+		"markdown-it-attrs": "^5.0.1",
 		"markdown-it-math": "^5.1.0",
-        "temml": "^0.11.11"
+		"temml": "^0.11.11"
 	}
 }

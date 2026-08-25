@@ -1,6 +1,7 @@
 import markdownit from 'markdown-it'
 import anchor from 'markdown-it-anchor';
-import math from "markdown-it-math/temml"
+import math from "markdown-it-math/temml";
+import attr from 'markdown-it-attrs';
 
 const md = (() => {
 
@@ -36,7 +37,8 @@ const md = (() => {
 
     const parser = markdownit(options)
         .use(math, mathOptions)
-        .use(anchor, anchorOptions);
+        .use(anchor, anchorOptions)
+			.use(attr);
     return parser;
 })();
 
