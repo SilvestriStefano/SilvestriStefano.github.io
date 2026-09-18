@@ -1,5 +1,6 @@
 Sitemap: https://silvestristefano.github.io/sitemap.xml
 
+<!-- ai-robots-txt:start -->
 User-agent: AddSearchBot
 User-agent: AgentTimes
 User-agent: AI2Bot
@@ -167,6 +168,7 @@ User-agent: YiyanBot
 User-agent: YouBot
 User-agent: ZanistaBot
 Disallow: /
+<!-- ai-robots-txt:end -->
 
 User-agent: *
 Disallow:
