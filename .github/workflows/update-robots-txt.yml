@@ -1,0 +1,60 @@
+name: Sync robots
+on:
+  schedule:
+    - cron: '0 6 * * *'   # every day at 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      - name: Fetch upstream robots.txt
+        run: |
+          curl -sSL -o /tmp/upstream-robots.txt \
+            https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/main/robots.txt
+
+      - name: Merge into robots.txt.njk
+        run: |
+          FILE="src/robots.txt.njk"
+          START="<!-- ai-robots-txt:start -->"
+          END="<!-- ai-robots-txt:end -->"
+
+          if ! grep -qF "$START" "$FILE" || ! grep -qF "$END" "$FILE"; then
+            echo "Marker comments not found in $FILE" >&2
+            exit 1
+          fi
+
+          awk -v start="$START" -v end="$END" -v content_file="/tmp/upstream-robots.txt" '
+            BEGIN { while ((getline line < content_file) > 0) content = content line "\n" }
+            $0 ~ start { print; printf "%s", content; skipping=1; next }
+            $0 ~ end   { skipping=0 }
+            !skipping { print }
+          ' "$FILE" > /tmp/merged.njk
+          mv /tmp/merged.njk "$FILE"
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet -- src/robots.txt.njk; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create pull request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: sync robots.txt block from ai-robots-txt/ai.robots.txt"
+          title: "Update AI-bot list in robots.txt.njk"
+          body: |
+            Automated sync from https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
+          branch: chore/sync-ai-robots-txt
+          delete-branch: true
