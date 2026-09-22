@@ -16,15 +16,15 @@
 		"title": "Sofic systems and extreme points of self-affine limit sets.",
 		"authors": "**Silvestri, S.** and P&eacute;rez, R. A. ",
 		"category": "purem",
-		"abstract": "Given an iterated function system whose affine maps share a common contracting linear part, we characterize the points on the boundary of the attractor's convex hull via a sofic system described by a directed graph IFS on said boundary.",
-		"journal": "",
+		"abstract": "Given any iterated function system (IFS) on the plane whose affine transformations share the same contracting matrix $T$, we characterize the set of extreme points of the attractor $A$ (along the convex hull $\\operatorname{conv}(A)$) in terms of a directed graph on the edges of $\\operatorname{conv}(A)$. This graph corresponds to a sofic system on the coding space associated to the IFS. When T is proper orthogonal or purely real, we give conditions for $\\operatorname{conv}(A)$ to be a finite polygon and, under additional symmetry of the transformations, we give conditions for $A$ itself to coincide with $\\operatorname{conv}(A)$.",
+		"journal": "submitted",
 		"journallink": "",
 		"volume": "",
 		"pages": "",
 		"year": "2026",
 		"doi": "",
-		"preprint": "",
-		"inpreparation": true
+		"preprint": "https://arxiv.org/abs/2609.23174",
+		"inpreparation": false
 	},
 	{
 		"title": "Bagel Bites: nibbles of an IFS parameter space.",
