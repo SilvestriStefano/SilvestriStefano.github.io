@@ -47,7 +47,7 @@ Interest in these sets spiked recently after [G. Tiozzo](https://academic.oup.co
 
 {% figureGroup [attOne, attTwo, attThree], "Three examples of limit sets: the Tame Twin Dragon, the Twin Dragon, and a Dendrite." %}
 
-*See more attractors by playing with my [p5.js](https://p5js.org) code: [just the limit set](https://editor.p5js.org/silvas/full/3iKx8wslr) or [the limit set and parameter plane](https://editor.p5js.org/silvas/full/2GL02NekB) (the first load might take a little bit).*
+*See more attractors by playing with Alden Walker beautiful and efficient [web app](https://aldenwalker.org/schottky.html) or my [p5.js](https://p5js.org) code: [just the limit set](https://editor.p5js.org/silvas/full/3iKx8wslr) or [the limit set and parameter plane](https://editor.p5js.org/silvas/full/2GL02NekB) (the first load might take a little bit).*
 
 The limit set is the unique invariant compact set satisfying
 $$\mathsf{A}_\lambda=\mathfrak{s}_-(\mathsf{A}_\lambda)\cup\mathfrak{s}_+(\mathsf{A}_\lambda).$$ 
