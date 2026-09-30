@@ -13,6 +13,34 @@
 		"inpreparation": true
 	},
 	{
+		"title": "Self-similar quasiarcs with Chebyshev dynamics.",
+		"authors": "**Silvestri, S.** ",
+		"category": "purem",
+		"abstract": "We study the iterated function system $\\{f_{\\mathrm{R}}(z)=\\lambda z+1,f_{\\mathrm{L}}(z)=(\\lambda-1)z-1\\}$. For every $\\lambda$ with $\\lvert\\lambda\\rvert<1$ and $\\lvert\\lambda-1\\rvert<1$ the images $f_{\\mathrm{R}}(A)$ and $f_{\\mathrm{L}}(A)$ of the attractor $A$ share the point $\\mathsf{o}_\\lambda=1-2\\lambda$, so the connectedness locus is the whole lens. When $\\mathsf{o}_\\lambda$ is the only common point, the inverse branches define an expanding map $q$ on $A$, and we show that $A$ has bounded turning and that $(A,q)$ is quasisymmetrically conjugate to $([-2,2],z^2-2)$. As a consequence, $A$ is a quasiarc. We then study the set $\\mathcal{T}$ of such parameters and show that it is an open set and lies in the disk $\\lvert \\lambda-0.5\\rvert<0.5$. Its complement is explored with an algorithm adapted from one developed by Calegari, Koch, and Walker for a related iterated function system.",
+		"journal": "",
+		"journallink": "",
+		"volume": "",
+		"pages": "",
+		"year": "2026",
+		"doi": "",
+		"preprint": "",
+		"inpreparation": true
+	},
+	{
+		"title": "Sierp&#324;ski Gaskets: From Fractal Geometry to Complex Dynamics.",
+		"authors": "**Silvestri, S.** ",
+		"category": "purem",
+		"abstract": "Devaney's work on the Julia sets of the McMullen family, established these rational maps as central objects in holomorphic dynamics. For Misiurewicz parameters, that is when the critical orbits are all strictly preperiodic to a repelling cycle, the topological point of view taken by Kameyama links the dynamics of such rational maps to that on the attractors of invertible self-similar iterated function system. Ero&#287;lu, Rohde, and Solomyak showed that in favorable cases the topological conjugacy is in fact quasisymmetric. We survey the machinery underlying these results and propose directions for further research.",
+		"journal": "",
+		"journallink": "",
+		"volume": "",
+		"pages": "",
+		"year": "2026",
+		"doi": "",
+		"preprint": "",
+		"inpreparation": true
+	},
+	{
 		"title": "Sofic systems and extreme points of self-affine limit sets.",
 		"authors": "**Silvestri, S.** and P&eacute;rez, R. A. ",
 		"category": "purem",
