@@ -55,35 +55,50 @@ function awardsList(items) {
 }
 
 function publicationsList(items) {
-    let list = '<ul role="list">';
+    let list = '<ol class="pub-list" role="list" reversed>';
     items.forEach((item, index) => {
-        list += `<li data-category="${item.category}" aria-labelledby="${item.category}">${md.renderInline(item.authors)} <cite>"${md.renderInline(item.title)}"</cite> <em>${item.journal}</em>`
-        if (item.volume) list += ` <strong>${item.volume}</strong>,`;
-        if (item.pages) list += ` pp.${item.pages}`;
-        if (item.year) list += ` (${item.year}).`;
+        const status = item.inpreparation ? 'In preparation' : (item.journal || '').toLowerCase() === 'submitted' ? 'Submitted' : '';
 
-        list += '<div class="pub_links">';
-        if (item.inpreparation) {
-            list += ` <em>---in preparation---</em>`;
-        } else {
+        list += `<li class="pub grid" data-category="${item.category}" aria-labelledby="${item.category}">`;
+        list += `<time class="pub__year" datetime="${item.year}">${item.year}</time>`;
+        list += '<div class="pub__body">';
+        list += `<cite class="pub__title">${md.renderInline(item.title)}</cite>`;
+        list += `<span class="pub__authors">${md.renderInline(item.authors).trim()}</span>`;
+
+        // ${md.renderInline(item.authors)} <cite>"${md.renderInline(item.title)}"</cite> <em>${item.journal}</em>`
+        // if (item.volume) list += ` <strong>${item.volume}</strong>,`;
+        // if (item.pages) list += ` pp.${item.pages}`;
+        // if (item.year) list += ` (${item.year}).`;
+
+        list += '<span class="pub__venue">';
+        if (status) list += `<span class="pub__status">${status}</span>`;
+        else list += `<em>${item.fjournal}</em>`;
+        list += '</span>';
+
+
+        list += '<div class="pub_links flex">';
+        // if (item.inpreparation) {
+        //     list += ` <em>---in preparation---</em>`;
+        // } else {
             if (item.journallink) {
                 list += `<a href="${item.journallink}">Journal`;
                 if (item.doi) list += ` DOI:${item.doi}`;
                 if (item.journallink.indexOf("pdf")>-1) list+=` (PDF <svg aria-hidden="true" focusable="false"width="18px" height="18px" role="img"><use href="#_pdf"></svg>)`;
                 list += '</a> ';
             }
-        }
+        // }
         if (item.preprint) {
             if (item.preprint.indexOf("pdf")>-1) list += `<a href="${item.preprint}" download>Preprint (PDF <svg aria-hidden="true" focusable="false"width="18px" height="18px" role="img"><use href="#_pdf"></svg>)</a>`;
             else list += `<a href="${item.preprint}">Preprint (arXiv)</a> `;
-        }    
+        } 
+        list += '</div>';
         if (item.abstract) {
             list += `<details id="abstract-pub-${index}"><summary>abstract</summary>`;
             list += `<div id="pub-${index}" class="abstract">${md.renderInline(item.abstract)}</div>`;
         }
-        list += '</div></li>';
+        list += '</li>';
     });
-    list += '</ul>';
+    list += '</ol>';
     return list;
 }
 
@@ -160,7 +175,7 @@ export const listItems = (obj, key) => {
             html += awardsList(obj[key]);
             break;
         case "publications":
-            html += '<aside class="category-legend grid" aria-label="Legend of publication\'s category"><span data-category="purem" id="purem">Pure Mathematics</span> <span data-category="applm" id="applm">Applied Mathematics</span> <span data-category="histm" id="histm">History of Mathematics</span> <span data-category="eleceng" id="eleceng">Electrical Engineering</span></aside>';
+            html += '<aside class="category-legend grid" aria-label="Legend of publication\'s category"><span data-category="purem" id="purem">Pure Maths</span> <span data-category="applm" id="applm">Applied Maths</span> <span data-category="histm" id="histm">History of Maths</span> <span data-category="eleceng" id="eleceng">Electrical Engineering</span></aside>';
             html += publicationsList(obj[key]);
             break;
         case "talks":
