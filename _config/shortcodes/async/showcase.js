@@ -8,7 +8,7 @@ async function visualizationsList(items) {
         let picture = await image(item.thumbnail, item.alt, "", [],'thumb');
         li += picture;
         li += `<h4>${md.renderInline(item.title)}</h4>`;
-        li += `<a href="${item.link}" class="card-link">open</a>`;
+        li += `<a href="${item.link}" class="card-link">open <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>`;
         li += `<p><strong>Language</strong>: ${item.language}</p>`;
         li += `<p>${md.renderInline(item.description)}</p>`;
         li += '</li>'; 
@@ -23,8 +23,8 @@ async function websList(items) {
         let picture = await image(item.thumbnail, item.alt, "", [],'thumb');
         li += picture;
         li += `<h4>${md.renderInline(item.title)}</h4>`;
-        if (item.source) li += `<a href="${item.source}" class="card-link">source</a>`;
-        li += `<a href="${item.link}" class="card-link">homepage</a>`;
+        if (item.source) li += `<a href="${item.source}" class="card-link">source <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>`;
+        li += `<a href="${item.link}" class="card-link">homepage <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>`;
         li += `<p><strong>Framework</strong>: ${item.framework}</p>`;
         if (item.details.length > 0) li += `<p><strong>Details:</strong> ${item.details.join('; ')}.</p>`;
         li += `<p>${md.renderInline(item.description)}</p>`;

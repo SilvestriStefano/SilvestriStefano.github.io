@@ -18,7 +18,13 @@ I first thought of becoming a mathematician during my last year of highschool, t
 
 ## Publications
 
-{% listItems maths, "publications" %}
+<aside class="category-legend grid" aria-label="Legend of publication's category">
+    <span data-category="purem" id="purem">Pure Maths</span>
+    <span data-category="applm" id="applm">Applied Maths</span>
+    <span data-category="histm" id="histm">History of Maths</span>
+    <span data-category="eleceng" id="eleceng">Electrical Engineering</span>
+</aside>
+{% include "../_includes/partials/publist.njk" %}
 
 ## Talks
 

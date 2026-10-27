@@ -81,8 +81,6 @@ const toAscii = (s = "") =>
     .normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[ß]/g, "ss").replace(/[æÆ]/g, "ae").replace(/[øØ]/g, "o").replace(/[łŁ]/g, "l")
     .toLowerCase().replace(/[^a-z0-9]/g, "");
- 
-const STOPWORDS = new Set(["a", "an", "the", "on", "of", "in", "for", "and", "to", "some", "with", "from"]);
 
 function citeKey(pub) {
   const firstAuthor = stripMarkup(pub.authors || "").split(/\s+and\s+|,\s*(?=[^,]*\band\b)/)[0];
@@ -113,11 +111,13 @@ export default function bibtex(pub) {
   fields.push(["year", pub.year]);
   if (!published) fields.push(["note", pub.inpreparation ? "In preparation" : "Preprint"]);
   fields.push(["doi", pub.doi]);
-  if (pub.preprint && pub.preprint.startsWith('http')) fields.push(["url", pub.preprint]);
+  if (!published && pub.preprint && pub.preprint.startsWith('http')) fields.push(["url", pub.preprint]);
+  else if (published && pub.journallink) fields.push(["url", pub.journallink]);
   fields.push(["mrnumber", pub.mrnumber], ["zblnumber", pub.zblnumber]);
 
   const present = fields.filter(([, v]) => v !== undefined && v !== null && String(v).trim() !== "");
   const width = Math.max(...present.map(([k]) => k.length));
-  const body = present.map(([k, v]) => `\t${k.padEnd(width)} = {${String(v).trim()}}`).join(",\n");
-  return `@${type}{${citeKey(pub)},\n${body}\n}`;
+  const body = present.map(([k, v]) => ` ${k.padEnd(width)} = {${String(v).trim()}}`).join(",\n");
+  const entry = `@${type}{${citeKey(pub)},\n${body}\n}`;
+  return entry.replace(/[!-\/:-@\[-`{-~]/g, (c) => `&#${c.charCodeAt(0)};`);
 }

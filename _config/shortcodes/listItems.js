@@ -47,7 +47,7 @@ function awardsList(items) {
     let list = '<ul role="list">';
     items.forEach((item) => {
         list += `<li> <strong>${item.title}</strong> from <em>`;
-        list += (item.link) ? `<a href="${item.link}">${item.from}</a>` : `${item.from}`;
+        list += (item.link) ? `<a href="${item.link}">${item.from} <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>` : `${item.from}`;
         list += `</em> <time>${item.date}</time>.</li>`;
     });
     list += '</ul>';
@@ -146,7 +146,7 @@ function workshopList(items) {
     items.forEach((item, index) => {
         list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (<time>${item.date}</time>)`;
         if (item.abstract) list += ` <button type="button" id="abstract-workshop-${index}" class="btn-abstract" aria-controls="workshop-${index}" aria-expanded="false">abstract</button>`;
-        list += '<span><em>' + ((item.link) ? `<a href="${item.link}">${item.name}</a>` : `${item.name}`) + '</em></span>';
+        list += '<span><em>' + ((item.link) ? `<a href="${item.link}">${item.name} <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>` : `${item.name}`) + '</em></span>';
         if (item.abstract) list += ` <div id="workshop-${index}" aria-label="abstract-workshop-${index}" class="abstract" hidden>${md.renderInline(item.abstract)}</div>`;
         list += '</li>';
     });
@@ -158,7 +158,7 @@ function conferenceList(items) {
     let list = '<ul role="list">';
     items.forEach((item) => {
         list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (<time>${item.date}</time>)<span><em>`;
-        list += (item.link) ? `<a href="${item.link}">${item.name}</a>` : `${item.name}`;
+        list += (item.link) ? `<a href="${item.link}">${item.name} <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>` : `${item.name}`;
         list += '</em>' + ((item.session) ? `: ${item.session}` : '');
         if (item.abstract) list += ` <button type="button" id="abstract-conference-${index}" class="btn-abstract" aria-controls="conference-${index}" aria-expanded="false">abstract</button>`;
         list += '</span>';
