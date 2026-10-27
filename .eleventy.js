@@ -1,8 +1,8 @@
 import shortcodes from "./_config/shortcodes/shortcodes.js";
 import asyncShortcodes from "./_config/shortcodes/async/asyncShortcodes.js";
 import md from "./_config/libraries/markdown.js";
+import bibtex from "./_config/utils/bibtex.js";
 import eleventyNavigation from "@11ty/eleventy-navigation";
-import fs from "node:fs";
 
 export default function (eleventyConfig) {
 	// Passthrough
@@ -26,6 +26,7 @@ export default function (eleventyConfig) {
 		eleventyConfig.addAsyncShortcode(key, asyncShortcodes[key]);
 
 	// Filters
+	eleventyConfig.addFilter("bibtex",bibtex);
 	eleventyConfig.addFilter("dump", (content) => {
 		return JSON.stringify(content);
 	});

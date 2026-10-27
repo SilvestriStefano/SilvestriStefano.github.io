@@ -57,7 +57,11 @@ function awardsList(items) {
 function publicationsList(items) {
     let list = '<ol class="pub-list" role="list" reversed>';
     items.forEach((item, index) => {
-        const status = item.inpreparation ? 'In preparation' : (item.journal || '').toLowerCase() === 'submitted' ? 'Submitted' : '';
+        let status;
+        if (item.status=='unpublished' && item.inpreparation) status='In preparation';
+        else if (item.status=='unpublished') status='Unpublished';
+        else if (item.status=='submitted') status='Submitted';
+        else status='';
 
         list += `<li class="pub grid" data-category="${item.category}" aria-labelledby="${item.category}">`;
         list += `<time class="pub__year" datetime="${item.year}">${item.year}</time>`;
@@ -94,8 +98,9 @@ function publicationsList(items) {
         list += '</div>';
         if (item.abstract) {
             list += `<details id="abstract-pub-${index}"><summary>abstract</summary>`;
-            list += `<div id="pub-${index}" class="abstract">${md.renderInline(item.abstract)}</div>`;
+            list += `<div id="pub-${index}" class="abstract">${md.renderInline(item.abstract)}</div></details>`;
         }
+        list += "<pre><code>{{ item | bibtex }}</code></pre>"
         list += '</li>';
     });
     list += '</ol>';
