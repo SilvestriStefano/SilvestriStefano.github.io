@@ -1,0 +1,36 @@
+<ol class="pub-list" role="list" reversed>
+{% for pub in maths.publications %}
+    <li class="pub grid" data-category="{{ pub.category }}" aria-labelledby="{{ pub.category }}">
+        <time class="pub__year" datetime="{{ pub.year }}">{{ pub.year }}</time>
+        <div class="pub__body">
+            <cite class="pub__title">{{ pub.title | safe }}</cite>
+            <span class="pub__authors">{{ pub.authors | safe }}</span>
+            <span class="pub__venue">
+            {%- if pub.status!=='published' -%}
+                <span class="pub__status">{{ pub.status }}</span>
+            {%- else -%}
+                <em>{{ pub.fjournal }}</em>
+            {%- endif -%}
+            </span>
+            <div class="pub_links flex">
+            {%- if pub.journallink -%}
+                <a href="{{ pub.journallink }}">{% if pub.doi %} DOI:{{ pub.doi }} {% else %} Journal {% endif %}<svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg>{% if (pub.journallink).indexOf("pdf")>-1 %} (PDF <svg aria-hidden="true" focusable="false" width="18px" height="18px" role="img"><use href="#_pdf"></svg>){%- endif -%}</a>
+            {%- endif -%}
+            {%- if pub.preprint -%}
+                <a href="{{ pub.preprint }}">Preprint {% if (pub.preprint).indexOf("arxiv")==-1 %} (PDF <svg aria-hidden="true" focusable="false" width="18px" height="18px" role="img"><use href="#_pdf"></svg>) {% else %} (arXiv <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg>){%- endif -%}</a>
+            {%- endif -%}
+            </div>
+            {%- if pub.abstract -%}
+                <details id="abstract-pub-{{ loop.index }}">
+                    <summary>abstract</summary>
+                    <div id="pub-{{ loop.index }}" class="abstract">{{ pub.abstract | safe }}</div>
+                </details>
+            {%- endif -%}
+            <details id="cite-pub-{{ loop.index }}">
+                <summary>cite</summary>
+                <pre><code>{{ pub | bibtex | safe}}</code></pre>
+            </details>
+        </div>
+    </li>
+{%- endfor -%}
+</ol>

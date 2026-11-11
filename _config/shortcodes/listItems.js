@@ -47,7 +47,7 @@ function awardsList(items) {
     let list = '<ul role="list">';
     items.forEach((item) => {
         list += `<li> <strong>${item.title}</strong> from <em>`;
-        list += (item.link) ? `<a href="${item.link}">${item.from}</a>` : `${item.from}`;
+        list += (item.link) ? `<a href="${item.link}">${item.from} <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>` : `${item.from}`;
         list += `</em> <time>${item.date}</time>.</li>`;
     });
     list += '</ul>';
@@ -55,35 +55,55 @@ function awardsList(items) {
 }
 
 function publicationsList(items) {
-    let list = '<ul role="list">';
+    let list = '<ol class="pub-list" role="list" reversed>';
     items.forEach((item, index) => {
-        list += `<li data-category="${item.category}" aria-labelledby="${item.category}">${md.renderInline(item.authors)} <cite>"${md.renderInline(item.title)}"</cite> <em>${item.journal}</em>`
-        if (item.volume) list += ` <strong>${item.volume}</strong>,`;
-        if (item.pages) list += ` pp.${item.pages}`;
-        if (item.year) list += ` (${item.year}).`;
+        let status;
+        if (item.status=='unpublished' && item.inpreparation) status='In preparation';
+        else if (item.status=='unpublished') status='Unpublished';
+        else if (item.status=='submitted') status='Submitted';
+        else status='';
 
-        list += '<div class="pub_links">';
-        if (item.inpreparation) {
-            list += ` <em>---in preparation---</em>`;
-        } else {
+        list += `<li class="pub grid" data-category="${item.category}" aria-labelledby="${item.category}">`;
+        list += `<time class="pub__year" datetime="${item.year}">${item.year}</time>`;
+        list += '<div class="pub__body">';
+        list += `<cite class="pub__title">${md.renderInline(item.title)}</cite>`;
+        list += `<span class="pub__authors">${md.renderInline(item.authors).trim()}</span>`;
+
+        // ${md.renderInline(item.authors)} <cite>"${md.renderInline(item.title)}"</cite> <em>${item.journal}</em>`
+        // if (item.volume) list += ` <strong>${item.volume}</strong>,`;
+        // if (item.pages) list += ` pp.${item.pages}`;
+        // if (item.year) list += ` (${item.year}).`;
+
+        list += '<span class="pub__venue">';
+        if (status) list += `<span class="pub__status">${status}</span>`;
+        else list += `<em>${item.fjournal}</em>`;
+        list += '</span>';
+
+
+        list += '<div class="pub_links flex">';
+        // if (item.inpreparation) {
+        //     list += ` <em>---in preparation---</em>`;
+        // } else {
             if (item.journallink) {
                 list += `<a href="${item.journallink}">Journal`;
                 if (item.doi) list += ` DOI:${item.doi}`;
                 if (item.journallink.indexOf("pdf")>-1) list+=` (PDF <svg aria-hidden="true" focusable="false"width="18px" height="18px" role="img"><use href="#_pdf"></svg>)`;
                 list += '</a> ';
             }
-        }
+        // }
         if (item.preprint) {
             if (item.preprint.indexOf("pdf")>-1) list += `<a href="${item.preprint}" download>Preprint (PDF <svg aria-hidden="true" focusable="false"width="18px" height="18px" role="img"><use href="#_pdf"></svg>)</a>`;
             else list += `<a href="${item.preprint}">Preprint (arXiv)</a> `;
-        }    
+        } 
+        list += '</div>';
         if (item.abstract) {
             list += `<details id="abstract-pub-${index}"><summary>abstract</summary>`;
-            list += `<div id="pub-${index}" class="abstract">${md.renderInline(item.abstract)}</div>`;
+            list += `<div id="pub-${index}" class="abstract">${md.renderInline(item.abstract)}</div></details>`;
         }
-        list += '</div></li>';
+        list += "<pre><code>{{ item | bibtex }}</code></pre>"
+        list += '</li>';
     });
-    list += '</ul>';
+    list += '</ol>';
     return list;
 }
 
@@ -126,7 +146,7 @@ function workshopList(items) {
     items.forEach((item, index) => {
         list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (<time>${item.date}</time>)`;
         if (item.abstract) list += ` <button type="button" id="abstract-workshop-${index}" class="btn-abstract" aria-controls="workshop-${index}" aria-expanded="false">abstract</button>`;
-        list += '<span><em>' + ((item.link) ? `<a href="${item.link}">${item.name}</a>` : `${item.name}`) + '</em></span>';
+        list += '<span><em>' + ((item.link) ? `<a href="${item.link}">${item.name} <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>` : `${item.name}`) + '</em></span>';
         if (item.abstract) list += ` <div id="workshop-${index}" aria-label="abstract-workshop-${index}" class="abstract" hidden>${md.renderInline(item.abstract)}</div>`;
         list += '</li>';
     });
@@ -138,7 +158,7 @@ function conferenceList(items) {
     let list = '<ul role="list">';
     items.forEach((item) => {
         list += `<li data-invited="${item.invited}"><cite>''${md.renderInline(item.title)}''</cite> (<time>${item.date}</time>)<span><em>`;
-        list += (item.link) ? `<a href="${item.link}">${item.name}</a>` : `${item.name}`;
+        list += (item.link) ? `<a href="${item.link}">${item.name} <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></svg></a>` : `${item.name}`;
         list += '</em>' + ((item.session) ? `: ${item.session}` : '');
         if (item.abstract) list += ` <button type="button" id="abstract-conference-${index}" class="btn-abstract" aria-controls="conference-${index}" aria-expanded="false">abstract</button>`;
         list += '</span>';
@@ -160,7 +180,7 @@ export const listItems = (obj, key) => {
             html += awardsList(obj[key]);
             break;
         case "publications":
-            html += '<aside class="category-legend grid" aria-label="Legend of publication\'s category"><span data-category="purem" id="purem">Pure Mathematics</span> <span data-category="applm" id="applm">Applied Mathematics</span> <span data-category="histm" id="histm">History of Mathematics</span> <span data-category="eleceng" id="eleceng">Electrical Engineering</span></aside>';
+            html += '<aside class="category-legend grid" aria-label="Legend of publication\'s category"><span data-category="purem" id="purem">Pure Maths</span> <span data-category="applm" id="applm">Applied Maths</span> <span data-category="histm" id="histm">History of Maths</span> <span data-category="eleceng" id="eleceng">Electrical Engineering</span></aside>';
             html += publicationsList(obj[key]);
             break;
         case "talks":
