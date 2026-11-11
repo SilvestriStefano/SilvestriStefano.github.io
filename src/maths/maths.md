@@ -6,7 +6,7 @@ carbonLink: https://www.websitecarbon.com/website/silvestristefano-github-io-mat
 eleventyNavigation:
   key: Maths
   order: 200
-modifiedOn: 2026-02-19
+modifiedOn: 2026-11-11
 ---
 
 

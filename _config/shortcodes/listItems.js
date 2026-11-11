@@ -54,6 +54,7 @@ function awardsList(items) {
     return list;
 }
 
+// deprecated
 function publicationsList(items) {
     let list = '<ol class="pub-list" role="list" reversed>';
     items.forEach((item, index) => {
