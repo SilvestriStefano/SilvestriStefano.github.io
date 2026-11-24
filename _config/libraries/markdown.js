@@ -4,6 +4,7 @@ import math from "markdown-it-math/temml";
 import attr from 'markdown-it-attrs';
 
 const LINK_ICON =' <svg aria-hidden="true" focusable="false" width="18px" height="18px"><use href="#_link"></use></svg>';
+const REF_ICON =' ';
 
 function linkIcons(md) {
   const defaultClose =
@@ -16,9 +17,14 @@ function linkIcons(md) {
     const link = tokens[open];
 
     const isPermalink = (link?.attrGet("class") || "").split(" ").includes("header-anchor");
+    const isRef = (link?.attrGet("class") || "").split(" ").includes("ref-anchor");
     const isBareUrl = link?.info === "auto";
 
-    const icon = link && !isPermalink && !isBareUrl ? LINK_ICON : "";
+    let icon = '';
+    if (link && !isPermalink && !isBareUrl && !isRef)
+        icon = LINK_ICON;
+    else if (link && isRef)
+        icon = REF_ICON;
     return icon + defaultClose(tokens, idx, options, env, self);
   };
 }
