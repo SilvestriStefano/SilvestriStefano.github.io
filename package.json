@@ -24,8 +24,8 @@
 		"markdown-it-math": "^5.1.0",
 		"temml": "^0.11.11"
 	},
-	"overrides":{
-		"@11ty/eleventy":{
+	"overrides": {
+		"@11ty/eleventy": {
 			"markdown-it": "^15.0.3"
 		}
 	}
